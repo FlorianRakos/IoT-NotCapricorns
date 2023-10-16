@@ -34,7 +34,7 @@ Internet of Things refers as the interconnection of everyday objects and devices
 
 ### Domains
 * Smart Home: includes all the devices and systems used in residences to enhance comfort, security, and energy efficiency.
-     * This domain usually includes: smart thermostats, smart lighting systems, smart security cameras and locks  and voice-activated smart assistants like Amazon Echo or Google Home
+    * This domain usually includes: smart thermostats, smart lighting systems, smart security cameras and locks  and voice-activated smart assistants like Amazon Echo or Google Home
 * Industrial IoT (IIoT): application of IoT technologies in manufacturing and industrial settings. Devices and systems in this domain aim to improve operational efficiencies, safety, and maintenance predictability. 
     * This domain usually includes connected machinery that reports its operational status in real-time, sensors that monitor                   environmental conditions in factories and systems that predict when machinery will require maintenance or repair
 * Healthcare: The healthcare domain leverages IoT for patient monitoring, personalized treatment, and improving overall patient care. 
