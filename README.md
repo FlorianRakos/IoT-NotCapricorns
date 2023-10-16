@@ -1,4 +1,4 @@
-# Combined repository of Roth, Lind, and Smith
+# Combined repository of Florian, Jorrit, Cristina, Gift and Luca
 
 In this repo there are three different portfolios. One for each student.
 
