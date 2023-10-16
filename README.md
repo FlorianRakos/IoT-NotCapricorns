@@ -1,6 +1,6 @@
 # Combined repository of Florian, Jorrit, Cristina, Gift and Luca
 
-In this repo there are three different portfolios. One for each student.
+In this repo there are five different portfolios. One for each student.
 
 ## Florian (student ID (?))
 [Florian](/Florian/README.md)
