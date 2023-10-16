@@ -55,17 +55,17 @@ Two commonly used data protocols are:
 
 
 ### What are the benefits of IoT?
-  ·Iot lets you have more freedom because you can control devices out of the house. For example, we can do chores from the distance. 
-  ·It makes our life easier
+  * Iot lets you have more freedom because you can control devices out of the house. For example, we can do chores from the distance. 
+  * It makes our life easier
 the devices are smaller than before
-  ·it can help companies to be more effective and productive
-  ·Predictive maintenance: knowing when a machine is going to fail before it does
+  * it can help companies to be more effective and productive
+  * Predictive maintenance: knowing when a machine is going to fail before it does
 
 
 ### What are the challenges?
-  ·The market did not accept m2m
-  ·Tecnology is not as advanced as we would like
-  ·The devices on the market are not always secure
-  ·Choosing a network: every device has different needs
-  ·Battery life
+  * The market did not accept m2m
+  * Tecnology is not as advanced as we would like
+  * The devices on the market are not always secure
+  * Choosing a network: every device has different needs
+  * Battery life
 
