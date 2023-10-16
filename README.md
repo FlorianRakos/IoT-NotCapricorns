@@ -8,8 +8,8 @@ In this repo there are three different portfolios. One for each student.
 ## Jorrit (student ID (?))
 [Jorrit](/Jorrit/README.md)
 
-## Christina (student ID (?))
-[Christina](/Christina/README.md)
+## Cristina (student ID (?))
+[Cristina](/Cristina/README.md)
 
 ## Gift (student ID (?))
 [Gift](/Gift/README.md)
