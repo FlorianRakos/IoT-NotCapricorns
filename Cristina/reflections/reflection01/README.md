@@ -1,6 +1,6 @@
 # Reflections
 
-## week 1
+## day 1
 
 ## Lecture reflection
 Today we did an introduction to the IoT world. I used Menti.com for the first time and I really liked the dinamic it created. It helped to see all the answers from the rest of collegues in a different and very visual way. Even though i'm not used to the amount of hours of lectures, I enjoyed them and for now, I have understood everything, which is my principal objective providing I have no experience on arduino or IoT.
