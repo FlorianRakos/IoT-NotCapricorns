@@ -4,7 +4,7 @@ My portfolio
 ## First day
 - [Research records](/Cristina/researches/research01/README.md)
 
-- [Lab records](/Teamfolder/exercises/exercise01/README.md)
+- [Lab records](/TeamTwo/exercises/exercise01/README.md)
 
 - [Reflection](/Cristina/reflections/reflection01/README.md)
 
