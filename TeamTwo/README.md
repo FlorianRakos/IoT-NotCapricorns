@@ -10,8 +10,8 @@ Here we list all exercises.
 - [exercise02][2]
 ...
 
-[1]: /TeamTwo/exercises/exercise01
-[2]: /TeamTwo/exercises/exercise02
+[1]: /TeamTwo/exercises/exercise01/
+[2]: /TeamTwo/exercises/exercise02/
 ...
 
 ## Projects
