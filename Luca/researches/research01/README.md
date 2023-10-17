@@ -9,41 +9,85 @@ Answer the following questions:
 
 
 ### What type of programming experience do you have?
-
+I did my starting semester, and worked very little with java, C#, C++, SQL and Rstudio. In the years afterwards, I continued with learning SQL, Rstudio, DAX and a bit of Python.
 
 ### What have you done with micro controllers? Which ones have you used?
-
+I have only used an arduino in my starting semester for around 8 weeks.
 
 ### Which single board computers do you know/have you used?
-
+None
 
 ### Who is a maker or part of the maker community? What do you like/would you like about it?
-
+I dont know what the maker community is.
 
 ### What do you already know about IoT?
-
+I have a general idea, but i don't know alot.
 
 ### What are your expectations from this class?
-
+To touch the basics of IoT and to have a teacher which is present most of the times to ask question, because I will probably need him.
 
 
 ## IoT
 
 ### What does Internet of Things entail?
-
+The Internet of Things, or IoT, means connecting everyday things like objects, devices, and machines to the internet. These things have special parts called sensors, software, and connections. They use these to collect and share information with other devices and systems on the internet. It's like giving regular things the power to talk to each other and share information.
 
 ### Domains
+WHAT ARE DOMAINS?
+"IoT domains" refer to areas or industries where Internet of Things (IoT) technologies and applications are used to address unique challenges and opportunities. These domains are characterized by the use of IoT devices, sensors, and data analytics to gather, process, and leverage data for specific purposes.
 
+SUPPLY CHAIN AND LOGISTICS MANAGEMENT
+IoT plays a crucial role in optimizing supply chain and logistics operations. Businesses use IoT devices to track the movement and condition of goods in real time. This includes tracking shipments, monitoring the temperature and humidity of perishable goods, and providing end-to-end visibility into the supply chain. IoT solutions can improve efficiency, reduce costs, enhance security, and enable just-in-time inventory management.
+
+RETAIL AND CUSTOMER ANALYTICS
+IoT is utilized in the retail industry for customer analytics and improving the shopping experience. Retailers use IoT devices such as beacons, RFID tags, and video analytics to track customer behavior and gather data on foot traffic, shopping patterns, and product interactions. This data is then used to optimize store layouts, product placements, and marketing strategies, leading to increased sales and improved customer satisfaction.
+
+MANUFACTURING AND PREDICTIVE MAINTENANCE
+IoT plays a significant role in the manufacturing sector by enabling predictive maintenance. Manufacturers use IoT sensors and data analytics to monitor the condition of machinery and equipment in real-time. This allows for the early detection of potential issues, reducing downtime, minimizing maintenance costs, and optimizing production processes.
 
 ### Commonly used (data) protocols
-
-
+HTTP (HYPERTEXT TRANSFER PROTOCOL)
+FTP (FILE TRANSFER PROTOCOL)
+MQTT (MESSAGE QUEING TELEMETRY TRANSPORT)
+IMAP (INTERNET MESSAGE ACCESS PROTOCOL)
 
 ### Typical devices
+SMARTWATCH/FITBIT
+Explanation:
+A smartwatch or Fitbit is a wearable device that connects to the internet and tracks various aspects of your health and daily activities. It can monitor your heart rate, count your steps, track your sleep patterns, and more.
 
+RING DOORBELL (SMART DOORBELL)
+Explanation: 
+A Ring doorbell is a smart doorbell equipped with a camera and an internet connection. It allows you to see and communicate with visitors at your front door using your smartphone or tablet, even when you're not at home.
+
+OVEN THAT CAN BE TURNED ON REMOTELY
+Explanation: 
+An oven that can be turned on remotely is a kitchen appliance that connects to the internet. It enables you to preheat or control your oven settings from a mobile app or through voice commands, even when you're not at home.
+
+CAR THAT CAN PARK ITSELF WITHOUT A DRIVER USING YOUR PHONE
+Explanation: 
+A car that can park itself without a driver involves IoT technology integrated into the vehicle. Using a smartphone app, you can instruct the car to find a parking spot and autonomously park itself without the need for a driver behind the wheel.
+
+SENSORS:
+TEMPERATURE AND HUMIDITY SENSORS
+Explanation: 
+Temperature and humidity sensors are small devices that measure the temperature and humidity levels in the surrounding environment. They can be used in homes, industrial settings, and various applications to provide real-time climate data.
+
+MOTION SENSORS
+Explanation: 
+Motion sensors are devices that can detect movement in their vicinity. They are commonly used in security systems to trigger alarms or activate lights when motion is detected.
+
+AIR QUALITY SENSORS
+Explanation: 
+Air quality sensors measure various parameters of the air, including pollutants, particulate matter, and gases. They are used in both indoor and outdoor settings to assess air quality.
 
 ### What are the benefits of IoT?
-
+Delivery tracking
+Small devices that are capable of a lot
+Safety en security
+Supply chain management
 
 ### What are the challenges?
-
+The growth of IoT devices is slower than the hype and ask behind it.
+IoT for the healthcare is still dificult
+Alot of devices or solutions are very hackable and the companies will still sell them like this. An example is cars
