@@ -13,7 +13,7 @@ My portfolio
 
 - [Lab records](/Teamfolder/exercises/exercise02/README.md)
 
-- [Reflection](/Cristina/reflections/reflection02/README.md)
+- [Reflection](/Cristina/reflections/reflection2/reflection.md)
 
 ## Third day
 - [Research records](/Cristina/researches/research03/README.md)
