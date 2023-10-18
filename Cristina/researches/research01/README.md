@@ -2,7 +2,7 @@
 
 ## Contents
 
-1. [How are U?](readme.md#who-are-u?)
+1. [How are U?](/Cristina/researches/research01/README.md#who-are-u?)
 
 ## Lecture slides
 
