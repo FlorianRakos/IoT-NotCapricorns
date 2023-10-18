@@ -1,4 +1,4 @@
-#day 3
+## day 3
 
 Yesterday I ended up very lost, and today I woke up with an opened mind and determined to do and understand everything I could. The theory today was fairly simple but because the subject is new for me I used ChatGPT to explain it to me in different ways to understand it fully.
 The series of tasks propsed for today were quite different from yesterday, and, even though they were more difficult than yesterday's ones, I had a better understanding today. 
