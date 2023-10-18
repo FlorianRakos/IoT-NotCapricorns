@@ -18,7 +18,7 @@ My portfolio
 ## Third day
 - [Research records](/Cristina/researches/research03/README.md)
 
-- [Lab records](/Cristina/Lab20%Records/LabRecords03.md)
+- [Lab records](/Cristina/Lab%20Records/LabRecords03/LabRecords.md)
 
 - [Reflection](/Cristina/reflections/reflection03/README.md)
 
