@@ -15,7 +15,7 @@ Roos' success didn't go unnoticed in the company. Her story served as an inspira
 ### Io Tempower Gateway
 
 ## Potential steps and challenges
-We propably have to install a Image on the Raspberry PI and then have to 
+We will have to install a Image on the Raspberry PI and then have to make a Web Request to the Wemos Mini. 
 
 ## Implementation
 
@@ -27,7 +27,9 @@ Change Wifi password in the wifi.txt file.
 
 Then we had to sudo poweroff the Raspberry PI so it will be shutdown cleanly, because we had to change Classroom.
 
-After that
+After that we used the Arduino IDE write the Programm for the Wemos Mini to be able to switch its LED. Therfor we used the HelloServer Template as a startingpoint. There we set the credentials for the WIFI from the Raspberry PI Router. Next at the Serial Monitor we can see that the Microcontroller has successfully connected to the RaspberryPI. After that we can set up a basic Web server which returns some Plain text when it's being accessed.
+Next we add Two Enpoints, a "/on" and a "/off". When these are accessed the LED is being switched off and on.
+
 
 
 ### Architecture and Terminology IoT
