@@ -1,8 +1,12 @@
 # Research records 01
 
+## Contents
+
+1. [How are U?](README.md#who-are-u?)
+
 ## Lecture slides
 
-The slides for this lecture can be found here: ...
+The slides for this lecture can be found here: 
 
 ## Who are U?
 Answer the following questions:
