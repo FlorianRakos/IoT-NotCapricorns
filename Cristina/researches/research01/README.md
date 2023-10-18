@@ -3,31 +3,13 @@
 ## Contents
 
 1. [How are U?](/Cristina/researches/research01/README.md#who-are-u)
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
+   1. 
 ## Lecture slides
 
 The slides for this lecture can be found here: 
 
 ## Who are U?
 Answer the following questions:
-
 
 ### What type of programming experience do you have?
 I have some experience on html, xml and processing
