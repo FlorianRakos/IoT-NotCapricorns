@@ -1,0 +1,1 @@
+I wasn't able to join the lecture on day 4 because I had a job interview.
