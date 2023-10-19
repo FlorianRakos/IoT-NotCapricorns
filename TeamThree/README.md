@@ -176,7 +176,7 @@ done
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
 
 ### Picture 1 setting up the breadboard
-![Afbeelding van WhatsApp op 2023-10-19 om 12 30 59_654bfce5](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/a673c6a3-db41-47e9-8681-1237046a33e2)
+![Afbeelding van WhatsApp op 2023-10-19 om 12 30 59_8422c7ae](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/63804990-03c4-4fba-a0ac-d36147a75c26)
 
 ### Coding
 We are now going to work on the laptop in Arduino IDE. We got a code from the library and we are editing it so we can work with it. We edited the esp32mqttclient "hellotomyself" code. We use this so we can use mqtt.
