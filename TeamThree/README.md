@@ -96,11 +96,17 @@ Toggle button:
 
 # Exercise 4: MQTT on microcontroller
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
+## Picture 1 setting up the breadboard
+![Afbeelding van WhatsApp op 2023-10-19 om 12 30 59_654bfce5](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/a673c6a3-db41-47e9-8681-1237046a33e2)
 
+## Coding
 We are now going to work on the laptop in Arduino IDE. We got a code from the library and we are editing it so we can work with it. We edited the esp32mqttclient "hellotomyself" code. We use this so we can use mqtt.
 We are looking for another example. We are selecting the DHT11 example. We don't know if it will work, but we are trying it. We selected the "readtemperature" option from DHT11. We tried to upload, but we forgot that we disconnected the ESP from the laptop. Now we connected it again and uploaded the program. We get a checksum mismatch while reading from DHT11 error code. So we need to change the pin number, we forgot that we were using pin 4 and not the default pin 2. We got an output. It gives us a temperature of 26 degrees (picture). We are trying to heat it up by using our hands. We put our hands around it and the temperature is going up. It went to 27, and even to 28.
 So now we are going to merge both our codes, and trying to make it 1 working code. 
 We have combined them and are now testing the code. The output gives us the temperature only once. We don't want this. We change the seconds for when it gives us a value every 2 seconds. Somehow this does not really work. It gives us a value each time it changes. 
 So we now change the subscribetopic in the top to "switch /r1/set". We do this because it was not subscribed to anything. So now we have it subscribed to the AC. We get a very weird error message now. It has symbols and text. 
 It now says we can not connect to the internet. It does not send the temperatue anymore. We changed the beginning of the code. We entered a serial_begin so we can use the serial_print command. This made it work. We just had to change the temperature where the device turns on and off to 30 because the device was already hot. This worked.
+## Picture 2 The temperature getting 30 or above and turning on the device
+![Afbeelding van WhatsApp op 2023-10-19 om 12 30 06_db478543](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/49eb70bf-17e8-402c-be59-9ecf0bb884a5)
 
+# Exercise 5
