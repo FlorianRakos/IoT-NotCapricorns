@@ -94,7 +94,7 @@ Toggle button:
 
 - [pictures](/Teamfolder/pictures)
 
-#Exercise 4: MQTT on microcontroller
+# Exercise 4: MQTT on microcontroller
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
 
 We are now going to work on the laptop in Arduino IDE. We got a code from the library and we are editing it so we can work with it. We edited the esp32mqttclient "hellotomyself" code. We use this so we can use mqtt.
