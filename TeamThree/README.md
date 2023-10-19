@@ -93,3 +93,183 @@ Toggle button:
 ![Afbeelding van WhatsApp op 2023-10-16 om 16 48 56_7457f06a](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/aa080584-d80d-4639-8c07-57b569e0cd27)
 
 - [pictures](/Teamfolder/pictures)
+
+# Exercise 4: 
+
+## MQTT Integration
+```python
+from iotknit import *
+
+init("192.168.12.1")  # use a MQTT broker on localhost
+
+prefix("switch")  # all actors below are prefixed with /led
+
+switch = publisher("r1")  # create a Thingi interface that publishes to led/led1
+
+def tempCallback(msg):
+
+    print("received: [temp]", msg)
+
+    try:
+        t = int(msg)
+    except ValueError:
+        return
+   
+    if (t >= 30):
+        switch.publish("set", "on")  # publish updated state
+        print("sending: [r1]", "on")
+    else:
+        switch.publish("set", "off")
+        print("sending: [r1]", "off")
+
+
+prefix("temp-measure")  # all sensors below are prefixed with /button
+
+temp1 = subscriber("temp1")  # create a Thingi interface that can have
+                                 # subscribes only to button/button1
+temp1.subscribe_change(callback=tempCallback)
+
+run()  # you can also do a while loop here call process() instead
+```
+
+## MQTT simulators
+### AC simulator Bash code
+```
+# Use a subshell to run mosquitto_sub in the background
+(
+    mosquitto_sub -h "$BROKER" -t "$RECEIVE_TOPIC" | while read -r MESSAGE; do
+        process_message "$MESSAGE"
+    done
+) &
+
+# Main loop to publish the state every second
+while true; do
+    # If there's new data in the PIPE, read it into STATE
+    if read -t 0.01 NEW_STATE < "$PIPE"; then
+        STATE="$NEW_STATE"
+    fi
+
+    mosquitto_pub -h "$BROKER" -t "$SEND_TOPIC" -m "$STATE"
+    sleep 1
+done
+```
+
+### Temperature simulator Bash code
+```
+#!/bin/bash
+
+BROKER="192.168.12.1"
+TOPIC="temp-measure/temp1"
+
+while true; do
+    # Generate a random number between 15 and 30
+    RAND_NUM=$((RANDOM % 16 + 15))
+
+    # Send the random number using mosquitto_pub
+    mosquitto_pub -h "$BROKER" -t "$TOPIC" -m "$RAND_NUM"
+
+    # Wait for 1 seconds
+    sleep 1
+done
+```
+## MQTT on microcontroller
+We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
+
+### Picture 1 setting up the breadboard
+![Afbeelding van WhatsApp op 2023-10-19 om 12 30 59_8422c7ae](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/63804990-03c4-4fba-a0ac-d36147a75c26)
+
+### Coding
+We are now going to work on the laptop in Arduino IDE. We got a code from the library and we are editing it so we can work with it. We edited the esp32mqttclient "hellotomyself" code. We use this so we can use mqtt.
+We are looking for another example. We are selecting the DHT11 example. We don't know if it will work, but we are trying it. We selected the "readtemperature" option from DHT11. We tried to upload, but we forgot that we disconnected the ESP from the laptop. Now we connected it again and uploaded the program. We get a checksum mismatch while reading from DHT11 error code. So we need to change the pin number, we forgot that we were using pin 4 and not the default pin 2. We got an output. It gives us a temperature of 26 degrees (picture). We are trying to heat it up by using our hands. We put our hands around it and the temperature is going up. It went to 27, and even to 28.
+So now we are going to merge both our codes, and trying to make it 1 working code. 
+We have combined them and are now testing the code. The output gives us the temperature only once. We don't want this. We change the seconds for when it gives us a value every 2 seconds. Somehow this does not really work. It gives us a value each time it changes. 
+So we now change the subscribetopic in the top to "switch /r1/set". We do this because it was not subscribed to anything. So now we have it subscribed to the AC. We get a very weird error message now. It has symbols and text. 
+It now says we can not connect to the internet. It does not send the temperatue anymore. We changed the beginning of the code. We entered a serial_begin so we can use the serial_print command. This made it work. We just had to change the temperature where the device turns on and off to 30 because the device was already hot. This worked.
+
+### Definitive code
+```python
+#include "Arduino.h"
+#include <WiFi.h>
+#include <DHT11.h>
+#include "ESP32MQTTClient.h"
+const char *ssid = "iotempire-nc";
+const char *pass = "bobby123";
+
+DHT11 dht11(4);
+
+// Test Mosquitto server, see: https://test.mosquitto.org
+char *server = "mqtt://192.168.12.1:1883";
+
+char *subscribeTopic = "switch/r1/set";
+char *publishTopic = "temp-measure/temp1";
+
+ESP32MQTTClient mqttClient; // all params are set later
+
+void setup()
+{
+    Serial.begin(115200);
+    log_i();
+    log_i("setup, ESP.getSdkVersion(): ");
+    log_i("%s", ESP.getSdkVersion());
+
+    mqttClient.enableDebuggingMessages();
+
+    mqttClient.setURI(server);
+    mqttClient.enableLastWillMessage("lwt", "I am going offline");
+    mqttClient.setKeepAlive(30);
+    WiFi.begin(ssid, pass);
+    WiFi.setHostname("c3test");
+    mqttClient.loopStart();
+}
+
+int pubCount = 0;
+
+void loop()
+{
+    int temperature = dht11.readTemperature();
+    String msg = String(temperature);
+    Serial.println(temperature);
+    mqttClient.publish(publishTopic, msg, 0, false);
+    delay(2000);
+}
+
+void onConnectionEstablishedCallback(esp_mqtt_client_handle_t client)
+{
+    if (mqttClient.isMyTurn(client)) // can be omitted if only one client
+    {
+        mqttClient.subscribe(subscribeTopic, [](const String &payload)
+                             { Serial.println(String(subscribeTopic) + String(payload)); });
+
+        mqttClient.subscribe("bar/#", [](const String &topic, const String &payload)
+                             { Serial.println(String(topic) +  String(payload)); });
+    }
+}
+
+esp_err_t handleMQTT(esp_mqtt_event_handle_t event)
+{
+    mqttClient.onEventCallback(event);
+    return ESP_OK;
+}
+```
+
+### Picture 2 The temperature getting 30 or above and turning on the device
+![Afbeelding van WhatsApp op 2023-10-19 om 12 30 06_db478543](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/49eb70bf-17e8-402c-be59-9ecf0bb884a5)
+![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_b6423ea3](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/80f616d4-3bad-4c11-9fd5-fec2abe1b6ff)
+![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_f864ab8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9ae0697c-d2f4-440c-beb4-4cbf4c5df763)
+
+# Exercise 5
+## Node-RED Intro
+![Afbeelding van WhatsApp op 2023-10-19 om 12 51 13_34f01c8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e60df6c-9696-4c6c-b84a-fd04bb722af2)
+
+## Emergency Button
+We created a breadboard that looks like this:
+![Afbeelding van WhatsApp op 2023-10-19 om 14 57 57_ce453a2e](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/52103184-f255-4132-8886-07a39ddcfd8d)
+
+We added a LED light so we can see if the button press is registering.
+
+We went on Node-red to look for the package we need and we found it. We checked with the debugging popup if our button presses came through after we made a MQTT start, and it did. So now we can go to work on the chatbot.
+Discovering where to create the discord bot was complicated, but after some asking around we found it. We did watch a video on how to install a discord bot because we have never done anything like this and were very confused. ![Afbeelding van WhatsApp op 2023-10-19 om 15 53 05_d65df0e4](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c92b1478-b3c4-4292-8b91-5f23c015101d)
+
+
+## Remote Control an Internal Device
+
