@@ -132,6 +132,27 @@ temp1.subscribe_change(callback=tempCallback)
 run()  # you can also do a while loop here call process() instead
 ```
 
+## MQTT simulators
+```
+# Use a subshell to run mosquitto_sub in the background
+(
+    mosquitto_sub -h "$BROKER" -t "$RECEIVE_TOPIC" | while read -r MESSAGE; do
+        process_message "$MESSAGE"
+    done
+) &
+
+# Main loop to publish the state every second
+while true; do
+    # If there's new data in the PIPE, read it into STATE
+    if read -t 0.01 NEW_STATE < "$PIPE"; then
+        STATE="$NEW_STATE"
+    fi
+
+    mosquitto_pub -h "$BROKER" -t "$SEND_TOPIC" -m "$STATE"
+    sleep 1
+done
+```
+
 ## MQTT on microcontroller
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
 
