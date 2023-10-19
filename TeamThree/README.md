@@ -268,7 +268,8 @@ We created a breadboard that looks like this:
 We added a LED light so we can see if the button press is registering.
 
 We went on Node-red to look for the package we need and we found it. We checked with the debugging popup if our button presses came through after we made a MQTT start, and it did. So now we can go to work on the chatbot.
-Discovering where to create the discord bot was complicated, but after some asking around we found it. We did watch a video on how to install a discord bot because we have never done anything like this and were very confused. (![Afbeelding van WhatsApp op 2023-10-19 om 15 53 05_d65df0e4](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c92b1478-b3c4-4292-8b91-5f23c015101d))
+Discovering where to create the discord bot was complicated, but after some asking around we found it. We did watch a video on how to install a discord bot because we have never done anything like this and were very confused. ![Afbeelding van WhatsApp op 2023-10-19 om 15 53 05_d65df0e4](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c92b1478-b3c4-4292-8b91-5f23c015101d)
+
 
 ## Remote Control an Internal Device
 
