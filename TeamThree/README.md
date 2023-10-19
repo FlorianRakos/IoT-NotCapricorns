@@ -133,6 +133,7 @@ run()  # you can also do a while loop here call process() instead
 ```
 
 ## MQTT simulators
+### AC simulator Bash code
 ```
 # Use a subshell to run mosquitto_sub in the background
 (
@@ -153,6 +154,24 @@ while true; do
 done
 ```
 
+### Temperature simulator Bash code
+```
+#!/bin/bash
+
+BROKER="192.168.12.1"
+TOPIC="temp-measure/temp1"
+
+while true; do
+    # Generate a random number between 15 and 30
+    RAND_NUM=$((RANDOM % 16 + 15))
+
+    # Send the random number using mosquitto_pub
+    mosquitto_pub -h "$BROKER" -t "$TOPIC" -m "$RAND_NUM"
+
+    # Wait for 1 seconds
+    sleep 1
+done
+```
 ## MQTT on microcontroller
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
 
