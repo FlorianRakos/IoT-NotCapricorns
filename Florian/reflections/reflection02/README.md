@@ -1,6 +1,6 @@
 
 ## Lecture reflection
-It was interesting to learn about the Architecture and Terminology of IoT. There were some 
+It was interesting to learn about the Architecture and Terminology of IoT.
 
 ## Lab reflection
-As we only had one Raspberry PI for the whole team it was very hard to follow what exactly is happening in regards to the task.
+As we only had one Raspberry PI for the whole team it was very hard actually work together as a team. But making some Microcontrollers
