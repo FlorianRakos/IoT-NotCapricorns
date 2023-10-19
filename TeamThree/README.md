@@ -106,6 +106,42 @@ So now we are going to merge both our codes, and trying to make it 1 working cod
 We have combined them and are now testing the code. The output gives us the temperature only once. We don't want this. We change the seconds for when it gives us a value every 2 seconds. Somehow this does not really work. It gives us a value each time it changes. 
 So we now change the subscribetopic in the top to "switch /r1/set". We do this because it was not subscribed to anything. So now we have it subscribed to the AC. We get a very weird error message now. It has symbols and text. 
 It now says we can not connect to the internet. It does not send the temperatue anymore. We changed the beginning of the code. We entered a serial_begin so we can use the serial_print command. This made it work. We just had to change the temperature where the device turns on and off to 30 because the device was already hot. This worked.
+## Definitive code
+```python
+from iotknit import *
+
+init("192.168.12.1")  # use a MQTT broker on localhost
+
+prefix("switch")  # all actors below are prefixed with /led
+
+switch = publisher("r1")  # create a Thingi interface that publishes to led/led1
+
+def tempCallback(msg):
+
+    print("received: [temp]", msg)
+
+    try:
+        t = int(msg)
+    except ValueError:
+        return
+   
+    if (t >= 30):
+        switch.publish("set", "on")  # publish updated state
+        print("sending: [r1]", "on")
+    else:
+        switch.publish("set", "off")
+        print("sending: [r1]", "off")
+
+
+prefix("temp-measure")  # all sensors below are prefixed with /button
+
+temp1 = subscriber("temp1")  # create a Thingi interface that can have
+                                 # subscribes only to button/button1
+temp1.subscribe_change(callback=tempCallback)
+
+run()  # you can also do a while loop here call process() instead
+```
+
 ## Picture 2 The temperature getting 30 or above and turning on the device
 ![Afbeelding van WhatsApp op 2023-10-19 om 12 30 06_db478543](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/49eb70bf-17e8-402c-be59-9ecf0bb884a5)
 
