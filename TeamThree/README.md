@@ -2,9 +2,46 @@
 
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures of IoT.
  
+# Index
+1. [Git and Kit](#1-git-and-kit)
+   * 1.a [Partner, team git repo setup](#1a-partner-team-git-repo-setup)
+   * 1.b [The Kit](#1b-the-kit)
+2. [Breadboard, Blink, and Stories](#2-breadboard-blink-and-stories)
+   * [2.b Breadboard and Electronic Prototyping](#2b-breadboard-and-electronic-prototyping)
+   * [2.c Blink on the Wemos D1 Mini](#2c-blink-on-the-wemos-d1-mini)
+   * 2.d Toggle Led With Button
+3. IoTempower Gateway - Our Own Network
+   * 3.a Actors and Sensors with Web Requests
+   * 3.b Stories/Scenario
+4. MQTT Introduction + Simulators
+   * 4.a MQTT Basics
+   * 4.b MQTT Integration
+   * 4.c MQTT simulators
+   * 4.d MQTT on microcontroller
+5. More Hardware and Integration with Node-RED
+   * 5.a Node-RED intro
+   * 5.b Emergency Button
+   * 5.c Remote Control an Interval Device
+6. Device Control with IoTempower
+   * 6.a Exploring IoTempower Services and COmmands
+   * 6.b First Node
+   * 6.c Second Node 
+   * 6.d Button to sound and notification
+   * 6.e Text receiver
 
-## Exercises
-### 2.b Breadboard and Electronic Prototyping (Pair)
+# 1. Git and Kit
+## 1.a Partner, team git repo setup
+Jorrit, Luca and Cristina partned up and with the rest of the group created this Git Repo. We downloaded the example provided on the documentation and decided on doing a similar organisation. We created different folders for each member of the group as well as the smaller groups and we all cloned the repository.
+
+## 1.b The Kit     
+We got one Kit, unpacked it and made a list with all the parts we found. We also identified what every piece is good for and added the bus system they use as an interface. Afterwards we googled tome properties of the respective bus on the respective device.
+All this information can be seen in this table:
+
+# 2. Breadboard, Blink, and Stories
+## 2.a Feedback
+We got feedback on repository and personal portfolio from one instructor.
+
+## 2.b Breadboard and Electronic Prototyping
 1. We connected the Wemos D1 Mini to our computer using a USB cable for testing.
 
 2. We established a 5V and Ground (G) connection from the Wemos D1 Mini to the breadboard, deviating from the video instructions. Instead, we successfully connected Jorrit's ESP32 to the laptop.
@@ -13,7 +50,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 
 4. We added the button as demonstrated in the video. We documented the steps, confirmed its functionality, and captured a photo of the setup for our portfolio. Initially, we encountered an issue with an incomplete circuit, but we resolved it. Now, the button works, allowing both lights to be activated simultaneously. In a subsequent attempt, we placed the button in a different location. Initially, only the red LED lit up, but we discovered that the yellow LED was inserted incorrectly with the long and short legs reversed. After making the adjustment, both LEDs now function as intended.
 
-### 2.c Blink on the Wemos D1 Mini (Pair)
+## 2.c Blink on the Wemos D1 Mini
 Blink on the Wemos D1 Mini Exercise:
 
 1. We connected D5 to the positive (as the ESP32 doesn't have D6). We then inserted the LED with its positive leg connected and a resistor in the negative leg. Additionally, we added a wire going from the negative leg to the ground.
@@ -24,7 +61,7 @@ Blink on the Wemos D1 Mini Exercise:
 
 4. To make the LEDs blink in sync, we kept the same setup but switched the High and Low voltage. This adjustment made both LEDs blink in perfect synchronization.
 
-### 2.d Toggle Led With Button
+## 2.d Toggle Led With Button
 Add a button to the breadboard, connecting the button to ground and a GPIO port like D5.
 1. We correctly placed the button in the designated spot.
 
@@ -50,7 +87,7 @@ Write an Arduino sketch that allows you to toggle the LED on D6 with a push of t
 [1]: /Teamfolder/exercises/exercise01
 ...
 
-## Projects
+### Projects
 
 - [project01][7]
 ...
@@ -58,7 +95,7 @@ Write an Arduino sketch that allows you to toggle the LED on D6 with a push of t
 [7]: /Teamfolder/project
 ...
 
-## Pictures
+### Pictures
 2.b
 1 button 1 light just lighting up:
 ![Afbeelding van WhatsApp op 2023-10-16 om 15 28 56_b5383109](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/999e431d-49c7-437f-881f-8a70786a24e3)
@@ -94,9 +131,27 @@ Toggle button:
 
 - [pictures](/Teamfolder/pictures)
 
-# Exercise 4: 
+# 3. IoTempower Gateway - Our Own Network
 
-## MQTT Integration
+## 3.a Actors and Sensors with Web Requests
+
+## 3.b Stories/Scenario
+
+# 4. MQTT Introduction + Simulators
+## 4.a MQTT Basics
+For this task we sent messages to each other using MQTT
+To do this activity we simply installed VSMqtt extension in Visual Studio Code and we added a profile. We subscribed to eachothers topic and send messages
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/8f6a73c2-5e5e-4fac-93ba-071a8f8e7f47)
+
+We also used wildcards, shown below:
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/17d77b67-114a-4888-a478-3e1164070799)
+
+
+## 4.b MQTT Integration
+create a virtual environment python -m venv /path/to/new/virtual/environment (download git) i didn't have it installed Paste the iotempire example on how to connect a button node with a switch changing the host to our raspberry pie number and follow tutorial "Knit Your IoT Network with IoTknit" set a mosquitto pub and a mosquitto sub connected to the script. We generated a bash script on ChatGPT and we installed PuTTY to run it. MQTT simulators task complete start the hardware part "MQTT on microcontroller" esp32 not recognisable on computer intalling driver and computer restart terminals closed but scrips saved no time so call it a day
+
+problem: we struggled getting the status of the AC because it only showed OFF
+
 ```python
 from iotknit import *
 
@@ -132,7 +187,7 @@ temp1.subscribe_change(callback=tempCallback)
 run()  # you can also do a while loop here call process() instead
 ```
 
-## MQTT simulators
+## 4.c MQTT simulators
 ### AC simulator Bash code
 ```
 # Use a subshell to run mosquitto_sub in the background
@@ -172,7 +227,7 @@ while true; do
     sleep 1
 done
 ```
-## MQTT on microcontroller
+## 4.d MQTT on microcontroller
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
 
 ### Picture 1 setting up the breadboard
@@ -257,11 +312,10 @@ esp_err_t handleMQTT(esp_mqtt_event_handle_t event)
 ![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_b6423ea3](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/80f616d4-3bad-4c11-9fd5-fec2abe1b6ff)
 ![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_f864ab8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9ae0697c-d2f4-440c-beb4-4cbf4c5df763)
 
-# Exercise 5
-## Node-RED Intro
+## 5.a Node-RED Intro
 ![Afbeelding van WhatsApp op 2023-10-19 om 12 51 13_34f01c8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e60df6c-9696-4c6c-b84a-fd04bb722af2)
 
-## Emergency Button
+## 5.b Emergency Button
 We created a breadboard that looks like this:
 ![Afbeelding van WhatsApp op 2023-10-19 om 14 57 57_ce453a2e](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/52103184-f255-4132-8886-07a39ddcfd8d)
 
@@ -271,5 +325,16 @@ We went on Node-red to look for the package we need and we found it. We checked 
 Discovering where to create the discord bot was complicated, but after some asking around we found it. We did watch a video on how to install a discord bot because we have never done anything like this and were very confused. ![Afbeelding van WhatsApp op 2023-10-19 om 15 53 05_d65df0e4](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c92b1478-b3c4-4292-8b91-5f23c015101d)
 
 
-## Remote Control an Internal Device
+## 5.c Remote Control an Internal Device
+
+# 6. Device Control with IoTempower
+##  - 6.a Exploring IoTempower Services and Commands
+
+##  - 6.b First Node
+
+##  - 6.c Second Node
+
+##  - 6.d Button to sound and notification
+
+##  - 6.e Text receiver
 
