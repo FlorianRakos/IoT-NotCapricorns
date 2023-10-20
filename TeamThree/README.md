@@ -3,29 +3,28 @@
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures of IoT.
  
 # Index
-- Exercises
-  - 2.b Breadboard and Electronic Prototyping (Pair)
-  - 2.c Blink on the Wemos D1 Mini (Pair)
-  - 2.d Toggle Led With Button
-- 3. IoTempower Gateway - Our Own Network
-  - 3.a Actors and Sensors with Web Requests
-  - 3.b Stories/Scenario
-- 4. MQTT Introduction + Simulators
-  - 4.a MQTT Basics
-  - 4.b MQTT Integration
-  - 4.c MQTT simulators
-  - 4.d MQTT on microcontroller
-- 5. More Hardware and Integration with Node-RED
-  - 5.a Node-RED intro
-  - 5.b Emergency Button
-  - 5.c Remote Control an Interval Device
-- 6. Device Control with IoTempower
-  - 6.a Exploring IoTempower Services and COmmands
-  - 6.b First Node
-  - 6.c Second Node
-  - 6.d Button to sound and notification
-  - 6.e Text receiver
-  - 6.f RFID reader
+2. Breadboard, Blink, and Stories
+  * 2.b Breadboard and Electronic Prototyping (Pair)
+  * 2.c Blink on the Wemos D1 Mini (Pair)
+  * 2.d Toggle Led With Button
+ 3. IoTempower Gateway - Our Own Network
+  * 3.a Actors and Sensors with Web Requests
+  * 3.b Stories/Scenario
+ 4. MQTT Introduction + Simulators
+  * 4.a MQTT Basics
+  * 4.b MQTT Integration
+  * 4.c MQTT simulators
+  * 4.d MQTT on microcontroller
+ 5. More Hardware and Integration with Node-RED
+  * 5.a Node-RED intro
+  * 5.b Emergency Button
+  * 5.c Remote Control an Interval Device
+ 6. Device Control with IoTempower
+  * 6.a Exploring IoTempower Services and COmmands
+  * 6.b First Node
+  * 6.c Second Node
+  * 6.d Button to sound and notification
+  * 6.e Text receiver
      
 # 2. Breadboard, Blink, and Stories
 ## 2.b Breadboard and Electronic Prototyping (Pair)
