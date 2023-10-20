@@ -7,7 +7,7 @@ Today we reflected on scaling and testing IoT and I made the following notes:
 * Interoperability 
 
 
-2. How can we do testing?
+## 2. How can we do testing?
 * User Experience or User Acceptance Testing
 * Simulations:
   * Device Simulators
