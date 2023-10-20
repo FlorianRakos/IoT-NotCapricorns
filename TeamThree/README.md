@@ -4,9 +4,9 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
  
 ## Index
 - Exercises
-  1. 2.b Breadboard and Electronic Prototyping (Pair)
-  2. 2.c Blink on the Wemos D1 Mini (Pair)
-  3. 2.d Toggle Led With Button
+  - 2.b Breadboard and Electronic Prototyping (Pair)
+  - 2.c Blink on the Wemos D1 Mini (Pair)
+  - 2.d Toggle Led With Button
      
 ## Exercises
 ### 2.b Breadboard and Electronic Prototyping (Pair)
