@@ -4,8 +4,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
  
 
 ## Exercises
-
-2.b Breadboard and Electronic Prototyping (Pair)
+### 2.b Breadboard and Electronic Prototyping (Pair)
 1. We connected the Wemos D1 Mini to our computer using a USB cable for testing.
 
 2. We established a 5V and Ground (G) connection from the Wemos D1 Mini to the breadboard, deviating from the video instructions. Instead, we successfully connected Jorrit's ESP32 to the laptop.
@@ -14,33 +13,36 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 
 4. We added the button as demonstrated in the video. We documented the steps, confirmed its functionality, and captured a photo of the setup for our portfolio. Initially, we encountered an issue with an incomplete circuit, but we resolved it. Now, the button works, allowing both lights to be activated simultaneously. In a subsequent attempt, we placed the button in a different location. Initially, only the red LED lit up, but we discovered that the yellow LED was inserted incorrectly with the long and short legs reversed. After making the adjustment, both LEDs now function as intended.
 
-2.c Blink on the Wemos D1 Mini (Pair)
-Exercise: Add led on D6 blinking async. Use number instead of D6 (not in video) and make it blink synchronously
-Our steps: We connected d5 to the positive (the esp32 has no d6), then put in the light in the positive and the resistance in the negative. We also added a wire that goes from the negative to the ground. For the number we used instead of d5 we look at pinout esp32. This showed us that we needed to use pin 5.
-So for the exercise to make them not sync we used the built in command to use one of the built in lights and we added another light on pin 5. We made a code to make them blink but the builtin one is blinking but the other one isnt.
-We apparently wrote the different number for the pin. We changed it to 5 so now it works. The are not blinking in sync.
-Now we are going to make them blink in sync. We are using the same setup, but we are switchting the High and Low voltage. This makes them blink in sync.
+### 2.c Blink on the Wemos D1 Mini (Pair)
+Blink on the Wemos D1 Mini Exercise:
 
-2.d Toggle Led With Button
-Exercise: Add button to breadboard (wire button to ground and a GPIO port like D5)
-Our steps: We put it in the correct place
+1. We connected D5 to the positive (as the ESP32 doesn't have D6). We then inserted the LED with its positive leg connected and a resistor in the negative leg. Additionally, we added a wire going from the negative leg to the ground.
 
-Exercise: Test out the DigitalReadSerial example
-Our steps: We tried it and it works
+2. To determine the correct pin number to use instead of D6, we referred to the ESP32 pinout. This reference indicated that we needed to use Pin 5.
 
-Exercise: Adjust pushButton to D5 (or the respective GPIO port number)
-Our steps: We dit and it works
+3. To create asynchronous blinking (non-synchronized), we utilized a built-in command to control one of the onboard LEDs and added another LED on Pin 5. Initially, our code resulted in the built-in LED blinking, but the additional one did not. We realized that we used a different pin number. We corrected it to Pin 5, and now both LEDs blinked, but not in sync.
 
-Exercise: Replace in pinMode INPUT with INPUT_PULLUP (if you want to learn something try to answer why this is better or what would be the alternative).
-Our steps: we wrote it in the code
+4. To make the LEDs blink in sync, we kept the same setup but switched the High and Low voltage. This adjustment made both LEDs blink in perfect synchronization.
 
-Exercise: Flash and check serial monitor (taking a screenshot when this is working is good proof for your portfolio - remember to take photos during your setup)
-Our steps: We wrote it in the code
+### 2.d Toggle Led With Button
+Add a button to the breadboard, connecting the button to ground and a GPIO port like D5.
+1. We correctly placed the button in the designated spot.
 
-Exercise: Write an Arduino sketch that allows you to toggle (switch from turned on to turned off and back) with a push of the button the led on D6.
-Our steps: We wrote it. But we have a problem. It checks the button state every 10 miliseconds so even if you press it quick it will still be on. We are lacking Hysteresis (luckily we know this because jorrit already encountered this problem). Hysteresis is a lag between input and output in a system upon a change in direction. 
-We now created a light that works but if we hold it, it will keep blinking. 
+Test out the DigitalReadSerial example.
+1. We tried it, and the example worked as expected.
 
+Adjust the pushButton to D5 (or the respective GPIO port number).
+1. We made the adjustment as required, and it worked properly.
+
+Replace pinMode INPUT with INPUT_PULLUP (consider why this is better and what the alternative would be).
+1. We incorporated the change in the code, as specified.
+
+Flash and check the serial monitor. Taking a screenshot when this is functioning correctly is a good addition to your portfolio. Remember to capture photos during your setup.
+1. We implemented the change in the code and confirmed the functionality. We took a screenshot to provide proof for our portfolio.
+
+Write an Arduino sketch that allows you to toggle the LED on D6 with a push of the button.
+1. We successfully created the code. However, we encountered a problem where the LED continued blinking if we held the button briefly. This issue relates to hysteresis, a delay between input and output when a system changes direction. Jorrit had previously faced this problem, so we were aware of it.
+Outcome: We now have a functional LED that can toggle on and off with a button press, but it keeps blinking if the button is held down.
 - [exercise01][1]
 ...
 
