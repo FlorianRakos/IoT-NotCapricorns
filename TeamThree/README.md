@@ -42,6 +42,7 @@ Flash and check the serial monitor. Taking a screenshot when this is functioning
 
 Write an Arduino sketch that allows you to toggle the LED on D6 with a push of the button.
 1. We successfully created the code. However, we encountered a problem where the LED continued blinking if we held the button briefly. This issue relates to hysteresis, a delay between input and output when a system changes direction. Jorrit had previously faced this problem, so we were aware of it.
+
 Outcome: We now have a functional LED that can toggle on and off with a button press, but it keeps blinking if the button is held down.
 - [exercise01][1]
 ...
