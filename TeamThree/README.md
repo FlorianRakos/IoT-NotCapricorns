@@ -2,7 +2,7 @@
 
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures of IoT.
  
-## Index
+### Index
 - Exercises
   - 2.b Breadboard and Electronic Prototyping (Pair)
   - 2.c Blink on the Wemos D1 Mini (Pair)
