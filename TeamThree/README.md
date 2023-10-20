@@ -3,7 +3,7 @@
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures of IoT.
  
 # Index
-1. [Git and Kit](/TeamThree/README.md/#Git-and-Kit)
+1. [Git and Kit](#git-and-kit)
    * 1.a Partner, team git repo setup
    * 2.b The Kit
 3. Breadboard, Blink, and Stories
