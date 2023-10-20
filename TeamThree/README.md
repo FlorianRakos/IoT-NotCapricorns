@@ -6,23 +6,23 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 1. [Git and Kit](#1-git-and-kit)
    * 1.a [Partner, team git repo setup](#1a-partner-team-git-repo-setup)
    * 1.b [The Kit](#1b-the-kit)
-3. [Breadboard, Blink, and Stories](#2-breadboard-blink-and-stories)
+2. [Breadboard, Blink, and Stories](#2-breadboard-blink-and-stories)
    * [2.b Breadboard and Electronic Prototyping](#2b-breadboard-and-electronic-prototyping)
    * [2.c Blink on the Wemos D1 Mini](#2c-blink-on-the-wemos-d1-mini)
    * 2.d Toggle Led With Button
-4. IoTempower Gateway - Our Own Network
+3. IoTempower Gateway - Our Own Network
    * 3.a Actors and Sensors with Web Requests
    * 3.b Stories/Scenario
-5. MQTT Introduction + Simulators
+4. MQTT Introduction + Simulators
    * 4.a MQTT Basics
    * 4.b MQTT Integration
    * 4.c MQTT simulators
    * 4.d MQTT on microcontroller
-6. More Hardware and Integration with Node-RED
+5. More Hardware and Integration with Node-RED
    * 5.a Node-RED intro
    * 5.b Emergency Button
    * 5.c Remote Control an Interval Device
-7. Device Control with IoTempower
+6. Device Control with IoTempower
    * 6.a Exploring IoTempower Services and COmmands
    * 6.b First Node
    * 6.c Second Node 
