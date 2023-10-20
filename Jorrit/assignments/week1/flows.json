@@ -1,0 +1,187 @@
+[
+    {
+        "id": "29d66a4c9b269512",
+        "type": "tab",
+        "label": "integrator",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0f31ed4104e13ac3",
+        "type": "inject",
+        "z": "29d66a4c9b269512",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "25",
+        "payloadType": "num",
+        "x": 250,
+        "y": 140,
+        "wires": [
+            [
+                "382670f4d9ec560d"
+            ]
+        ]
+    },
+    {
+        "id": "e6b764e25c411913",
+        "type": "debug",
+        "z": "29d66a4c9b269512",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "47f53fa2c9b879e9",
+        "type": "mqtt in",
+        "z": "29d66a4c9b269512",
+        "name": "",
+        "topic": "iotempire/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "225fcbb00efb938e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "e6b764e25c411913",
+                "382670f4d9ec560d"
+            ]
+        ]
+    },
+    {
+        "id": "a65411173648ca97",
+        "type": "mqtt out",
+        "z": "29d66a4c9b269512",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "225fcbb00efb938e",
+        "x": 750,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "382670f4d9ec560d",
+        "type": "function",
+        "z": "29d66a4c9b269512",
+        "name": "function 2",
+        "func": "msg.topic = \"iotempire/power\";\nif (parseInt(msg.payload) > 20)\n{\n    msg.payload = \"on\";\n}\nelse\n{\n    msg.payload = \"off\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "28e7a67b06f6da4e",
+                "a65411173648ca97"
+            ]
+        ]
+    },
+    {
+        "id": "28e7a67b06f6da4e",
+        "type": "debug",
+        "z": "29d66a4c9b269512",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "af8cf4e19a50633e",
+        "type": "inject",
+        "z": "29d66a4c9b269512",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "18",
+        "payloadType": "num",
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "382670f4d9ec560d"
+            ]
+        ]
+    },
+    {
+        "id": "225fcbb00efb938e",
+        "type": "mqtt-broker",
+        "name": "Eclipse",
+        "broker": "mqtt.eclipseprojects.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
