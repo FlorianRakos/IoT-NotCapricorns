@@ -5,10 +5,10 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 # Index
 1. [Git and Kit](#1-git-and-kit)
    * 1.a [Partner, team git repo setup](#1a-partner-team-git-repo-setup)
-   * 2.b [The Kit](#1b-the-kit)
+   * 1.b [The Kit](#1b-the-kit)
 3. [Breadboard, Blink, and Stories](#2-breadboard-blink-and-stories)
-   * [2.b Breadboard and Electronic Prototyping](#2a-breadboard-and-electronic-prototyping)
-   * [2.c Blink on the Wemos D1 Mini](#2b-blink-on-the-wemos-d1-mini)
+   * [2.b Breadboard and Electronic Prototyping](#2b-breadboard-and-electronic-prototyping)
+   * [2.c Blink on the Wemos D1 Mini](#2c-blink-on-the-wemos-d1-mini)
    * 2.d Toggle Led With Button
 4. IoTempower Gateway - Our Own Network
    * 3.a Actors and Sensors with Web Requests
@@ -33,7 +33,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 ## 1.a Partner, team git repo setup
 Jorrit, Luca and Cristina partned up and with the rest of the group created this Git Repo. We downloaded the example provided on the documentation and decided on doing a similar organisation. We created different folders for each member of the group as well as the smaller groups and we all cloned the repository.
 
-## 2.b The Kit     
+## 1.b The Kit     
 We got one Kit, unpacked it and made a list with all the parts we found. We also identified what every piece is good for and added the bus system they use as an interface. Afterwards we googled tome properties of the respective bus on the respective device.
 All this information can be seen in this table:
 
