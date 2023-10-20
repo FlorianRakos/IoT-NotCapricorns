@@ -2,14 +2,14 @@
 
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures of IoT.
  
-### Index
+## Index
 - Exercises
   - 2.b Breadboard and Electronic Prototyping (Pair)
   - 2.c Blink on the Wemos D1 Mini (Pair)
   - 2.d Toggle Led With Button
   - 4.a MQTT Basics
      
-## Exercises
+## 2. Breadboard, Blink, and Stories
 ### 2.b Breadboard and Electronic Prototyping (Pair)
 1. We connected the Wemos D1 Mini to our computer using a USB cable for testing.
 
@@ -100,9 +100,11 @@ Toggle button:
 
 - [pictures](/Teamfolder/pictures)
 
-# Exercise 4: 
+## 4. MQTT Introduction + Simulators
 
-## MQTT Integration
+
+### 4.b MQTT Integration
+To do this activity we simply installed VSMqtt extension
 ```python
 from iotknit import *
 
