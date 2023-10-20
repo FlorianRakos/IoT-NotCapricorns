@@ -5,7 +5,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 # Index
 1. [Git and Kit](#1-git-and-kit)
    * 1.a [Partner, team git repo setup](#1a-partner-team-git-repo-setup)
-   * 2.b The Kit
+   * 2.b [The Kit](#1b-the-kit)
 3. Breadboard, Blink, and Stories
    * 2.b Breadboard and Electronic Prototyping (Pair)
    * 2.c Blink on the Wemos D1 Mini (Pair)
