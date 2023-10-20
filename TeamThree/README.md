@@ -41,7 +41,7 @@ All this information can be seen in this table:
 ## 2.a Feedback
 We got feedback on repository and personal portfolio from one instructor.
 
-## 2.b Breadboard and Electronic Prototyping (Pair)
+## 2.b Breadboard and Electronic Prototyping
 1. We connected the Wemos D1 Mini to our computer using a USB cable for testing.
 
 2. We established a 5V and Ground (G) connection from the Wemos D1 Mini to the breadboard, deviating from the video instructions. Instead, we successfully connected Jorrit's ESP32 to the laptop.
@@ -50,7 +50,7 @@ We got feedback on repository and personal portfolio from one instructor.
 
 4. We added the button as demonstrated in the video. We documented the steps, confirmed its functionality, and captured a photo of the setup for our portfolio. Initially, we encountered an issue with an incomplete circuit, but we resolved it. Now, the button works, allowing both lights to be activated simultaneously. In a subsequent attempt, we placed the button in a different location. Initially, only the red LED lit up, but we discovered that the yellow LED was inserted incorrectly with the long and short legs reversed. After making the adjustment, both LEDs now function as intended.
 
-## 2.c Blink on the Wemos D1 Mini (Pair)
+## 2.c Blink on the Wemos D1 Mini
 Blink on the Wemos D1 Mini Exercise:
 
 1. We connected D5 to the positive (as the ESP32 doesn't have D6). We then inserted the LED with its positive leg connected and a resistor in the negative leg. Additionally, we added a wire going from the negative leg to the ground.
