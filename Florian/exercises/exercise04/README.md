@@ -16,6 +16,9 @@ After that, we flashed the following [script](../../../Team/code/MQTT-Button-Pub
 Next we set up a discord bot and got a token as well as a link we could share with our teacher to recieve the necessary permission for the bot to post messages in the sandbox thread in the IoTempire discord server. However when we tried to send the recived message to the discord server with the "discordMessageManager" Node we always recieved an Error "Used disallowed intents". This indicates that our bot propably didn't recive the required access rights from our teacher. We might still try to fix this tomorrow.
 <br><br><img src="../../pictures/NodeRed-Button-Discord.jpg" width="500"><br><br>
 
+Finally we got it to work. We realised that we have uploaded a similar but not the right program on the ESP32. The result can be seen in the following picture.
+<br><br><img src="../../pictures/Emergency_Button_Working.JPG" width="500"><br><br>
+
 
 
 ## Problems and Conclusion
