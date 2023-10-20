@@ -3,30 +3,44 @@
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures of IoT.
  
 # Index
-2. Breadboard, Blink, and Stories
+1. Git and Kit
+   * 1.a Partner, team git repo setup
+   * 2.b The Kit
+3. Breadboard, Blink, and Stories
    * 2.b Breadboard and Electronic Prototyping (Pair)
    * 2.c Blink on the Wemos D1 Mini (Pair)
    * 2.d Toggle Led With Button
- 3. IoTempower Gateway - Our Own Network
+4. IoTempower Gateway - Our Own Network
    * 3.a Actors and Sensors with Web Requests
    * 3.b Stories/Scenario
- 4. MQTT Introduction + Simulators
+5. MQTT Introduction + Simulators
    * 4.a MQTT Basics
    * 4.b MQTT Integration
    * 4.c MQTT simulators
    * 4.d MQTT on microcontroller
- 5. More Hardware and Integration with Node-RED
+6. More Hardware and Integration with Node-RED
    * 5.a Node-RED intro
    * 5.b Emergency Button
    * 5.c Remote Control an Interval Device
- 6. Device Control with IoTempower
+7. Device Control with IoTempower
    * 6.a Exploring IoTempower Services and COmmands
    * 6.b First Node
    * 6.c Second Node 
    * 6.d Button to sound and notification
    * 6.e Text receiver
-     
+
+# 1. Git and Kit
+## 1.a Partner, team git repo setup
+Jorrit, Luca and Cristina partned up and with the rest of the group created this Git Repo. We downloaded the example provided on the documentation and decided on doing a similar organisation. We created different folders for each member of the group as well as the smaller groups and we all cloned the repository.
+
+## 2.b The Kit     
+We got one Kit, unpacked it and made a list with all the parts we found. We also identified what every piece is good for and added the bus system they use as an interface. Afterwards we googled tome properties of the respective bus on the respective device.
+All this information can be seen in this table:
+
 # 2. Breadboard, Blink, and Stories
+## 2.a Feedback
+We got feedback on repository and personal portfolio from one instructor.
+
 ## 2.b Breadboard and Electronic Prototyping (Pair)
 1. We connected the Wemos D1 Mini to our computer using a USB cable for testing.
 
