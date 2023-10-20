@@ -6,9 +6,9 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 1. [Git and Kit](#1-git-and-kit)
    * 1.a [Partner, team git repo setup](#1a-partner-team-git-repo-setup)
    * 2.b [The Kit](#1b-the-kit)
-3. Breadboard, Blink, and Stories
-   * 2.b Breadboard and Electronic Prototyping (Pair)
-   * 2.c Blink on the Wemos D1 Mini (Pair)
+3. [Breadboard, Blink, and Stories](#2-breadboard-blink-and-stories)
+   * [2.b Breadboard and Electronic Prototyping](#2a-breadboard-and-electronic-prototyping)
+   * [2.c Blink on the Wemos D1 Mini](#2b-blink-on-the-wemos-d1-mini)
    * 2.d Toggle Led With Button
 4. IoTempower Gateway - Our Own Network
    * 3.a Actors and Sensors with Web Requests
