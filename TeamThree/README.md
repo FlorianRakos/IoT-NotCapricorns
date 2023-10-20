@@ -6,16 +6,13 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 ## Exercises
 
 2.b Breadboard and Electronic Prototyping (Pair)
-Excercise: Wire up a Wemos D1 Mini to your computer (via usb cable - only plug it in for testing) and get 5V and Ground (G) from the Wemos D1 Mini to the correct places on the breadboard (different from video)
-Our steps: We wired Jorrit his ESP32 to the laptop
+1. We connected the Wemos D1 Mini to our computer using a USB cable for testing.
 
-Excercise: Wire up the yellow and red LEDs like described in video (with 330 Ohm register) - take picture for proof of lit LEDs in portfolio (and document problems/steps)
-Our steps: Cristina and Luca have no experience, so they tried some stuff with jorrit his supervision (because he knows what he is doing). They managed to light up only the red light while the yellow one was off. This was because the circuit was not closed or connected so they couldnt turn both on.
-Eventually all of us managed to turn on both lights at the same time by connecting the circuit.
+2. We established a 5V and Ground (G) connection from the Wemos D1 Mini to the breadboard, deviating from the video instructions. Instead, we successfully connected Jorrit's ESP32 to the laptop.
 
-Excercise: Add the button like described in video and write down steps as well as if its working and take picture of setup for portfolio.
-Our steps: First we again had the problem that we didnt complete the circuit. This was because we just missed it. We changed it, and not it works. We can press the button and both of the lights turn on.
-We tried it another time. We added the button on a different spot. At first only the red lit up, but the problem was that the yellow light was the wrong way around. The long leg and the short one were in the wrong way. After adjusting it will light up now aswell.
+3. We followed the video instructions to wire up the yellow and red LEDs with a 330-Ohm resistor. We took a photo as proof of the illuminated LEDs for our portfolio. During this step, Cristina and Luca, with limited prior experience, conducted the task with Jorrit's guidance. Initially, only the red LED lit up while the yellow one remained off due to an incomplete circuit. Eventually, we all succeeded in lighting up both LEDs simultaneously by completing the circuit.
+
+4. We added the button as demonstrated in the video. We documented the steps, confirmed its functionality, and captured a photo of the setup for our portfolio. Initially, we encountered an issue with an incomplete circuit, but we resolved it. Now, the button works, allowing both lights to be activated simultaneously. In a subsequent attempt, we placed the button in a different location. Initially, only the red LED lit up, but we discovered that the yellow LED was inserted incorrectly with the long and short legs reversed. After making the adjustment, both LEDs now function as intended.
 
 2.c Blink on the Wemos D1 Mini (Pair)
 Exercise: Add led on D6 blinking async. Use number instead of D6 (not in video) and make it blink synchronously
