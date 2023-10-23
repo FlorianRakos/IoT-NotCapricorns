@@ -18,16 +18,16 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [4.b MQTT Integration](#4b-mqtt-integration)
    * [4.c MQTT simulators](#c-mqtt-simulators)
    * [4.d MQTT on microcontroller](#4d-mqtt-on-microcontroller)
-5. More Hardware and Integration with Node-RED
-   * 5.a Node-RED intro
-   * 5.b Emergency Button
-   * 5.c Remote Control an Interval Device
-6. Device Control with IoTempower
-   * 6.a Exploring IoTempower Services and COmmands
-   * 6.b First Node
-   * 6.c Second Node 
-   * 6.d Button to sound and notification
-   * 6.e Text receiver
+5. [More Hardware and Integration with Node-RED](#5-more-hardware-and-integration-with-node-red)
+   * [5.a Node-RED intro](#5a-node-red-intro)
+   * [5.b Emergency Button](#5b-emergency-button)
+   * [5.c Remote Control an Interval Device](#5c-remote-control-and-interval-device)
+6. [Device Control with IoTempower](#6-device-control-with-iotempower)
+   * [6.a Exploring IoTempower Services and Commands](#6a-exploring-iotempower-services-and-commands)
+   * [6.b First Node](#6b-first-node)
+   * [6.c Second Node](#6c-second-node)
+   * [6.d Button to sound and notification](#6d-button-to-sound-and-notification)
+   * [6.e Text receiver](#6e-text-receiver)
 
 # 1. Git and Kit
 ## 1.a Partner, team git repo setup
@@ -266,6 +266,7 @@ esp_err_t handleMQTT(esp_mqtt_event_handle_t event)
 ![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_b6423ea3](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/80f616d4-3bad-4c11-9fd5-fec2abe1b6ff)
 ![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_f864ab8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9ae0697c-d2f4-440c-beb4-4cbf4c5df763)
 
+### 5. More Hardware and Integration with Node RED
 ## 5.a Node-RED Intro
 ![Afbeelding van WhatsApp op 2023-10-19 om 12 51 13_34f01c8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e60df6c-9696-4c6c-b84a-fd04bb722af2)
 
