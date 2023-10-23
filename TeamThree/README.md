@@ -65,75 +65,25 @@ Blink on the Wemos D1 Mini Exercise:
 4. To make the LEDs blink in sync, we kept the same setup but switched the High and Low voltage. This adjustment made both LEDs blink in perfect synchronization (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/4a5a858d-dd20-44d5-b659-88307596b9a3" target="_blank">See picture 1 here</a>), (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/1ec2ecf8-6864-40cf-a140-72f3ea6bf8be" target="_blank">See picture 2 here</a>).
 
 ## 2.d Toggle Led With Button 
-Add a button to the breadboard, connecting the button to ground and a GPIO port like D5.
-1. We correctly placed the button in the right spot (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/6743522d-ca32-48b9-a11f-5559176af15c" target="_blank">See picture here</a>).
-.
+- Add a button to the breadboard, connecting the button to ground and a GPIO port like D5.
+  * We correctly placed the button in the right spot (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/6743522d-ca32-48b9-a11f-5559176af15c" target="_blank">See picture here</a>).
 
-Test out the DigitalReadSerial example.
-1. We tried it, and the example worked as expected (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/952be337-14f4-4c65-a2cb-6c8251380858" target="_blank">See picture here</a>).
+- Test out the DigitalReadSerial example.
+  * We tried it, and the example worked as expected (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/952be337-14f4-4c65-a2cb-6c8251380858" target="_blank">See picture here</a>).
 
-Adjust the pushButton to D5 (or the respective GPIO port number).
-1. We made the adjustment as required, and it worked properly.
+- Adjust the pushButton to D5 (or the respective GPIO port number).
+  * We made the adjustment as required, and it worked properly.
 
-Replace pinMode INPUT with INPUT_PULLUP (consider why this is better and what the alternative would be).
-1. We incorporated the change in the code, as specified (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/952be337-14f4-4c65-a2cb-6c8251380858" target="_blank">See picture here</a>).
+- Replace pinMode INPUT with INPUT_PULLUP (consider why this is better and what the alternative would be).
+  * We incorporated the change in the code, as specified (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/952be337-14f4-4c65-a2cb-6c8251380858" target="_blank">See picture here</a>).
 
-Flash and check the serial monitor. Taking a screenshot when this is functioning correctly is a good addition to your portfolio. Remember to capture photos during your setup.
-1. We implemented the change in the code and confirmed the functionality. We took a screenshot to provide proof for our portfolio.
+- Flash and check the serial monitor. Taking a screenshot when this is functioning correctly is a good addition to your portfolio. Remember to capture photos during your setup.
+  * We implemented the change in the code and confirmed the functionality. We took a screenshot to provide proof for our portfolio.
 
-Write an Arduino sketch that allows you to toggle the LED on D6 with a push of the button.
-1. We successfully created the code. However, we encountered a problem where the LED continued blinking if we held the button briefly. This issue relates to hysteresis, a delay between input and output when a system changes direction. Jorrit had previously faced this problem, so we were aware of it.
+- Write an Arduino sketch that allows you to toggle the LED on D6 with a push of the button.
+  * We successfully created the code. However, we encountered a problem where the LED continued blinking if we held the button briefly. This issue relates to hysteresis, a delay between input and output when a system changes direction. Jorrit had previously faced this problem, so we were aware of it.
 
-2. Outcome: We now have a functional LED that can toggle on and off with a button press, but it keeps blinking if the button is held down.
-- [exercise01][1]
-...
-
-[1]: /Teamfolder/exercises/exercise01
-...
-
-### Projects
-
-- [project01][7]
-...
-
-[7]: /Teamfolder/project
-...
-
-### Pictures
-2.b
-1 button 1 light just lighting up:
-![Afbeelding van WhatsApp op 2023-10-16 om 15 28 56_b5383109](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/999e431d-49c7-437f-881f-8a70786a24e3)
-![Afbeelding van WhatsApp op 2023-10-16 om 15 28 59_de844371](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5a01f577-ebca-4f8e-ac2e-445e20e8e681)
-
-1 button 1 light:
-![Afbeelding van WhatsApp op 2023-10-16 om 15 32 09_ee3254b9](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/d09248ab-fa23-4788-8bbf-51469d90e262)
-![Afbeelding van WhatsApp op 2023-10-16 om 15 32 08_d924c623](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e5c9444-31fc-422a-ba78-fb0fb4ac7fc9)
-
-1 button 2 lights version 1:
-![Afbeelding van WhatsApp op 2023-10-16 om 15 37 34_fc6412d7](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c072ac23-9c19-48b4-bd4e-2feeae02eefc)
-![Afbeelding van WhatsApp op 2023-10-16 om 15 37 35_728fc1b9](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5f232988-ae03-47ed-86b1-913af74a7f50)
-
-1 button 2 lights version 2:
-![Afbeelding van WhatsApp op 2023-10-16 om 15 41 56_45f5b16e](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/f436057c-86f4-48e1-beb0-0a2b6e89c60f)
-![Afbeelding van WhatsApp op 2023-10-16 om 15 41 56_63d2ca0b](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/1e4a7a83-11ed-4cf4-b25d-b5c821f2f559)
-
-2.c
-Not in sync:
-![Afbeelding van WhatsApp op 2023-10-16 om 16 17 22_114a1a8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/3628419a-ce7b-4001-a7f4-6263f143599d)
-![Afbeelding van WhatsApp op 2023-10-16 om 16 17 22_b3cec146](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9001bb9e-a57d-47d5-a9ce-2d74b648b728)
-
-In sync:
-![Afbeelding van WhatsApp op 2023-10-16 om 16 17 45_a2a5b926](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/b1e4a89a-cc1b-4562-b59b-e1eb48bae96b)
-![Afbeelding van WhatsApp op 2023-10-16 om 16 17 46_2b4676c7](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/95c934cc-9b99-40bb-b683-efd6098f442d)
-
-2.d
-Digitalreadsignal and input pullup and :
-![Afbeelding van WhatsApp op 2023-10-16 om 16 32 17_bd15b30b](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/2b735b6e-e9d4-456d-8431-096edb0ec825)
-
-Toggle button:
-![Afbeelding van WhatsApp op 2023-10-16 om 16 48 56_7457f06a](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/aa080584-d80d-4639-8c07-57b569e0cd27)
-
-- [pictures](/Teamfolder/pictures)
+- Outcome: We now have a functional LED that can toggle on and off with a button press, but it keeps blinking if the button is held down.
 
 # 3. IoTempower Gateway - Our Own Network
 
