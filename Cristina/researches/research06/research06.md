@@ -78,6 +78,8 @@ Al edit chart node, pots modificar els parametres i et dona el gràfic al fer el
 
 – What are filters and how do they work (in Node-Red and IoTempower)?
 In Node-red you have different nodes in IoT you have chains me peldi
+
+We also adapted the stories we made last week (link) to the iot project we will do (link)
 Filters are often implemented using "Function" nodes or specialized nodes like "Switch" and "Change." Filters allow you to manipulate, transform, and control the flow of data as it moves through your Node-Red flows.
 Tambe poden convertir floating points de dades en dades binaries.
 
