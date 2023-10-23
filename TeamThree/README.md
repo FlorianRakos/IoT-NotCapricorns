@@ -9,7 +9,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 2. [Breadboard, Blink, and Stories](#2-breadboard-blink-and-stories)
    * [2.b Breadboard and Electronic Prototyping](#2b-breadboard-and-electronic-prototyping)
    * [2.c Blink on the Wemos D1 Mini](#2c-blink-on-the-wemos-d1-mini)
-   * 2.d Toggle Led With Button
+   * [2.d Toggle Led With Button](#2d-toggle-led-with-button)
 3. IoTempower Gateway - Our Own Network
    * 3.a Actors and Sensors with Web Requests
    * 3.b Stories/Scenario
