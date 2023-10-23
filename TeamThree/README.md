@@ -60,11 +60,11 @@ Blink on the Wemos D1 Mini Exercise:
 2. To determine the correct pin number to use instead of D6, we referred to the ESP32 pinout. This reference indicated that we needed to use Pin 5.
 
 3. To create non-synchronized blinking, we used a built-in command to control one of the onboard LEDs and added another LED on Pin 5. Initially, our code resulted in the built-in LED blinking, but the additional one did not (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/83d095a7-00aa-4790-83b9-5ce4986efee8
-" target="_blank">See picture 1 here</a>), (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/94f66a4f-9b15-4814-991a-e1181dd9e3d2" target="_blank">See picture 1 here</a>). We realized that we used a different pin number. We corrected it to Pin 5, and now both LEDs blinked, but not in sync.
+" target="_blank">See picture 1 here</a>), (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/94f66a4f-9b15-4814-991a-e1181dd9e3d2" target="_blank">See picture 2 here</a>). We realized that we used a different pin number. We corrected it to Pin 5, and now both LEDs blinked, but not in sync.
 
-4. To make the LEDs blink in sync, we kept the same setup but switched the High and Low voltage. This adjustment made both LEDs blink in perfect synchronization.
+4. To make the LEDs blink in sync, we kept the same setup but switched the High and Low voltage. This adjustment made both LEDs blink in perfect synchronization (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/4a5a858d-dd20-44d5-b659-88307596b9a3" target="_blank">See picture 1 here</a>), (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/1ec2ecf8-6864-40cf-a140-72f3ea6bf8be" target="_blank">See picture 2 here</a>).
 
-## 2.d Toggle Led With Button
+## 2.d Toggle Led With Button 
 Add a button to the breadboard, connecting the button to ground and a GPIO port like D5.
 1. We correctly placed the button in the designated spot.
 
