@@ -49,7 +49,7 @@ We got feedback on repository and personal portfolio from one instructor.
 3. We followed the video instructions to wire up the yellow and red LEDs with a 330-Ohm resistor. We took a photo as proof of the illuminated LEDs for our portfolio (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/98668160-db2b-46b5-919b-148b9e33240b
 " target="_blank">See picture here</a>). During this step, Cristina and Luca, with limited prior experience, conducted the task with Jorrit's guidance. Initially, only the red LED lit up while the yellow one remained off due to an incomplete circuit. Eventually, we all succeeded in lighting up both LEDs simultaneously by completing the circuit (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/cbaed91c-b59d-44fe-9103-939511387c8d" target="_blank">See picture here</a>)
 
-4. We added the button as demonstrated in the video. We documented the steps, confirmed its functionality, and captured a photo of the setup for our portfolio. Initially, we encountered an issue with an incomplete circuit, but we resolved it. Now, the button works, allowing both lights to be activated simultaneously. In a subsequent attempt, we placed the button in a different location. Initially, only the red LED lit up, but we discovered that the yellow LED was inserted incorrectly with the long and short legs reversed. After making the adjustment, both LEDs now function as intended  (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/a11244e0-5afe-48b2-ac59-61101e0a18ea
+4. We added the button as demonstrated in the video. We documented the steps, confirmed its functionality, and captured a photo of the setup for our portfolio. Initially, we encountered an issue with an incomplete circuit, but we resolved it. Now, the button works, allowing both lights to be activated simultaneously. In a subsequent attempt, we placed the button in a different location. Initially, only the red LED lit up, but we discovered that the yellow LED was inserted incorrectly with the long and short legs reversed. After making the adjustment, both LEDs now function as intended (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/a11244e0-5afe-48b2-ac59-61101e0a18ea
 " target="_blank">See picture here</a>).
 
 ## 2.c Blink on the Wemos D1 Mini
@@ -66,16 +66,17 @@ Blink on the Wemos D1 Mini Exercise:
 
 ## 2.d Toggle Led With Button 
 Add a button to the breadboard, connecting the button to ground and a GPIO port like D5.
-1. We correctly placed the button in the designated spot.
+1. We correctly placed the button in the right spot (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/6743522d-ca32-48b9-a11f-5559176af15c" target="_blank">See picture here</a>).
+.
 
 Test out the DigitalReadSerial example.
-1. We tried it, and the example worked as expected.
+1. We tried it, and the example worked as expected (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/952be337-14f4-4c65-a2cb-6c8251380858" target="_blank">See picture here</a>).
 
 Adjust the pushButton to D5 (or the respective GPIO port number).
 1. We made the adjustment as required, and it worked properly.
 
 Replace pinMode INPUT with INPUT_PULLUP (consider why this is better and what the alternative would be).
-1. We incorporated the change in the code, as specified.
+1. We incorporated the change in the code, as specified (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/952be337-14f4-4c65-a2cb-6c8251380858" target="_blank">See picture here</a>).
 
 Flash and check the serial monitor. Taking a screenshot when this is functioning correctly is a good addition to your portfolio. Remember to capture photos during your setup.
 1. We implemented the change in the code and confirmed the functionality. We took a screenshot to provide proof for our portfolio.
