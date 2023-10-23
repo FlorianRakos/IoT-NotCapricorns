@@ -10,14 +10,14 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [2.b Breadboard and Electronic Prototyping](#2b-breadboard-and-electronic-prototyping)
    * [2.c Blink on the Wemos D1 Mini](#2c-blink-on-the-wemos-d1-mini)
    * [2.d Toggle Led With Button](#2d-toggle-led-with-button)
-3. IoTempower Gateway - Our Own Network
-   * 3.a Actors and Sensors with Web Requests
-   * 3.b Stories/Scenario
-4. MQTT Introduction + Simulators
-   * 4.a MQTT Basics
-   * 4.b MQTT Integration
-   * 4.c MQTT simulators
-   * 4.d MQTT on microcontroller
+3. [IoTempower Gateway, Actors and Sensors](#3-iotempower-gateway-our-own-network)
+   * [3.a Actors and Sensors with Web Requests](#3a-actors-and-sensors-with-web-requests)
+   * [3.b Stories/Scenario](#3b-stories-scenario)
+4. [MQTT Introduction + Simulators](#4-mqtt-introduction-simulators)
+   * [4.a MQTT Basics](#4a-mqtt-basics)
+   * [4.b MQTT Integration](#4b-mqtt-integration)
+   * [4.c MQTT simulators](#c-mqtt-simulators)
+   * [4.d MQTT on microcontroller](#4d-mqtt-on-microcontroller)
 5. More Hardware and Integration with Node-RED
    * 5.a Node-RED intro
    * 5.b Emergency Button
