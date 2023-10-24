@@ -36,10 +36,10 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [7.c Moisture Sensor](#7c-moisture-sensor)
    * [7.d Optional](#7d-optional)
 8. [Final IOT Project](#8-final-iot-project)
-9. [Volker's Part 1](#9-volker's-part-1)
-10. [Volker's Part 2](#10-volker's-part-2)
-11. [Volker's Part 3](#11-volker's-part-3)
-12. [Volker's Part 4](#12-volker's-part-4)
+9. [Volkers Part 1](#9-volkers-part-1)
+10. [Volkers Part 2](#10-volkers-part-2)
+11. [Volkers Part 3](#11-volkers-part-3)
+12. [Volkers Part 4](#12-volkers-part-4)
 13. [Presentation](#13-presentation)
 
 ## 1. Git and Kit
@@ -453,8 +453,8 @@ breadboard setup:
 ### 7.c Moisture Sensor
 ### 7.d Optional
 ## 8. Final IOT Project
-## 9. Volker's Part 1
-## 10. Volker's Part 2
-## 11. Volker's Part 3
-## 12. Volker's Part 4
+## 9. Volkers Part 1
+## 10. Volkers Part 2
+## 11. Volkers Part 3
+## 12. Volkers Part 4
 ## 13. Presentation
