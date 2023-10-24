@@ -34,13 +34,13 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [7.a2 Project 1 (Group)](#7a2-project-1-(group))
    * [7.b Analog Touch Sensor](#7b-analog-touch-sensor)
    * [7.c Moisture Sensor](#7c-moisture-sensor)
-   * [7.d Optional](#7d-optio)
-8. [Final IOT Project](#)
-9. [Volker's Part 1](#)
-10. [Volker's Part 2](#)
-11. [Volker's Part 3](#)
-12. [Volker's Part 4](#)
-13. [Presentation](#)
+   * [7.d Optional](#7d-optional)
+8. [Final IOT Project](#8-final-iot-project)
+9. [Volker's Part 1](#9-volker's-part-1)
+10. [Volker's Part 2](#10-volker's-part-2)
+11. [Volker's Part 3](#11-volker's-part-3)
+12. [Volker's Part 4](#12-volker's-part-4)
+13. [Presentation](#13-presentation)
 
 ## 1. Git and Kit
 ### 1.a Partner, team git repo setup
