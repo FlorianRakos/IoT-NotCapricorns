@@ -458,6 +458,25 @@ breadboard setup:
 
 
 ### 7.b Analog Touch Sensor
+We build a touch sensor based on the analog port with IoTempower on an Wemos D1 Mini and an attached cable that uses a Node-RED flow to generate pressed and released messages on MQTT.
+ * We opened the IoTempire gateway and, created a new node folder and wrote "analog(a0)" on the setup.cpp
+ * When we deployed it gave us an error. We tried different things and concluded that we missed a ; and we had the wrong device on the node.conf. When we changed the "Wemos D1 Mini" to "esp32minikit", we could deploy it correctly.
+ * We connected a cable onto the breadboard:
+ 
+ * In node red we connected a mqtt in node to a debug one and the following data started showing:
+![Analog_response](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/12c60d3d-4d14-466e-a67c-bbbba2bbfa0e)
+
+ * We applied a filter in node red so the data only shows when the state changes and a swich to sort out the 0 value from the others
+![Analog_messages](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d744662a-5944-4103-9384-c34faafacc38)
+![Analog_proff](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/dbab11e7-9cc4-409c-9a41-48e6919b12c5)
+We then used the filter filter_binarize to generate touched/untouched the same. 
+ * We had some trouble adding the filter because we were following the format from the video tutorial, but didn't realize that in the documentation the format was different. We were missing a dot "."
+ * In node red it wasn't working. I deleted the switch and filter nodes in node-red and it kinda worked but only the pressed were shown.
+![Analog_pressedProblem](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/221b369f-00ce-43bd-9346-54f01175ab47)
+ * I chandged the code from pressed/released to touched/untouched and added again the filter and switch in red node and it magically worked. 
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ce2253ad-2cb6-4e76-af68-30e9c03fc79f)
+![Analog_2proff](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/55cc7a9a-d516-493d-ba99-0faa1949d98c)
+
 ### 7.c Moisture Sensor
 ### 7.d Optional
 We did not do the optional exercise.
