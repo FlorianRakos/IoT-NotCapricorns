@@ -221,7 +221,7 @@ while true; do
 done
 ```
 
-### Temperature simulator Bash code
+#### Temperature simulator Bash code
 ```
 #!/bin/bash
 
@@ -239,13 +239,13 @@ while true; do
     sleep 1
 done
 ```
-## 4.d MQTT on microcontroller
+### 4.d MQTT on microcontroller
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
 
-### Picture 1 setting up the breadboard
+#### Picture 1 setting up the breadboard
 ![Afbeelding van WhatsApp op 2023-10-19 om 12 30 59_8422c7ae](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/63804990-03c4-4fba-a0ac-d36147a75c26)
 
-### Coding
+#### Coding
 We are now going to work on the laptop in Arduino IDE. We got a code from the library and we are editing it so we can work with it. We edited the esp32mqttclient "hellotomyself" code. We use this so we can use mqtt.
 We are looking for another example. We are selecting the DHT11 example. We don't know if it will work, but we are trying it. We selected the "readtemperature" option from DHT11. We tried to upload, but we forgot that we disconnected the ESP from the laptop. Now we connected it again and uploaded the program. We get a checksum mismatch while reading from DHT11 error code. So we need to change the pin number, we forgot that we were using pin 4 and not the default pin 2. We got an output. It gives us a temperature of 26 degrees (picture). We are trying to heat it up by using our hands. We put our hands around it and the temperature is going up. It went to 27, and even to 28.
 So now we are going to merge both our codes, and trying to make it 1 working code. 
@@ -253,7 +253,7 @@ We have combined them and are now testing the code. The output gives us the temp
 So we now change the subscribetopic in the top to "switch /r1/set". We do this because it was not subscribed to anything. So now we have it subscribed to the AC. We get a very weird error message now. It has symbols and text. 
 It now says we can not connect to the internet. It does not send the temperatue anymore. We changed the beginning of the code. We entered a serial_begin so we can use the serial_print command. This made it work. We just had to change the temperature where the device turns on and off to 30 because the device was already hot. This worked.
 
-### Definitive code
+#### Definitive code
 ```python
 #include "Arduino.h"
 #include <WiFi.h>
@@ -319,16 +319,16 @@ esp_err_t handleMQTT(esp_mqtt_event_handle_t event)
 }
 ```
 
-### Picture 2 The temperature getting 30 or above and turning on the device
+#### Picture 2 The temperature getting 30 or above and turning on the device
 ![Afbeelding van WhatsApp op 2023-10-19 om 12 30 06_db478543](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/49eb70bf-17e8-402c-be59-9ecf0bb884a5)
 ![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_b6423ea3](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/80f616d4-3bad-4c11-9fd5-fec2abe1b6ff)
 ![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_f864ab8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9ae0697c-d2f4-440c-beb4-4cbf4c5df763)
 
-### 5. More Hardware and Integration with Node RED
-## 5.a Node-RED Intro
+#### 5. More Hardware and Integration with Node RED
+### 5.a Node-RED Intro
 ![Afbeelding van WhatsApp op 2023-10-19 om 12 51 13_34f01c8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e60df6c-9696-4c6c-b84a-fd04bb722af2)
 
-## 5.b Emergency Button
+### 5.b Emergency Button
 We created a breadboard that looks like this:
 ![Afbeelding van WhatsApp op 2023-10-19 om 14 57 57_ce453a2e](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/52103184-f255-4132-8886-07a39ddcfd8d)
 
@@ -338,20 +338,20 @@ We went on Node-red to look for the package we need and we found it. We checked 
 Discovering where to create the discord bot was complicated, but after some asking around we found it. We did watch a video on how to install a discord bot because we have never done anything like this and were very confused. ![Afbeelding van WhatsApp op 2023-10-19 om 15 53 05_d65df0e4](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c92b1478-b3c4-4292-8b91-5f23c015101d)
 
 
-## 5.c Remote Control an Internal Device
+### 5.c Remote Control an Internal Device
 
-# 6. Device Control with IoTempower
-##  - 6.a Exploring IoTempower Services and Commands
+## 6. Device Control with IoTempower
+### 6.a Exploring IoTempower Services and Commands
 
-##  - 6.b First Node
+### 6.b First Node
 
-##  - 6.c Second Node
+### 6.c Second Node
 
-##  - 6.d Button to sound and notification
+### 6.d Button to sound and notification
 
-##  - 6.e Text receiver
+### 6.e Text receiver
 
-##  - 6.f RFID reader
+### 6.f RFID reader
 plugged rfid to the breadboard
 wired it to the d1 mini following the wiring in the documentation like so: foto
 initialise serial 
@@ -360,10 +360,31 @@ keeps failing with this error
 it didn't work because we forgot to wire the 3.3V to the 3V3.
 we connected the following functions on Node-red
 when the accept and denied worked, we added the functionality where when pressing the button it is reset and a "scan tag" message is displayed. Proof here:
-# 7. Access Control System
-##  - 7.a1 New Actors
-##  - 7.a2 Project 1
-##  - 7.b Analog Touch Sensor
-##  - 7.c Moisture Sensor
-##  - 7.d Optional
-# 8. Final IOT Project
+## 7. Access Control System
+### 7.a1 New Actors
+put a single led with a resistor on the bread board and into the d1 mini. In the gateway
+it doesn't lit up because we didn't deployed it correctly, there was a ; missing
+it gives an error again because it didn't find the ESP32WM
+we decided on updating the gateway and 
+After more attempts, we decided on changing the LED light and it worked.
+For the next part of the exercise we replaced the LED with the buzzer
+We did some research and found that our specific buzzer has a frequency of 3.1 kHz so we created the slider from 0 to 3000 and it worked
+
+------
+
+We conected the single rgb led with 3 resistors and could manage to do the serial on the command on the documentation. We tried to do it with the 3 colors seperated and it worked.
+We had some trouble because of that on node red because we had 3 different variables (R,G,B)
+The dev_rgv... library doesn't work so we will skip this activity for now
+Nevermind we are on it again
+Only the blue value works
+
+-------
+
+When it is accepted the red light turns on, when it is denied it is turned off and the green one doesn't light up
+Now it works but the green light is slightly lighten, it nearly doesn't see
+
+### 7.a2 Project 1
+### 7.b Analog Touch Sensor
+### 7.c Moisture Sensor
+### 7.d Optional
+## 8. Final IOT Project
