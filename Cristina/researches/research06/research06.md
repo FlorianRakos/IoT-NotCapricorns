@@ -1,3 +1,11 @@
+# Index
+1. [Update on the “nice-to-have feature-list”](/Cristina/researches/research06/research06.md#update-on-the-nice-to-have-feature-list)
+2. [IoTempower”](/Cristina/researches/research06/research06.md#iotempower)
+3. [System in folders](/Cristina/researches/research06/research06.md#system-in-folders)
+4. [Nodes](/Cristina/researches/research06/research06.md#nodes)
+5. [Compilation](/Cristina/researches/research06/research06.md#compilation)
+6. [Filters video](/Cristina/researches/research06/research06.md#filters-video)
+7. [Stories](/Cristina/researches/research06/research06.md#stories)
 ## Update on the “nice-to-have feature-list”
   * Unified framework: Not have to use that many different programs
   * More documentation and context on the tasks
@@ -18,13 +26,13 @@ There are base links pointing to different directories. There is this directory 
 
 ## System in folders
 ### Which topic needs to be called with what to 
-### * switch on the coffee machine?
+### switch on the coffee machine?
 kitchen/coffee-machine/switch/set/on
 the set is there because it is an output
-### * set all lights in living room to blue?
+### set all lights in living room to blue?
 living_room/leds#/rgb/set/blue
 living_room/leds1+leds2/rgb/set/blue
-### * turn the main power off?
+### turn the main power off?
 main/switch/set/off
 
 ### What is the general rule for forming topics in IoTempower?

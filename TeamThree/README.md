@@ -2,7 +2,7 @@
 
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures of IoT.
  
-# Index
+## Index
 1. [Git and Kit](#1-git-and-kit)
    * 1.a [Partner, team git repo setup](#1a-partner-team-git-repo-setup)
    * 1.b [The Kit](#1b-the-kit)
@@ -42,19 +42,19 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 12. [Volker's Part 4](#)
 13. [Presentation](#)
 
-# 1. Git and Kit
-## 1.a Partner, team git repo setup
+## 1. Git and Kit
+### 1.a Partner, team git repo setup
 Jorrit, Luca and Cristina partned up and with the rest of the group created this Git Repo. We downloaded the example provided on the documentation and decided on doing a similar organisation. We created different folders for each member of the group as well as the smaller groups and we all cloned the repository.
 
-## 1.b The Kit     
+### 1.b The Kit     
 We got one Kit, unpacked it and made a list with all the parts we found. We also identified what every piece is good for and added the bus system they use as an interface. Afterwards we googled tome properties of the respective bus on the respective device.
 All this information can be seen in this table:
 
-# 2. Breadboard, Blink, and Stories
-## 2.a Feedback
+## 2. Breadboard, Blink, and Stories
+### 2.a Feedback
 We got feedback on repository and personal portfolio from one instructor.
 
-## 2.b Breadboard and Electronic Prototyping
+### 2.b Breadboard and Electronic Prototyping
 1. We connected the Wemos D1 Mini to our computer using a USB cable for testing.
 
 2. We established a 5V and Ground (G) connection from the Wemos D1 Mini to the breadboard, deviating from the video instructions. Instead, we successfully connected Jorrit's ESP32 to the laptop.
@@ -65,7 +65,7 @@ We got feedback on repository and personal portfolio from one instructor.
 4. We added the button as demonstrated in the video. We documented the steps, confirmed its functionality, and captured a photo of the setup for our portfolio. Initially, we encountered an issue with an incomplete circuit, but we resolved it. Now, the button works, allowing both lights to be activated simultaneously. In a subsequent attempt, we placed the button in a different location. Initially, only the red LED lit up, but we discovered that the yellow LED was inserted incorrectly with the long and short legs reversed. After making the adjustment, both LEDs now function as intended (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/a11244e0-5afe-48b2-ac59-61101e0a18ea
 " target="_blank">See picture here</a>).
 
-## 2.c Blink on the Wemos D1 Mini
+### 2.c Blink on the Wemos D1 Mini
 Blink on the Wemos D1 Mini Exercise:
 
 1. We connected D5 to the positive (as the ESP32 doesn't have D6). We then inserted the LED with its positive leg connected and a resistor in the negative leg. Additionally, we added a wire going from the negative leg to the ground.
@@ -98,11 +98,11 @@ Blink on the Wemos D1 Mini Exercise:
 
 - Outcome: We now have a functional LED that can toggle on and off with a button press, but it keeps blinking if the button is held down.
 
-# 3. IoTempower Gateway - Our Own Network
+## 3. IoTempower Gateway - Our Own Network
 
-## 3.a Actors and Sensors with Web Requests
+### 3.a Actors and Sensors with Web Requests
 
-## 3.b Stories and Scenario
+### 3.b Stories and Scenario
 Foot Mouse & Accessibility Software Scenario
 
 Company: LoudWhisper, Project Manager: Roberto, Employee: Matthijs, CEO: Pieter
@@ -149,8 +149,8 @@ Roberto goes to her table and she explains her need. He brings her a glass of wa
 Her need is stored in the cloud
 
 
-# 4. MQTT Introduction and Simulators
-## 4.a MQTT Basics
+## 4. MQTT Introduction and Simulators
+### 4.a MQTT Basics
 For this task we sent messages to each other using MQTT
 To do this activity we simply installed VSMqtt extension in Visual Studio Code and we added a profile. We subscribed to eachothers topic and send messages
 ![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/8f6a73c2-5e5e-4fac-93ba-071a8f8e7f47)
@@ -158,11 +158,12 @@ To do this activity we simply installed VSMqtt extension in Visual Studio Code a
 We also used wildcards, shown below:
 ![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/17d77b67-114a-4888-a478-3e1164070799)
 
-
-## 4.b MQTT Integration
-create a virtual environment python -m venv /path/to/new/virtual/environment (download git) i didn't have it installed Paste the iotempire example on how to connect a button node with a switch changing the host to our raspberry pie number and follow tutorial "Knit Your IoT Network with IoTknit" set a mosquitto pub and a mosquitto sub connected to the script. We generated a bash script on ChatGPT and we installed PuTTY to run it. MQTT simulators task complete start the hardware part "MQTT on microcontroller" esp32 not recognisable on computer intalling driver and computer restart terminals closed but scrips saved no time so call it a day
-
-problem: we struggled getting the status of the AC because it only showed OFF
+### 4.b MQTT Integration
+To rebuild the air conditioning integratior component from the video, we first created a virtual environment in python using the following command: 
+```python
+-m venv /path/to/new/virtual/environment
+```
+After that, we download git, because we didn't have it installed. We pasted the iotempire example on how to connect a button node with a switch, changing the host to our raspberry pie number, and followed the tutorial "Knit Your IoT Network with IoTknit". We set a mosquitto pub and a mosquitto sub that were connected to the script. 
 
 ```python
 from iotknit import *
@@ -199,8 +200,17 @@ temp1.subscribe_change(callback=tempCallback)
 run()  # you can also do a while loop here call process() instead
 ```
 
-## 4.c MQTT simulators
-### AC simulator Bash code
+### 4.c MQTT simulators
+We generated two bash scripts on ChatGPT, one for the temperature simulator, and one for the AC simulator, and we installed PuTTY to run them. 
+
+
+problem: we struggled getting the status of the AC because it only showed OFF
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ed6f828a-65f9-4be5-8f38-2aa4c8957918)
+
+resolved:
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/62a23ca0-b329-4674-836a-e01c2f08a487)
+
+#### AC simulator Bash code
 ```
 # Use a subshell to run mosquitto_sub in the background
 (
@@ -221,7 +231,7 @@ while true; do
 done
 ```
 
-### Temperature simulator Bash code
+#### Temperature simulator Bash code
 ```
 #!/bin/bash
 
@@ -239,13 +249,15 @@ while true; do
     sleep 1
 done
 ```
-## 4.d MQTT on microcontroller
+### 4.d MQTT on microcontroller
+On our first try, Cristina's computer did not recognise the esp32 and when intalling the driver, the computer restarted and all the terminals were closed. Thankfully, all the scrips were saved, but we called it a day and continued the following.
+<br><br>
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
 
-### Picture 1 setting up the breadboard
+#### Picture 1 setting up the breadboard
 ![Afbeelding van WhatsApp op 2023-10-19 om 12 30 59_8422c7ae](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/63804990-03c4-4fba-a0ac-d36147a75c26)
 
-### Coding
+#### Coding
 We are now going to work on the laptop in Arduino IDE. We got a code from the library and we are editing it so we can work with it. We edited the esp32mqttclient "hellotomyself" code. We use this so we can use mqtt.
 We are looking for another example. We are selecting the DHT11 example. We don't know if it will work, but we are trying it. We selected the "readtemperature" option from DHT11. We tried to upload, but we forgot that we disconnected the ESP from the laptop. Now we connected it again and uploaded the program. We get a checksum mismatch while reading from DHT11 error code. So we need to change the pin number, we forgot that we were using pin 4 and not the default pin 2. We got an output. It gives us a temperature of 26 degrees (picture). We are trying to heat it up by using our hands. We put our hands around it and the temperature is going up. It went to 27, and even to 28.
 So now we are going to merge both our codes, and trying to make it 1 working code. 
@@ -253,7 +265,7 @@ We have combined them and are now testing the code. The output gives us the temp
 So we now change the subscribetopic in the top to "switch /r1/set". We do this because it was not subscribed to anything. So now we have it subscribed to the AC. We get a very weird error message now. It has symbols and text. 
 It now says we can not connect to the internet. It does not send the temperatue anymore. We changed the beginning of the code. We entered a serial_begin so we can use the serial_print command. This made it work. We just had to change the temperature where the device turns on and off to 30 because the device was already hot. This worked.
 
-### Definitive code
+#### Definitive code
 ```python
 #include "Arduino.h"
 #include <WiFi.h>
@@ -319,16 +331,16 @@ esp_err_t handleMQTT(esp_mqtt_event_handle_t event)
 }
 ```
 
-### Picture 2 The temperature getting 30 or above and turning on the device
+#### Picture 2 The temperature getting 30 or above and turning on the device
 ![Afbeelding van WhatsApp op 2023-10-19 om 12 30 06_db478543](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/49eb70bf-17e8-402c-be59-9ecf0bb884a5)
 ![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_b6423ea3](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/80f616d4-3bad-4c11-9fd5-fec2abe1b6ff)
 ![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_f864ab8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9ae0697c-d2f4-440c-beb4-4cbf4c5df763)
 
-### 5. More Hardware and Integration with Node RED
-## 5.a Node-RED Intro
+#### 5. More Hardware and Integration with Node RED
+### 5.a Node-RED Intro
 ![Afbeelding van WhatsApp op 2023-10-19 om 12 51 13_34f01c8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e60df6c-9696-4c6c-b84a-fd04bb722af2)
 
-## 5.b Emergency Button
+### 5.b Emergency Button
 We created a breadboard that looks like this:
 ![Afbeelding van WhatsApp op 2023-10-19 om 14 57 57_ce453a2e](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/52103184-f255-4132-8886-07a39ddcfd8d)
 
@@ -338,16 +350,53 @@ We went on Node-red to look for the package we need and we found it. We checked 
 Discovering where to create the discord bot was complicated, but after some asking around we found it. We did watch a video on how to install a discord bot because we have never done anything like this and were very confused. ![Afbeelding van WhatsApp op 2023-10-19 om 15 53 05_d65df0e4](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c92b1478-b3c4-4292-8b91-5f23c015101d)
 
 
-## 5.c Remote Control an Internal Device
+### 5.c Remote Control an Internal Device
 
-# 6. Device Control with IoTempower
-##  - 6.a Exploring IoTempower Services and Commands
+## 6. Device Control with IoTempower
+### 6.a Exploring IoTempower Services and Commands
 
-##  - 6.b First Node
+### 6.b First Node
 
-##  - 6.c Second Node
+### 6.c Second Node
 
-##  - 6.d Button to sound and notification
+### 6.d Button to sound and notification
 
-##  - 6.e Text receiver
+### 6.e Text receiver
 
+### 6.f RFID reader
+plugged rfid to the breadboard
+wired it to the d1 mini following the wiring in the documentation like so: foto
+initialise serial 
+fails because of missing ;
+keeps failing with this error
+it didn't work because we forgot to wire the 3.3V to the 3V3.
+we connected the following functions on Node-red
+when the accept and denied worked, we added the functionality where when pressing the button it is reset and a "scan tag" message is displayed. Proof here:
+## 7. Access Control System
+### 7.a1 New Actors
+put a single led with a resistor on the bread board and into the d1 mini. In the gateway
+it doesn't lit up because we didn't deployed it correctly, there was a ; missing
+it gives an error again because it didn't find the ESP32WM
+we decided on updating the gateway and 
+After more attempts, we decided on changing the LED light and it worked.
+For the next part of the exercise we replaced the LED with the buzzer
+We did some research and found that our specific buzzer has a frequency of 3.1 kHz so we created the slider from 0 to 3000 and it worked
+
+------
+
+We conected the single rgb led with 3 resistors and could manage to do the serial on the command on the documentation. We tried to do it with the 3 colors seperated and it worked.
+We had some trouble because of that on node red because we had 3 different variables (R,G,B)
+The dev_rgv... library doesn't work so we will skip this activity for now
+Nevermind we are on it again
+Only the blue value works
+
+-------
+
+When it is accepted the red light turns on, when it is denied it is turned off and the green one doesn't light up
+Now it works but the green light is slightly lighten, it nearly doesn't see
+
+### 7.a2 Project 1
+### 7.b Analog Touch Sensor
+### 7.c Moisture Sensor
+### 7.d Optional
+## 8. Final IOT Project

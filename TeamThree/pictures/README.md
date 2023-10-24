@@ -41,6 +41,9 @@ To do this activity we simply installed VSMqtt extension in Visual Studio Code a
 
 We also used wildcards, shown below:
 ![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/17d77b67-114a-4888-a478-3e1164070799)
+## 4.b
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d282b68b-02a1-483b-9b64-efed6a489516)
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/b54ea143-8c04-4158-9628-2a8f69478e94)
 
 ## 4.d MQTT on microcontroller
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
