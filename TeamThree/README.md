@@ -251,6 +251,7 @@ done
 ```
 ### 4.d MQTT on microcontroller
 On our first try, Cristina's computer did not recognise the esp32 and when intalling the driver, the computer restarted and all the terminals were closed. Thankfully, all the scrips were saved, but we called it a day and continued the following.
+<br><br>
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
 
 #### Picture 1 setting up the breadboard
