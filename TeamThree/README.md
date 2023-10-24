@@ -2,7 +2,7 @@
 
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures of IoT.
  
-# Index
+## Index
 1. [Git and Kit](#1-git-and-kit)
    * 1.a [Partner, team git repo setup](#1a-partner-team-git-repo-setup)
    * 1.b [The Kit](#1b-the-kit)
@@ -42,19 +42,19 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 12. [Volker's Part 4](#)
 13. [Presentation](#)
 
-# 1. Git and Kit
-## 1.a Partner, team git repo setup
+## 1. Git and Kit
+### 1.a Partner, team git repo setup
 Jorrit, Luca and Cristina partned up and with the rest of the group created this Git Repo. We downloaded the example provided on the documentation and decided on doing a similar organisation. We created different folders for each member of the group as well as the smaller groups and we all cloned the repository.
 
-## 1.b The Kit     
+### 1.b The Kit     
 We got one Kit, unpacked it and made a list with all the parts we found. We also identified what every piece is good for and added the bus system they use as an interface. Afterwards we googled tome properties of the respective bus on the respective device.
 All this information can be seen in this table:
 
-# 2. Breadboard, Blink, and Stories
-## 2.a Feedback
+## 2. Breadboard, Blink, and Stories
+### 2.a Feedback
 We got feedback on repository and personal portfolio from one instructor.
 
-## 2.b Breadboard and Electronic Prototyping
+### 2.b Breadboard and Electronic Prototyping
 1. We connected the Wemos D1 Mini to our computer using a USB cable for testing.
 
 2. We established a 5V and Ground (G) connection from the Wemos D1 Mini to the breadboard, deviating from the video instructions. Instead, we successfully connected Jorrit's ESP32 to the laptop.
@@ -65,7 +65,7 @@ We got feedback on repository and personal portfolio from one instructor.
 4. We added the button as demonstrated in the video. We documented the steps, confirmed its functionality, and captured a photo of the setup for our portfolio. Initially, we encountered an issue with an incomplete circuit, but we resolved it. Now, the button works, allowing both lights to be activated simultaneously. In a subsequent attempt, we placed the button in a different location. Initially, only the red LED lit up, but we discovered that the yellow LED was inserted incorrectly with the long and short legs reversed. After making the adjustment, both LEDs now function as intended (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/a11244e0-5afe-48b2-ac59-61101e0a18ea
 " target="_blank">See picture here</a>).
 
-## 2.c Blink on the Wemos D1 Mini
+### 2.c Blink on the Wemos D1 Mini
 Blink on the Wemos D1 Mini Exercise:
 
 1. We connected D5 to the positive (as the ESP32 doesn't have D6). We then inserted the LED with its positive leg connected and a resistor in the negative leg. Additionally, we added a wire going from the negative leg to the ground.
@@ -98,11 +98,11 @@ Blink on the Wemos D1 Mini Exercise:
 
 - Outcome: We now have a functional LED that can toggle on and off with a button press, but it keeps blinking if the button is held down.
 
-# 3. IoTempower Gateway - Our Own Network
+## 3. IoTempower Gateway - Our Own Network
 
-## 3.a Actors and Sensors with Web Requests
+### 3.a Actors and Sensors with Web Requests
 
-## 3.b Stories and Scenario
+### 3.b Stories and Scenario
 Foot Mouse & Accessibility Software Scenario
 
 Company: LoudWhisper, Project Manager: Roberto, Employee: Matthijs, CEO: Pieter
@@ -149,8 +149,8 @@ Roberto goes to her table and she explains her need. He brings her a glass of wa
 Her need is stored in the cloud
 
 
-# 4. MQTT Introduction and Simulators
-## 4.a MQTT Basics
+## 4. MQTT Introduction and Simulators
+### 4.a MQTT Basics
 For this task we sent messages to each other using MQTT
 To do this activity we simply installed VSMqtt extension in Visual Studio Code and we added a profile. We subscribed to eachothers topic and send messages
 ![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/8f6a73c2-5e5e-4fac-93ba-071a8f8e7f47)
@@ -159,7 +159,7 @@ We also used wildcards, shown below:
 ![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/17d77b67-114a-4888-a478-3e1164070799)
 
 
-## 4.b MQTT Integration
+### 4.b MQTT Integration
 create a virtual environment python -m venv /path/to/new/virtual/environment (download git) i didn't have it installed Paste the iotempire example on how to connect a button node with a switch changing the host to our raspberry pie number and follow tutorial "Knit Your IoT Network with IoTknit" set a mosquitto pub and a mosquitto sub connected to the script. We generated a bash script on ChatGPT and we installed PuTTY to run it. MQTT simulators task complete start the hardware part "MQTT on microcontroller" esp32 not recognisable on computer intalling driver and computer restart terminals closed but scrips saved no time so call it a day
 
 problem: we struggled getting the status of the AC because it only showed OFF
@@ -199,8 +199,8 @@ temp1.subscribe_change(callback=tempCallback)
 run()  # you can also do a while loop here call process() instead
 ```
 
-## 4.c MQTT simulators
-### AC simulator Bash code
+### 4.c MQTT simulators
+#### AC simulator Bash code
 ```
 # Use a subshell to run mosquitto_sub in the background
 (
