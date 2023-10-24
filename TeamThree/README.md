@@ -374,28 +374,30 @@ we connected the following functions on Node-red
 when the accept and denied worked, we added the functionality where when pressing the button it is reset and a "scan tag" message is displayed. Proof here:
 ## 7. Access Control System
 ### 7.a1 New Actors
-put a single led with a resistor on the bread board and into the d1 mini. In the gateway
-it doesn't lit up because we didn't deployed it correctly, there was a ; missing
-it gives an error again because it didn't find the ESP32WM
-we decided on updating the gateway and 
-After more attempts, we decided on changing the LED light and it worked.
+On the fisrt part of this task, we used a slider in Node-RED to control the brightness (duty cycle) of the LED. 	
+ * We first hooked up a simple LED with a resistor to a GPIO port of a Wemos D1 Mini.
+ * The led wouldn't lit up and in the gateway we were receiving an error over and over again. We first thought it was a missing ";" but it still gave us the error
+   Photo
+ * We figured out that it wasn't finding the ESP32WM so we uppdated the gateway. The error didn't appear but the light was still off
+ * After more attempts, we decided on changing the LED light and it worked.
 For the next part of the exercise we replaced the LED with the buzzer
-We did some research and found that our specific buzzer has a frequency of 3.1 kHz so we created the slider from 0 to 3000 and it worked
-
-------
-
-We conected the single rgb led with 3 resistors and could manage to do the serial on the command on the documentation. We tried to do it with the 3 colors seperated and it worked.
-We had some trouble because of that on node red because we had 3 different variables (R,G,B)
-The dev_rgv... library doesn't work so we will skip this activity for now
-Nevermind we are on it again
-Only the blue value works
-
--------
-
-When it is accepted the red light turns on, when it is denied it is turned off and the green one doesn't light up
-Now it works but the green light is slightly lighten, it nearly doesn't see
+ * We did some research and found that our specific buzzer has a frequency of 3.1 kHz so we created the slider from 0 to 3000 and we played different tones
+Photos
+<br><br>
+The last part of the task consisted on using the rgb_single IoTempower command to control the RGB led, and using a color-picker in Node-RED to send a color value to the LED.
+ * We conected the single rgb led with 3 resistors and could manage to do the serial on the command on the documentation.
+ * We tried to do it with the 3 colors seperated and it worked.
+ * We had some trouble because of that on node red because we had 3 different variables (R,G,B)
+ * After many attempts and comments from other people we concluded that The dev_rgb_base.h library doesn't work so we will skip this activity for now
+ * Nevermind we are on it again
+ * Only the blue value works but here is some proof
 
 ### 7.a2 Project 1
+On this task we are building an access control system using the RFID reader, the RGB led, the buzzer, the display, and the relay with the solenoid drawer lock. 
+ * First we wire up the RFID reader along with the RGB light.
+ * We do some connedtions on Node-RED. When it is accepted the red light turns on, when it is denied it is turned off and the green one doesn't light up.
+ * We make some changes and when is it accepted the green light turns on and when it is denied it turns off and the red light turns on. We figured that the green light is on but is very very light. It is hard to see.
+ * We connect the buzzer to the breadboard and make it that when the red light turns on, we hear a short nasty sound.
 ### 7.b Analog Touch Sensor
 ### 7.c Moisture Sensor
 ### 7.d Optional
