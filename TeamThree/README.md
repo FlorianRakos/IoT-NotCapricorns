@@ -392,38 +392,38 @@ Denied
 On the fisrt part of this task, we used a slider in Node-RED to control the brightness (duty cycle) of the LED. 	
  * We first hooked up a simple LED with a resistor to a GPIO port of a Wemos D1 Mini.
  * The led wouldn't lit up and in the gateway we were receiving an error over and over again. We first thought it was a missing ";" but it still gave us the error
-![PWM_Error](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/c13c3a43-7f82-42b3-a12e-826d5d1ed7d4)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/c13c3a43-7f82-42b3-a12e-826d5d1ed7d4" target="_blank">See PWM Error here</a>).
 
  * We figured out that it wasn't finding the ESP32WM so we updated the gateway. The error didn't appear but the light was still off
  * After more attempts, we decided on changing the LED light and it worked.
 LED dimm
-![PWM_LED_Dimm](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/45f5fb92-c5aa-4445-b91d-4cf336a92740)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/45f5fb92-c5aa-4445-b91d-4cf336a92740" target="_blank">See PWM LED dimm here</a>).
 LED Bright
-![PWM_LED_Bright](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d256d24d-a745-4d1a-8308-b5ae41a00441)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d256d24d-a745-4d1a-8308-b5ae41a00441" target="_blank">See PWM LED bright here</a>).
 
 For the next part of the exercise we replaced the LED with the buzzer
  * We did some research and found that our specific buzzer has a frequency of 3.1 kHz so we created the slider from 0 to 3000 and we played different tones
 Proff:
-![Set_PWM](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/c4d60b42-a726-47dc-ae6a-b7cb7ccde67e)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/10cde51b-50a6-4fc0-9620-e5191b8d774d" target="_blank">See PWM Buzzer Sound Low Frequency here</a>).
 
-![PWM_Buzzer_Sound_LowFreq](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/10cde51b-50a6-4fc0-9620-e5191b8d774d)
-![PWM_Buzzer_Sound_HighFreq](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/86bcb57b-e11a-48fd-bf05-136f54734037)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/86bcb57b-e11a-48fd-bf05-136f54734037" target="_blank">See PWM Buzzer here</a>).
+
 NodeRED
-![PWM_Buzzer_NodeRED](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/015a0eca-7e2b-4ad7-b8ee-fe61080db199)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/015a0eca-7e2b-4ad7-b8ee-fe61080db199" target="_blank">See PWM Buzzer NodeRED here</a>).
 
 <br><br>
 The last part of the task consisted on using the rgb_single IoTempower command to control the RGB led, and using a color-picker in Node-RED to send a color value to the LED.
  * We conected the single rgb led with 3 resistors and could manage to do the serial on the command on the documentation.
  * We tried to do it with the 3 colors seperated and it worked.
  * We had some trouble because of that on node red because we had 3 different variables (R,G,B)
-![RGB_Try](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/0f736e14-f126-4a7b-9200-f77d64707fc7)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/0f736e14-f126-4a7b-9200-f77d64707fc7"     target="_blank">See RGB Try here</a>)
 
  * After many attempts and comments from other people we concluded that The dev_rgb_base.h library doesn't work so we will skip this activity for now
- ![RGB_Error](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/f3196d5b-6d7c-45fc-89be-a98c138f9266)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/f3196d5b-6d7c-45fc-89be-a98c138f9266"     target="_blank">See RGB Error Console here</a>)
 
  * Nevermind we are on it again
  * Only the blue value works but here is some proof
-![RGB_Light](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/144f5829-39c5-4e11-b023-03a0a5589bb5)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/144f5829-39c5-4e11-b023-03a0a5589bb5"     target="_blank">See RGB Light Console here</a>)
 
 ### 7.a2 Project 1
 On this task we are building an access control system using the RFID reader, the RGB led, the buzzer, the display, and the relay with the solenoid drawer lock. 
@@ -431,19 +431,21 @@ On this task we are building an access control system using the RFID reader, the
  * We do some connedtions on Node-RED. When it is accepted the red light turns on, when it is denied it is turned off and the green one doesn't light up.
  * We make some changes and when is it accepted the green light turns on and when it is denied it turns off and the red light turns on. We figured that the green light is on but is very very light. It is hard to see.
  * We connect the buzzer to the breadboard and make it that when the red light turns on, we hear a short nasty sound.
-   ![RFID_System_Console](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/4be338d7-de39-448b-b68a-97d5719df2a5)
+   (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/4be338d7-de39-448b-b68a-97d5719df2a5"     target="_blank">See RFID System Console here</a>)
 
  * We tryed to implement the lock but it didn't work.
 Code on IoTempower:
-![Accesscontrollsystem_Code](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/22056f13-1f3c-4be6-b266-b479ee087b85)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/22056f13-1f3c-4be6-b266-b479ee087b85" target="_blank">See Accesscontrollsystem Code here</a>)
 Node-RED system:
-![RFID_System_NodeRED](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/4585904c-cdc6-4b57-a5cd-a690605fbdd9)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/4585904c-cdc6-4b57-a5cd-a690605fbdd9" target="_blank">See Accesscontrollsystem Code here</a>)
+
 node-red + bread board + gateway
-![Accesscontrollsystem_Closed](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/1106a4c7-32e6-477b-91f4-a0a4e45aa0c4)
-![Accesscontrollsystem_Open](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/a6eafdbd-91ad-4f03-baac-49514f6a53ae)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/1106a4c7-32e6-477b-91f4-a0a4e45aa0c4" target="_blank">See Accesscontrollsystem Closed here</a>)
+
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/a6eafdbd-91ad-4f03-baac-49514f6a53ae" target="_blank">See Accesscontrollsystem Open here</a>)
 
 breadboard setup: 
-![Accesscontrollsystem_Circuit](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/67fe49df-166b-4dc4-b963-55f44866678d)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/67fe49df-166b-4dc4-b963-55f44866678d " target="_blank">See Accesscontrollsystem Circuit here</a>)
 
 
 ### 7.b Analog Touch Sensor
