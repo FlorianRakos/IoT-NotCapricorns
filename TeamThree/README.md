@@ -9,25 +9,38 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 2. [Breadboard, Blink, and Stories](#2-breadboard-blink-and-stories)
    * [2.b Breadboard and Electronic Prototyping](#2b-breadboard-and-electronic-prototyping)
    * [2.c Blink on the Wemos D1 Mini](#2c-blink-on-the-wemos-d1-mini)
-   * 2.d Toggle Led With Button
-3. IoTempower Gateway - Our Own Network
-   * 3.a Actors and Sensors with Web Requests
-   * 3.b Stories/Scenario
-4. MQTT Introduction + Simulators
-   * 4.a MQTT Basics
-   * 4.b MQTT Integration
-   * 4.c MQTT simulators
-   * 4.d MQTT on microcontroller
-5. More Hardware and Integration with Node-RED
-   * 5.a Node-RED intro
-   * 5.b Emergency Button
-   * 5.c Remote Control an Interval Device
-6. Device Control with IoTempower
-   * 6.a Exploring IoTempower Services and COmmands
-   * 6.b First Node
-   * 6.c Second Node 
-   * 6.d Button to sound and notification
-   * 6.e Text receiver
+   * [2.d Toggle Led With Button](#2d-toggle-led-with-button)
+3. [IoTempower Gateway, Actors and Sensors](#3-iotempower-gateway-our-own-network)
+   * [3.a Actors and Sensors with Web Requests](#3a-actors-and-sensors-with-web-requests)
+   * [3.b Stories and Scenario](#3b-stories-and-scenario)
+4. [MQTT Introduction and Simulators](#4-mqtt-introduction-and-simulators)
+   * [4.a MQTT Basics](#4a-mqtt-basics)
+   * [4.b MQTT Integration](#4b-mqtt-integration)
+   * [4.c MQTT simulators](#c-mqtt-simulators)
+   * [4.d MQTT on microcontroller](#4d-mqtt-on-microcontroller)
+5. [More Hardware and Integration with Node-RED](#5-more-hardware-and-integration-with-node-red)
+   * [5.a Node-RED intro](#5a-node-red-intro)
+   * [5.b Emergency Button](#5b-emergency-button)
+   * [5.c Remote Control an Interval Device](#5c-remote-control-and-interval-device)
+6. [Device Control with IoTempower](#6-device-control-with-iotempower)
+   * [6.a Exploring IoTempower Services and Commands](#6a-exploring-iotempower-services-and-commands)
+   * [6.b First Node](#6b-first-node)
+   * [6.c Second Node](#6c-second-node)
+   * [6.d Button to sound and notification](#6d-button-to-sound-and-notification)
+   * [6.e Text receiver](#6e-text-receiver)
+   * [6.f RFID Reader](#6f-rfid-reader)
+7. [Acces Control System](#7-acces-control-system)
+   * [7.a1 New Actors](#7a1-new-actors)
+   * [7.a2 Project 1 (Group)](#7a2-project-1-(group))
+   * [7.b Analog Touch Sensor](#7b-analog-touch-sensor)
+   * [7.c Moisture Sensor](#7c-moisture-sensor)
+   * [7.d Optional](#7d-optio)
+8. [Final IOT Project](#)
+9. [Volker's Part 1](#)
+10. [Volker's Part 2](#)
+11. [Volker's Part 3](#)
+12. [Volker's Part 4](#)
+13. [Presentation](#)
 
 # 1. Git and Kit
 ## 1.a Partner, team git repo setup
@@ -46,9 +59,11 @@ We got feedback on repository and personal portfolio from one instructor.
 
 2. We established a 5V and Ground (G) connection from the Wemos D1 Mini to the breadboard, deviating from the video instructions. Instead, we successfully connected Jorrit's ESP32 to the laptop.
 
-3. We followed the video instructions to wire up the yellow and red LEDs with a 330-Ohm resistor. We took a photo as proof of the illuminated LEDs for our portfolio. During this step, Cristina and Luca, with limited prior experience, conducted the task with Jorrit's guidance. Initially, only the red LED lit up while the yellow one remained off due to an incomplete circuit. Eventually, we all succeeded in lighting up both LEDs simultaneously by completing the circuit.
+3. We followed the video instructions to wire up the yellow and red LEDs with a 330-Ohm resistor. We took a photo as proof of the illuminated LEDs for our portfolio (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/98668160-db2b-46b5-919b-148b9e33240b
+" target="_blank">See picture here</a>). During this step, Cristina and Luca, with limited prior experience, conducted the task with Jorrit's guidance. Initially, only the red LED lit up while the yellow one remained off due to an incomplete circuit. Eventually, we all succeeded in lighting up both LEDs simultaneously by completing the circuit (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/cbaed91c-b59d-44fe-9103-939511387c8d" target="_blank">See picture here</a>)
 
-4. We added the button as demonstrated in the video. We documented the steps, confirmed its functionality, and captured a photo of the setup for our portfolio. Initially, we encountered an issue with an incomplete circuit, but we resolved it. Now, the button works, allowing both lights to be activated simultaneously. In a subsequent attempt, we placed the button in a different location. Initially, only the red LED lit up, but we discovered that the yellow LED was inserted incorrectly with the long and short legs reversed. After making the adjustment, both LEDs now function as intended.
+4. We added the button as demonstrated in the video. We documented the steps, confirmed its functionality, and captured a photo of the setup for our portfolio. Initially, we encountered an issue with an incomplete circuit, but we resolved it. Now, the button works, allowing both lights to be activated simultaneously. In a subsequent attempt, we placed the button in a different location. Initially, only the red LED lit up, but we discovered that the yellow LED was inserted incorrectly with the long and short legs reversed. After making the adjustment, both LEDs now function as intended (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/a11244e0-5afe-48b2-ac59-61101e0a18ea
+" target="_blank">See picture here</a>).
 
 ## 2.c Blink on the Wemos D1 Mini
 Blink on the Wemos D1 Mini Exercise:
@@ -57,87 +72,39 @@ Blink on the Wemos D1 Mini Exercise:
 
 2. To determine the correct pin number to use instead of D6, we referred to the ESP32 pinout. This reference indicated that we needed to use Pin 5.
 
-3. To create asynchronous blinking (non-synchronized), we utilized a built-in command to control one of the onboard LEDs and added another LED on Pin 5. Initially, our code resulted in the built-in LED blinking, but the additional one did not. We realized that we used a different pin number. We corrected it to Pin 5, and now both LEDs blinked, but not in sync.
+3. To create non-synchronized blinking, we used a built-in command to control one of the onboard LEDs and added another LED on Pin 5. Initially, our code resulted in the built-in LED blinking, but the additional one did not (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/83d095a7-00aa-4790-83b9-5ce4986efee8
+" target="_blank">See picture 1 here</a>), (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/8ee8f736-3b24-44e8-b6bb-6ead05b08066" target="_blank">See picture 2 here</a>). We realized that we used a different pin number. We corrected it to Pin 5, and now both LEDs blinked, but not in sync.
 
-4. To make the LEDs blink in sync, we kept the same setup but switched the High and Low voltage. This adjustment made both LEDs blink in perfect synchronization.
+4. To make the LEDs blink in sync, we kept the same setup but switched the High and Low voltage. This adjustment made both LEDs blink in perfect synchronization (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/4a5a858d-dd20-44d5-b659-88307596b9a3" target="_blank">See picture 1 here</a>), (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/1ec2ecf8-6864-40cf-a140-72f3ea6bf8be" target="_blank">See picture 2 here</a>).
 
-## 2.d Toggle Led With Button
-Add a button to the breadboard, connecting the button to ground and a GPIO port like D5.
-1. We correctly placed the button in the designated spot.
+## 2.d Toggle Led With Button 
+- Add a button to the breadboard, connecting the button to ground and a GPIO port like D5.
+  * We correctly placed the button in the right spot (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/6743522d-ca32-48b9-a11f-5559176af15c" target="_blank">See picture here</a>).
 
-Test out the DigitalReadSerial example.
-1. We tried it, and the example worked as expected.
+- Test out the DigitalReadSerial example.
+  * We tried it, and the example worked as expected (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/952be337-14f4-4c65-a2cb-6c8251380858" target="_blank">See picture here</a>).
 
-Adjust the pushButton to D5 (or the respective GPIO port number).
-1. We made the adjustment as required, and it worked properly.
+- Adjust the pushButton to D5 (or the respective GPIO port number).
+  * We made the adjustment as required, and it worked properly.
 
-Replace pinMode INPUT with INPUT_PULLUP (consider why this is better and what the alternative would be).
-1. We incorporated the change in the code, as specified.
+- Replace pinMode INPUT with INPUT_PULLUP (consider why this is better and what the alternative would be).
+  * We incorporated the change in the code, as specified (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/952be337-14f4-4c65-a2cb-6c8251380858" target="_blank">See picture here</a>).
 
-Flash and check the serial monitor. Taking a screenshot when this is functioning correctly is a good addition to your portfolio. Remember to capture photos during your setup.
-1. We implemented the change in the code and confirmed the functionality. We took a screenshot to provide proof for our portfolio.
+- Flash and check the serial monitor. Taking a screenshot when this is functioning correctly is a good addition to your portfolio. Remember to capture photos during your setup.
+  * We implemented the change in the code and confirmed the functionality. We took a screenshot to provide proof for our portfolio.
 
-Write an Arduino sketch that allows you to toggle the LED on D6 with a push of the button.
-1. We successfully created the code. However, we encountered a problem where the LED continued blinking if we held the button briefly. This issue relates to hysteresis, a delay between input and output when a system changes direction. Jorrit had previously faced this problem, so we were aware of it.
+- Write an Arduino sketch that allows you to toggle the LED on D6 with a push of the button.
+  * We successfully created the code. However, we encountered a problem where the LED continued blinking if we held the button briefly. This issue relates to hysteresis, a delay between input and output when a system changes direction. Jorrit had previously faced this problem, so we were aware of it.
 
-2. Outcome: We now have a functional LED that can toggle on and off with a button press, but it keeps blinking if the button is held down.
-- [exercise01][1]
-...
-
-[1]: /Teamfolder/exercises/exercise01
-...
-
-### Projects
-
-- [project01][7]
-...
-
-[7]: /Teamfolder/project
-...
-
-### Pictures
-2.b
-1 button 1 light just lighting up:
-![Afbeelding van WhatsApp op 2023-10-16 om 15 28 56_b5383109](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/999e431d-49c7-437f-881f-8a70786a24e3)
-![Afbeelding van WhatsApp op 2023-10-16 om 15 28 59_de844371](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5a01f577-ebca-4f8e-ac2e-445e20e8e681)
-
-1 button 1 light:
-![Afbeelding van WhatsApp op 2023-10-16 om 15 32 09_ee3254b9](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/d09248ab-fa23-4788-8bbf-51469d90e262)
-![Afbeelding van WhatsApp op 2023-10-16 om 15 32 08_d924c623](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e5c9444-31fc-422a-ba78-fb0fb4ac7fc9)
-
-1 button 2 lights version 1:
-![Afbeelding van WhatsApp op 2023-10-16 om 15 37 34_fc6412d7](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c072ac23-9c19-48b4-bd4e-2feeae02eefc)
-![Afbeelding van WhatsApp op 2023-10-16 om 15 37 35_728fc1b9](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5f232988-ae03-47ed-86b1-913af74a7f50)
-
-1 button 2 lights version 2:
-![Afbeelding van WhatsApp op 2023-10-16 om 15 41 56_45f5b16e](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/f436057c-86f4-48e1-beb0-0a2b6e89c60f)
-![Afbeelding van WhatsApp op 2023-10-16 om 15 41 56_63d2ca0b](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/1e4a7a83-11ed-4cf4-b25d-b5c821f2f559)
-
-2.c
-Not in sync:
-![Afbeelding van WhatsApp op 2023-10-16 om 16 17 22_114a1a8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/3628419a-ce7b-4001-a7f4-6263f143599d)
-![Afbeelding van WhatsApp op 2023-10-16 om 16 17 22_b3cec146](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9001bb9e-a57d-47d5-a9ce-2d74b648b728)
-
-In sync:
-![Afbeelding van WhatsApp op 2023-10-16 om 16 17 45_a2a5b926](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/b1e4a89a-cc1b-4562-b59b-e1eb48bae96b)
-![Afbeelding van WhatsApp op 2023-10-16 om 16 17 46_2b4676c7](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/95c934cc-9b99-40bb-b683-efd6098f442d)
-
-2.d
-Digitalreadsignal and input pullup and :
-![Afbeelding van WhatsApp op 2023-10-16 om 16 32 17_bd15b30b](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/2b735b6e-e9d4-456d-8431-096edb0ec825)
-
-Toggle button:
-![Afbeelding van WhatsApp op 2023-10-16 om 16 48 56_7457f06a](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/aa080584-d80d-4639-8c07-57b569e0cd27)
-
-- [pictures](/Teamfolder/pictures)
+- Outcome: We now have a functional LED that can toggle on and off with a button press, but it keeps blinking if the button is held down.
 
 # 3. IoTempower Gateway - Our Own Network
 
 ## 3.a Actors and Sensors with Web Requests
 
-## 3.b Stories/Scenario
+## 3.b Stories and Scenario
 
-# 4. MQTT Introduction + Simulators
+# 4. MQTT Introduction and Simulators
 ## 4.a MQTT Basics
 For this task we sent messages to each other using MQTT
 To do this activity we simply installed VSMqtt extension in Visual Studio Code and we added a profile. We subscribed to eachothers topic and send messages
@@ -312,6 +279,7 @@ esp_err_t handleMQTT(esp_mqtt_event_handle_t event)
 ![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_b6423ea3](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/80f616d4-3bad-4c11-9fd5-fec2abe1b6ff)
 ![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_f864ab8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9ae0697c-d2f4-440c-beb4-4cbf4c5df763)
 
+### 5. More Hardware and Integration with Node RED
 ## 5.a Node-RED Intro
 ![Afbeelding van WhatsApp op 2023-10-19 om 12 51 13_34f01c8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e60df6c-9696-4c6c-b84a-fd04bb722af2)
 

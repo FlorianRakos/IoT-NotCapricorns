@@ -1,6 +1,6 @@
 # Here we store all the pictures later linked to in the portfolios!
 
-## Pictures
+# Pictures
 2.b
 1 button 1 light just lighting up:
 ![Afbeelding van WhatsApp op 2023-10-16 om 15 28 56_b5383109](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/999e431d-49c7-437f-881f-8a70786a24e3)
@@ -33,3 +33,35 @@ Digitalreadsignal and input pullup and :
 
 Toggle button:
 ![Afbeelding van WhatsApp op 2023-10-16 om 16 48 56_7457f06a](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/aa080584-d80d-4639-8c07-57b569e0cd27)
+
+## 4.a MQTT Basics
+For this task we sent messages to each other using MQTT
+To do this activity we simply installed VSMqtt extension in Visual Studio Code and we added a profile. We subscribed to eachothers topic and send messages
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/8f6a73c2-5e5e-4fac-93ba-071a8f8e7f47)
+
+We also used wildcards, shown below:
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/17d77b67-114a-4888-a478-3e1164070799)
+
+## 4.d MQTT on microcontroller
+We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
+
+### Picture 1 setting up the breadboard
+![Afbeelding van WhatsApp op 2023-10-19 om 12 30 59_8422c7ae](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/63804990-03c4-4fba-a0ac-d36147a75c26)
+
+### Picture 2 The temperature getting 30 or above and turning on the device
+![Afbeelding van WhatsApp op 2023-10-19 om 12 30 06_db478543](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/49eb70bf-17e8-402c-be59-9ecf0bb884a5)
+![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_b6423ea3](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/80f616d4-3bad-4c11-9fd5-fec2abe1b6ff)
+![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_f864ab8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9ae0697c-d2f4-440c-beb4-4cbf4c5df763)
+
+## 5.a Node-RED Intro
+![Afbeelding van WhatsApp op 2023-10-19 om 12 51 13_34f01c8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e60df6c-9696-4c6c-b84a-fd04bb722af2)
+
+## 5.b Emergency Button
+We created a breadboard that looks like this:
+![Afbeelding van WhatsApp op 2023-10-19 om 14 57 57_ce453a2e](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/52103184-f255-4132-8886-07a39ddcfd8d)
+
+We added a LED light so we can see if the button press is registering.
+
+We went on Node-red to look for the package we need and we found it. We checked with the debugging popup if our button presses came through after we made a MQTT start, and it did. So now we can go to work on the chatbot.
+Discovering where to create the discord bot was complicated, but after some asking around we found it. We did watch a video on how to install a discord bot because we have never done anything like this and were very confused. ![Afbeelding van WhatsApp op 2023-10-19 om 15 53 05_d65df0e4](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c92b1478-b3c4-4292-8b91-5f23c015101d)
+
