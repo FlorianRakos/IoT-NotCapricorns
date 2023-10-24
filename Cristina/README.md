@@ -1,4 +1,4 @@
-# Portfolio of Cristina (example!)
+# Portfolio of Cristina
 My portfolio 
 
 ## First day
