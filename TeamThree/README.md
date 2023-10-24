@@ -153,10 +153,13 @@ Her need is stored in the cloud
 ### 4.a MQTT Basics
 For this task we sent messages to each other using MQTT
 To do this activity we simply installed VSMqtt extension in Visual Studio Code and we added a profile. We subscribed to eachothers topic and send messages
-![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/8f6a73c2-5e5e-4fac-93ba-071a8f8e7f47)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/8f6a73c2-5e5e-4fac-93ba-071a8f8e7f47" target="_blank">See picture here</a>)
 
 We also used wildcards, shown below:
-![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/17d77b67-114a-4888-a478-3e1164070799)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/17d77b67-114a-4888-a478-3e1164070799" target="_blank">See picture here</a>)
+
+We also used our consoles to talk to each other, shown below:
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d282b68b-02a1-483b-9b64-efed6a489516" target="_blank">See picture here</a>)
 
 ### 4.b MQTT Integration
 To rebuild the air conditioning integratior component from the video, we first created a virtual environment in python using the following command: 
@@ -205,10 +208,11 @@ We generated two bash scripts on ChatGPT, one for the temperature simulator, and
 
 
 problem: we struggled getting the status of the AC because it only showed OFF
-![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ed6f828a-65f9-4be5-8f38-2aa4c8957918)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ed6f828a-65f9-4be5-8f38-2aa4c8957918" target="_blank">See picture here</a>)
 
 resolved:
-![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/62a23ca0-b329-4674-836a-e01c2f08a487)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/62a23ca0-b329-4674-836a-e01c2f08a487" target="_blank">See picture here</a>)
+
 
 #### AC simulator Bash code
 ```
@@ -255,7 +259,7 @@ On our first try, Cristina's computer did not recognise the esp32 and when intal
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
 
 #### Picture 1 setting up the breadboard
-![Afbeelding van WhatsApp op 2023-10-19 om 12 30 59_8422c7ae](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/63804990-03c4-4fba-a0ac-d36147a75c26)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/63804990-03c4-4fba-a0ac-d36147a75c26" target="_blank">See picture here</a>)
 
 #### Coding
 We are now going to work on the laptop in Arduino IDE. We got a code from the library and we are editing it so we can work with it. We edited the esp32mqttclient "hellotomyself" code. We use this so we can use mqtt.
@@ -332,23 +336,23 @@ esp_err_t handleMQTT(esp_mqtt_event_handle_t event)
 ```
 
 #### Picture 2 The temperature getting 30 or above and turning on the device
-![Afbeelding van WhatsApp op 2023-10-19 om 12 30 06_db478543](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/49eb70bf-17e8-402c-be59-9ecf0bb884a5)
-![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_b6423ea3](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/80f616d4-3bad-4c11-9fd5-fec2abe1b6ff)
-![Afbeelding van WhatsApp op 2023-10-19 om 15 29 52_f864ab8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9ae0697c-d2f4-440c-beb4-4cbf4c5df763)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/49eb70bf-17e8-402c-be59-9ecf0bb884a5" target="_blank">See picture 1 here</a>)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/80f616d4-3bad-4c11-9fd5-fec2abe1b6ff " target="_blank">See picture 2 here</a>)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9ae0697c-d2f4-440c-beb4-4cbf4c5df763" target="_blank">See picture 3 here</a>)
+
 
 #### 5. More Hardware and Integration with Node RED
 ### 5.a Node-RED Intro
-![Afbeelding van WhatsApp op 2023-10-19 om 12 51 13_34f01c8f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e60df6c-9696-4c6c-b84a-fd04bb722af2)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e60df6c-9696-4c6c-b84a-fd04bb722af2" target="_blank">See picture here</a>)
 
 ### 5.b Emergency Button
 We created a breadboard that looks like this:
-![Afbeelding van WhatsApp op 2023-10-19 om 14 57 57_ce453a2e](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/52103184-f255-4132-8886-07a39ddcfd8d)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/52103184-f255-4132-8886-07a39ddcfd8d " target="_blank">See picture here</a>)
 
 We added a LED light so we can see if the button press is registering.
 
 We went on Node-red to look for the package we need and we found it. We checked with the debugging popup if our button presses came through after we made a MQTT start, and it did. So now we can go to work on the chatbot.
-Discovering where to create the discord bot was complicated, but after some asking around we found it. We did watch a video on how to install a discord bot because we have never done anything like this and were very confused. ![Afbeelding van WhatsApp op 2023-10-19 om 15 53 05_d65df0e4](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c92b1478-b3c4-4292-8b91-5f23c015101d)
-
+Discovering where to create the discord bot was complicated, but after some asking around we found it. We did watch a video on how to install a discord bot because we have never done anything like this and were very confused. (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c92b1478-b3c4-4292-8b91-5f23c015101d" target="_blank">See picture here</a>)
 
 ### 5.c Remote Control an Internal Device
 
