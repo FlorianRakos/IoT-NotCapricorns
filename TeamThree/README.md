@@ -370,7 +370,7 @@ Discovering where to create the discord bot was complicated, but after some aski
 ### 6.f RFID reader
 Description
 * We first plugged rfid to the breadboard and wired it to the d1 mini following the wiring in the documentation like so:
-
+![RFID_Circuit](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/e3db2f98-dafa-405d-be24-ccf9c68afb4b)
 * We initialise the serial 
 * It fails provably because of missing ;
 * It keeps failing until we realise we forgot to wire the 3.3V to the 3V3.
@@ -386,9 +386,6 @@ Accept:
 ![RFID_Accept](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/3698a475-4829-47b7-9324-57c9460c5822)
 Denied
 ![RFID_Deny](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/fd6d1fc4-7a6a-4236-809d-2a236abdb443)
-
-Circuit:
-![RFID_Circuit](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/e3db2f98-dafa-405d-be24-ccf9c68afb4b)
 
 ## 7. Access Control System
 ### 7.a1 New Actors
