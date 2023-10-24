@@ -394,7 +394,7 @@ On the fisrt part of this task, we used a slider in Node-RED to control the brig
  * The led wouldn't lit up and in the gateway we were receiving an error over and over again. We first thought it was a missing ";" but it still gave us the error
 ![PWM_Error](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/c13c3a43-7f82-42b3-a12e-826d5d1ed7d4)
 
- * We figured out that it wasn't finding the ESP32WM so we uppdated the gateway. The error didn't appear but the light was still off
+ * We figured out that it wasn't finding the ESP32WM so we updated the gateway. The error didn't appear but the light was still off
  * After more attempts, we decided on changing the LED light and it worked.
 LED dimm
 ![PWM_LED_Dimm](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/45f5fb92-c5aa-4445-b91d-4cf336a92740)
