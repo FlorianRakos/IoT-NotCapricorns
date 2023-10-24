@@ -29,7 +29,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [6.d Button to sound and notification](#6d-button-to-sound-and-notification)
    * [6.e Text receiver](#6e-text-receiver)
    * [6.f RFID Reader](#6f-rfid-reader)
-7. [Acces Control System](#7-acces-control-system)
+7. [Acces Control System](#7-access-control-system)
    * [7.a1 New Actors](#7a1-new-actors)
    * [7.a2 Project 1 (Group)](#7a2-project-1-(group))
    * [7.b Analog Touch Sensor](#7b-analog-touch-sensor)
@@ -370,22 +370,23 @@ Discovering where to create the discord bot was complicated, but after some aski
 ### 6.f RFID reader
 Description
 * We first plugged rfid to the breadboard and wired it to the d1 mini following the wiring in the documentation like so:
-![RFID_Circuit](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/e3db2f98-dafa-405d-be24-ccf9c68afb4b)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/e3db2f98-dafa-405d-be24-ccf9c68afb4b" target="_blank">See RFID Circuit here</a>).
 * We initialise the serial 
 * It fails provably because of missing ;
 * It keeps failing until we realise we forgot to wire the 3.3V to the 3V3.
-* We connect the following functions on Node-red
-![RFID_NodeRED](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/41ff379a-3d12-4377-984c-67f2a94acf82)
-
+* We connect the following functions on Node-red:
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/41ff379a-3d12-4377-984c-67f2a94acf82" target="_blank">See RFID NodeRED here</a>).
 
 * when the accept and denied worked, we added the functionality where when pressing the button it is reset and a "scan tag" message is displayed. Proof here:
-![Scan_Tag](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/10744393-c6b3-4b78-8677-b52c70d78fbf)
-![RFID_Scan](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/56400772-bced-49b7-8711-15dc333b2ff2)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/10744393-c6b3-4b78-8677-b52c70d78fbf" target="_blank">See Scan Tag here</a>).
+
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/56400772-bced-49b7-8711-15dc333b2ff2" target="_blank">See RFID Scan here</a>).
 
 Accept:
-![RFID_Accept](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/3698a475-4829-47b7-9324-57c9460c5822)
-Denied
-![RFID_Deny](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/fd6d1fc4-7a6a-4236-809d-2a236abdb443)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/3698a475-4829-47b7-9324-57c9460c5822" target="_blank">See RFID Accept here</a>).
+
+Denied:
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/fd6d1fc4-7a6a-4236-809d-2a236abdb443" target="_blank">See RFID Deny here</a>).
 
 ## 7. Access Control System
 ### 7.a1 New Actors
