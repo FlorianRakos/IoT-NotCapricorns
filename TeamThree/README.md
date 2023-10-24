@@ -351,3 +351,19 @@ Discovering where to create the discord bot was complicated, but after some aski
 
 ##  - 6.e Text receiver
 
+##  - 6.f RFID reader
+plugged rfid to the breadboard
+wired it to the d1 mini following the wiring in the documentation like so: foto
+initialise serial 
+fails because of missing ;
+keeps failing with this error
+it didn't work because we forgot to wire the 3.3V to the 3V3.
+we connected the following functions on Node-red
+when the accept and denied worked, we added the functionality where when pressing the button it is reset and a "scan tag" message is displayed. Proof here:
+# 7. Access Control System
+##  - 7.a1 New Actors
+##  - 7.a2 Project 1
+##  - 7.b Analog Touch Sensor
+##  - 7.c Moisture Sensor
+##  - 7.d Optional
+# 8. Final IOT Project
