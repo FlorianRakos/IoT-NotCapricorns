@@ -1,11 +1,11 @@
 # Index
-[Update on the “nice-to-have feature-list”](/Cristina/researches/research06/research06.md#update-on-the-nice-to-have-feature-list)
-[IoTempower”](/Cristina/researches/research06/research06.md#iotempower)
-[System in folders](/Cristina/researches/research06/research06.md#system-in-folders)
-[Nodes](/Cristina/researches/research06/research06.md#nodes)
-[Compilation](/Cristina/researches/research06/research06.md#compilation)
-[Filters video](/Cristina/researches/research06/research06.md#filters-video)
-[Stories](/Cristina/researches/research06/research06.md#stories)
+1. [Update on the “nice-to-have feature-list”](/Cristina/researches/research06/research06.md#update-on-the-nice-to-have-feature-list)
+2. [IoTempower”](/Cristina/researches/research06/research06.md#iotempower)
+3. [System in folders](/Cristina/researches/research06/research06.md#system-in-folders)
+4. [Nodes](/Cristina/researches/research06/research06.md#nodes)
+5. [Compilation](/Cristina/researches/research06/research06.md#compilation)
+6. [Filters video](/Cristina/researches/research06/research06.md#filters-video)
+7. [Stories](/Cristina/researches/research06/research06.md#stories)
 ## Update on the “nice-to-have feature-list”
   * Unified framework: Not have to use that many different programs
   * More documentation and context on the tasks
