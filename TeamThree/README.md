@@ -368,14 +368,27 @@ Discovering where to create the discord bot was complicated, but after some aski
 ### 6.e Text receiver
 
 ### 6.f RFID reader
-plugged rfid to the breadboard
-wired it to the d1 mini following the wiring in the documentation like so: foto
-initialise serial 
-fails because of missing ;
-keeps failing with this error
-it didn't work because we forgot to wire the 3.3V to the 3V3.
-we connected the following functions on Node-red
-when the accept and denied worked, we added the functionality where when pressing the button it is reset and a "scan tag" message is displayed. Proof here:
+Description
+* We first plugged rfid to the breadboard and wired it to the d1 mini following the wiring in the documentation like so:
+
+* We initialise the serial 
+* It fails provably because of missing ;
+* It keeps failing until we realise we forgot to wire the 3.3V to the 3V3.
+* We connect the following functions on Node-red
+![RFID_NodeRED](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/41ff379a-3d12-4377-984c-67f2a94acf82)
+
+
+* when the accept and denied worked, we added the functionality where when pressing the button it is reset and a "scan tag" message is displayed. Proof here:
+![Scan_Tag](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/10744393-c6b3-4b78-8677-b52c70d78fbf)
+![RFID_Scan](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/56400772-bced-49b7-8711-15dc333b2ff2)
+
+Accept:
+![RFID_Accept](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/3698a475-4829-47b7-9324-57c9460c5822)
+Denied
+![RFID_Deny](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/fd6d1fc4-7a6a-4236-809d-2a236abdb443)
+
+Circuit:
+![RFID_Circuit](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/e3db2f98-dafa-405d-be24-ccf9c68afb4b)
 
 ## 7. Access Control System
 ### 7.a1 New Actors
@@ -393,21 +406,27 @@ LED Bright
 
 For the next part of the exercise we replaced the LED with the buzzer
  * We did some research and found that our specific buzzer has a frequency of 3.1 kHz so we created the slider from 0 to 3000 and we played different tones
- * Proff:
+Proff:
+![Set_PWM](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/c4d60b42-a726-47dc-ae6a-b7cb7ccde67e)
+
 ![PWM_Buzzer_Sound_LowFreq](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/10cde51b-50a6-4fc0-9620-e5191b8d774d)
 ![PWM_Buzzer_Sound_HighFreq](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/86bcb57b-e11a-48fd-bf05-136f54734037)
 NodeRED
 ![PWM_Buzzer_NodeRED](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/015a0eca-7e2b-4ad7-b8ee-fe61080db199)
 
-Photos
 <br><br>
 The last part of the task consisted on using the rgb_single IoTempower command to control the RGB led, and using a color-picker in Node-RED to send a color value to the LED.
  * We conected the single rgb led with 3 resistors and could manage to do the serial on the command on the documentation.
  * We tried to do it with the 3 colors seperated and it worked.
  * We had some trouble because of that on node red because we had 3 different variables (R,G,B)
+![RGB_Try](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/0f736e14-f126-4a7b-9200-f77d64707fc7)
+
  * After many attempts and comments from other people we concluded that The dev_rgb_base.h library doesn't work so we will skip this activity for now
+ ![RGB_Error](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/f3196d5b-6d7c-45fc-89be-a98c138f9266)
+
  * Nevermind we are on it again
  * Only the blue value works but here is some proof
+![RGB_Light](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/144f5829-39c5-4e11-b023-03a0a5589bb5)
 
 ### 7.a2 Project 1
 On this task we are building an access control system using the RFID reader, the RGB led, the buzzer, the display, and the relay with the solenoid drawer lock. 
@@ -415,10 +434,13 @@ On this task we are building an access control system using the RFID reader, the
  * We do some connedtions on Node-RED. When it is accepted the red light turns on, when it is denied it is turned off and the green one doesn't light up.
  * We make some changes and when is it accepted the green light turns on and when it is denied it turns off and the red light turns on. We figured that the green light is on but is very very light. It is hard to see.
  * We connect the buzzer to the breadboard and make it that when the red light turns on, we hear a short nasty sound.
+   ![RFID_System_Console](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/4be338d7-de39-448b-b68a-97d5719df2a5)
+
  * We tryed to implement the lock but it didn't work.
 Code on IoTempower:
 ![Accesscontrollsystem_Code](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/22056f13-1f3c-4be6-b266-b479ee087b85)
-
+Node-RED system:
+![RFID_System_NodeRED](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/4585904c-cdc6-4b57-a5cd-a690605fbdd9)
 node-red + bread board + gateway
 ![Accesscontrollsystem_Closed](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/1106a4c7-32e6-477b-91f4-a0a4e45aa0c4)
 ![Accesscontrollsystem_Open](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/a6eafdbd-91ad-4f03-baac-49514f6a53ae)
