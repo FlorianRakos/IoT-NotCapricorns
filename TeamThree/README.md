@@ -159,10 +159,11 @@ We also used wildcards, shown below:
 ![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/17d77b67-114a-4888-a478-3e1164070799)
 
 ### 4.b MQTT Integration
-create a virtual environment python -m venv /path/to/new/virtual/environment (download git) i didn't have it installed Paste the iotempire example on how to connect a button node with a switch changing the host to our raspberry pie number and follow tutorial "Knit Your IoT Network with IoTknit" set a mosquitto pub and a mosquitto sub connected to the script. We generated a bash script on ChatGPT and we installed PuTTY to run it. MQTT simulators task complete start the hardware part "MQTT on microcontroller" esp32 not recognisable on computer intalling driver and computer restart terminals closed but scrips saved no time so call it a day
-
-
-problem: we struggled getting the status of the AC because it only showed OFF
+To rebuild the air conditioning integratior component from the video, we first created a virtual environment in python using the following command: 
+```python
+-m venv /path/to/new/virtual/environment
+```
+After that, we download git, because we didn't have it installed. We pasted the iotempire example on how to connect a button node with a switch, changing the host to our raspberry pie number, and followed the tutorial "Knit Your IoT Network with IoTknit". We set a mosquitto pub and a mosquitto sub that were connected to the script. 
 
 ```python
 from iotknit import *
@@ -200,6 +201,15 @@ run()  # you can also do a while loop here call process() instead
 ```
 
 ### 4.c MQTT simulators
+We generated two bash scripts on ChatGPT, one for the temperature simulator, and one for the AC simulator, and we installed PuTTY to run them. 
+
+
+problem: we struggled getting the status of the AC because it only showed OFF
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ed6f828a-65f9-4be5-8f38-2aa4c8957918)
+
+resolved:
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/62a23ca0-b329-4674-836a-e01c2f08a487)
+
 #### AC simulator Bash code
 ```
 # Use a subshell to run mosquitto_sub in the background
@@ -240,6 +250,7 @@ while true; do
 done
 ```
 ### 4.d MQTT on microcontroller
+On our first try, Cristina's computer did not recognise the esp32 and when intalling the driver, the computer restarted and all the terminals were closed. Thankfully, all the scrips were saved, but we called it a day and continued the following.
 We first started with connecting the wires to the temperature sensor. We needed to work around this because we had no female to male cables, so we used some normal connecting wires and put them in the female output and then in the breadboard. From the breadboard we connected 3 wires to the Esp32.
 
 #### Picture 1 setting up the breadboard
