@@ -453,3 +453,8 @@ breadboard setup:
 ### 7.c Moisture Sensor
 ### 7.d Optional
 ## 8. Final IOT Project
+## 9. Volker's Part 1
+## 10. Volker's Part 2
+## 11. Volker's Part 3
+## 12. Volker's Part 4
+## 13. Presentation
