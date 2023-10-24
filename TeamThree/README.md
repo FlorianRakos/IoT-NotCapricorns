@@ -341,7 +341,7 @@ esp_err_t handleMQTT(esp_mqtt_event_handle_t event)
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9ae0697c-d2f4-440c-beb4-4cbf4c5df763" target="_blank">See picture 3 here</a>)
 
 
-#### 5. More Hardware and Integration with Node RED
+## 5. More Hardware and Integration with Node RED
 ### 5.a Node-RED Intro
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/5e60df6c-9696-4c6c-b84a-fd04bb722af2" target="_blank">See picture here</a>)
 
