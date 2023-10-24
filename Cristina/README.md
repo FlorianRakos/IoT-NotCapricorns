@@ -37,7 +37,7 @@ My portfolio
 - [Reflection](/Cristina/reflections/reflection05/README.md)
 
 ## Sixth day
-- [Research records](/Cristina/researches/research06/README.md)
+- [Research records](/Cristina/researches/research06/research06.md)
 
 - [Lab records](/Teamfolder/exercises/exercise06/README.md)
 
