@@ -158,7 +158,6 @@ To do this activity we simply installed VSMqtt extension in Visual Studio Code a
 We also used wildcards, shown below:
 ![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/17d77b67-114a-4888-a478-3e1164070799)
 
-
 ### 4.b MQTT Integration
 create a virtual environment python -m venv /path/to/new/virtual/environment (download git) i didn't have it installed Paste the iotempire example on how to connect a button node with a switch changing the host to our raspberry pie number and follow tutorial "Knit Your IoT Network with IoTknit" set a mosquitto pub and a mosquitto sub connected to the script. We generated a bash script on ChatGPT and we installed PuTTY to run it. MQTT simulators task complete start the hardware part "MQTT on microcontroller" esp32 not recognisable on computer intalling driver and computer restart terminals closed but scrips saved no time so call it a day
 
