@@ -372,16 +372,29 @@ keeps failing with this error
 it didn't work because we forgot to wire the 3.3V to the 3V3.
 we connected the following functions on Node-red
 when the accept and denied worked, we added the functionality where when pressing the button it is reset and a "scan tag" message is displayed. Proof here:
+
 ## 7. Access Control System
 ### 7.a1 New Actors
 On the fisrt part of this task, we used a slider in Node-RED to control the brightness (duty cycle) of the LED. 	
  * We first hooked up a simple LED with a resistor to a GPIO port of a Wemos D1 Mini.
  * The led wouldn't lit up and in the gateway we were receiving an error over and over again. We first thought it was a missing ";" but it still gave us the error
-   Photo
+![PWM_Error](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/c13c3a43-7f82-42b3-a12e-826d5d1ed7d4)
+
  * We figured out that it wasn't finding the ESP32WM so we uppdated the gateway. The error didn't appear but the light was still off
  * After more attempts, we decided on changing the LED light and it worked.
+LED dimm
+![PWM_LED_Dimm](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/45f5fb92-c5aa-4445-b91d-4cf336a92740)
+LED Bright
+![PWM_LED_Bright](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d256d24d-a745-4d1a-8308-b5ae41a00441)
+
 For the next part of the exercise we replaced the LED with the buzzer
  * We did some research and found that our specific buzzer has a frequency of 3.1 kHz so we created the slider from 0 to 3000 and we played different tones
+ * Proff:
+![PWM_Buzzer_Sound_LowFreq](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/10cde51b-50a6-4fc0-9620-e5191b8d774d)
+![PWM_Buzzer_Sound_HighFreq](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/86bcb57b-e11a-48fd-bf05-136f54734037)
+NodeRED
+![PWM_Buzzer_NodeRED](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/015a0eca-7e2b-4ad7-b8ee-fe61080db199)
+
 Photos
 <br><br>
 The last part of the task consisted on using the rgb_single IoTempower command to control the RGB led, and using a color-picker in Node-RED to send a color value to the LED.
@@ -398,6 +411,18 @@ On this task we are building an access control system using the RFID reader, the
  * We do some connedtions on Node-RED. When it is accepted the red light turns on, when it is denied it is turned off and the green one doesn't light up.
  * We make some changes and when is it accepted the green light turns on and when it is denied it turns off and the red light turns on. We figured that the green light is on but is very very light. It is hard to see.
  * We connect the buzzer to the breadboard and make it that when the red light turns on, we hear a short nasty sound.
+ * We tryed to implement the lock but it didn't work.
+Code on IoTempower:
+![Accesscontrollsystem_Code](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/22056f13-1f3c-4be6-b266-b479ee087b85)
+
+node-red + bread board + gateway
+![Accesscontrollsystem_Closed](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/1106a4c7-32e6-477b-91f4-a0a4e45aa0c4)
+![Accesscontrollsystem_Open](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/a6eafdbd-91ad-4f03-baac-49514f6a53ae)
+
+breadboard setup: 
+![Accesscontrollsystem_Circuit](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/67fe49df-166b-4dc4-b963-55f44866678d)
+
+
 ### 7.b Analog Touch Sensor
 ### 7.c Moisture Sensor
 ### 7.d Optional
