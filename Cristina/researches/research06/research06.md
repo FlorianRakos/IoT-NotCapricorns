@@ -79,4 +79,4 @@ Binarize, jmc_interval_median.
 Puttung everything in one line when we can, non repetitive code, or cahining methods.
 
 ## Stories
-We also adapted the stories we made last week (link) to the iot project we will do. Here is the update.
+We also adapted the stories we made last week [(link)](/TeamThree#3b-stories-and-scenario) to the iot project we will do. [Here](/TeamThree/README.md#23102023-story-update) is the update.
