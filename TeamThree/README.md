@@ -435,9 +435,9 @@ On this task we are building an access control system using the RFID reader, the
 
  * We tryed to implement the lock but it didn't work.
 Code on IoTempower:
-(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/22056f13-1f3c-4be6-b266-b479ee087b85" target="_blank">See Accesscontrollsystem Code here</a>)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/22056f13-1f3c-4be6-b266-b479ee087b85" target="_blank">See Code on IoTempower here</a>)
 Node-RED system:
-(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/4585904c-cdc6-4b57-a5cd-a690605fbdd9" target="_blank">See Accesscontrollsystem Code here</a>)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/4585904c-cdc6-4b57-a5cd-a690605fbdd9" target="_blank">See NodeRed here</a>)
 
 node-red + bread board + gateway
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/1106a4c7-32e6-477b-91f4-a0a4e45aa0c4" target="_blank">See Accesscontrollsystem Closed here</a>)
