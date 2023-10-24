@@ -452,6 +452,8 @@ breadboard setup:
 ### 7.b Analog Touch Sensor
 ### 7.c Moisture Sensor
 ### 7.d Optional
+We did not do the optional exercise.
+
 ## 8. Final IOT Project
 ## 9. Volkers Part 1
 ## 10. Volkers Part 2
