@@ -464,11 +464,12 @@ We build a touch sensor based on the analog port with IoTempower on an Wemos D1 
  * We connected a cable onto the breadboard:
  
  * In node red we connected a mqtt in node to a debug one and the following data started showing:
-![Analog_response](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/12c60d3d-4d14-466e-a67c-bbbba2bbfa0e)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/12c60d3d-4d14-466e-a67c-bbbba2bbfa0e" target="_blank">See Analog response here</a>)
 
  * We applied a filter in node red so the data only shows when the state changes and a swich to sort out the 0 value from the others
-![Analog_messages](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d744662a-5944-4103-9384-c34faafacc38)
-![Analog_proff](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/dbab11e7-9cc4-409c-9a41-48e6919b12c5)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d744662a-5944-4103-9384-c34faafacc38" target="_blank">See Analog messages here</a>)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/dbab11e7-9cc4-409c-9a41-48e6919b12c5" target="_blank">See Analog proff here</a>)
+
 We then used the filter filter_binarize to generate touched/untouched the same. 
  * We had some trouble adding the filter because we were following the format from the video tutorial, but didn't realize that in the documentation the format was different. We were missing a dot "."
  * In node red it wasn't working. I deleted the switch and filter nodes in node-red and it kinda worked but only the pressed were shown.
