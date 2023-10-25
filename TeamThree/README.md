@@ -493,7 +493,6 @@ Wet:
 ![IMG-6337](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/b9df2092-a206-414f-8314-cfec22069612)
 Dry:
 [IMG-6336](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/07027208-4ba3-44e1-b7df-14400225d8c0)
-bbd3a)
 
 ### 7.d Optional
 We did not do the optional exercise.
