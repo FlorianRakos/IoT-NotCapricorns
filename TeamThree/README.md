@@ -479,6 +479,22 @@ We then used the filter filter_binarize to generate touched/untouched the same.
 ![Analog_2proff](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/55cc7a9a-d516-493d-ba99-0faa1949d98c)
 
 ### 7.c Moisture Sensor
+In this task we build a voltage divider connected to the capacitive moisture sensor. 
+ * First we connected everything to the breadboard and then to the raspberry pie
+ * In the gateway, in the setup-cpp document, we wrote the following command: analog(a0);
+ ![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d455641a-c30b-4f1b-87a8-e28636ecdc70)
+ * In node red we connected a mqtt in node to a debug and a lot of numbers appeared after deploying.
+ * We tried to apply a filter in the gateway to filter out the numbers, but it didn't really work, so we applied the filter and a delay in node red because it was easier.
+ * We added a switch to translate the numbers to the messages wet/dry
+ * We had some truble gettin the dry/wet stats because we didn't know the number that separated what was wet from what was dry. After some trial and error, we found that the turning point was 70.
+Nodes in node red:
+![Moisture_nodered](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/de49a756-fccb-459e-be5a-114bfffd753d)
+Wet:
+![IMG-6337](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/b9df2092-a206-414f-8314-cfec22069612)
+Dry:
+[IMG-6336](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/07027208-4ba3-44e1-b7df-14400225d8c0)
+bbd3a)
+
 ### 7.d Optional
 We did not do the optional exercise.
 
