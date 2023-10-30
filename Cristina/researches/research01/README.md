@@ -4,7 +4,7 @@
 
 1. [How are U?](/Cristina/researches/research01/README.md#who-are-u)
    * 1.1 [What type of programming experience do you have?](/Cristina/researches/research01/README.md#what-type-of-programming-experience-do-you-have)
-   * 1.2 [What type of programming experience do you have?](/Cristina/researches/research01/README.md#what-type-of-programming-experience-do-you-have)
+   * 1.2 [What have you done with micro controllers? Which ones have you used?](/Cristina/researches/research01/README.md#what-have-you-done-with-micro-controllers-which-ones-have-you-used)
 
 ## Who are U?
 Answer the following questions:
