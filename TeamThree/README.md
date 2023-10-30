@@ -473,26 +473,27 @@ We build a touch sensor based on the analog port with IoTempower on an Wemos D1 
 We then used the filter filter_binarize to generate touched/untouched the same. 
  * We had some trouble adding the filter because we were following the format from the video tutorial, but didn't realize that in the documentation the format was different. We were missing a dot "."
  * In node red it wasn't working. I deleted the switch and filter nodes in node-red and it kinda worked but only the pressed were shown.
-![Analog_pressedProblem](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/221b369f-00ce-43bd-9346-54f01175ab47)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/221b369f-00ce-43bd-9346-54f01175ab47" target="_blank">See Analog pressedProblem here</a>)
  * I chandged the code from pressed/released to touched/untouched and added again the filter and switch in red node and it magically worked. 
-![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ce2253ad-2cb6-4e76-af68-30e9c03fc79f)
-![Analog_2proff](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/55cc7a9a-d516-493d-ba99-0faa1949d98c)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ce2253ad-2cb6-4e76-af68-30e9c03fc79f" target="_blank">See picture here</a>)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/55cc7a9a-d516-493d-ba99-0faa1949d98c" target="_blank">See Analog 2proff here</a>)
 
 ### 7.c Moisture Sensor
 In this task we build a voltage divider connected to the capacitive moisture sensor. 
  * First we connected everything to the breadboard and then to the raspberry pie
  * In the gateway, in the setup-cpp document, we wrote the following command: analog(a0);
- ![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d455641a-c30b-4f1b-87a8-e28636ecdc70)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d455641a-c30b-4f1b-87a8-e28636ecdc70" target="_blank">See picture here</a>)
  * In node red we connected a mqtt in node to a debug and a lot of numbers appeared after deploying.
  * We tried to apply a filter in the gateway to filter out the numbers, but it didn't really work, so we applied the filter and a delay in node red because it was easier.
  * We added a switch to translate the numbers to the messages wet/dry
  * We had some truble gettin the dry/wet stats because we didn't know the number that separated what was wet from what was dry. After some trial and error, we found that the turning point was 70.
 Nodes in node red:
-![Moisture_nodered](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/de49a756-fccb-459e-be5a-114bfffd753d)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/de49a756-fccb-459e-be5a-114bfffd753d" target="_blank">See Moisture nodered here</a>)
+
 Wet:
-![IMG-6337](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/b9df2092-a206-414f-8314-cfec22069612)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/b9df2092-a206-414f-8314-cfec22069612" target="_blank">See Wet Sensor here</a>)
 Dry:
-[IMG-6336](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/07027208-4ba3-44e1-b7df-14400225d8c0)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/07027208-4ba3-44e1-b7df-14400225d8c0" target="_blank">See Dry Sensor here</a>)
 
 ### 7.d Optional
 We did not do the optional exercise.
