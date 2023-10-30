@@ -11,7 +11,7 @@ My portfolio
 ## Second day
 - [Research records](/TeamTwo/exercises/exercise02/)
 
-- [Lab records](/Teamfolder/exercises/exercise02/README.md)
+- [Lab records](/TeamThree#3-iotempower-gateway---our-own-network)
 
 - [Reflection](/Cristina/reflections/reflection02/reflection02.md)
 
