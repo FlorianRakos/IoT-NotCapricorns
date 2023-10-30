@@ -3,7 +3,7 @@
 ## Contents
 
 1. [How are U?](/Cristina/researches/research01/README.md#who-are-u)
-   1.1 [What type of programming experience do you have?](/Cristina/researches/research01/README.md#what-type-of-programming-experience-do-you-have)
+   * 1.1 [What type of programming experience do you have?](/Cristina/researches/research01/README.md#what-type-of-programming-experience-do-you-have)
 
 ## Who are U?
 Answer the following questions:
