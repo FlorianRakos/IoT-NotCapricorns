@@ -5,6 +5,19 @@
 1. [How are U?](/Cristina/researches/research01/README.md#who-are-u)
    * 1.1 [What type of programming experience do you have?](/Cristina/researches/research01/README.md#what-type-of-programming-experience-do-you-have)
    * 1.2 [What have you done with micro controllers? Which ones have you used?](/Cristina/researches/research01/README.md#what-have-you-done-with-micro-controllers-which-ones-have-you-used)
+   * 1.3 [Which single board computers do you know/have you used?](/Cristina/researches/research01/README.md#which-single-boars-computers-do-you-knowhave-you-used)
+   * 1.4 [Who is a maker or part of the maker community? What do you like/would you like about it?](/Cristina/researches/research01/README.md#who-is-a-maker-or-part-of-the-maker-community-what-do-you-likewould-you-like-about-it)
+   * 1.5 [What do you already know about IoT?](/Cristina/researches/research01/README.md#what-do-you-already-know-about-iot)
+   * 1.6 [What are your expectations from this class?](/Cristina/researches/research01/README.md#what-are-your-expectations-from-this-class)
+2. [IoT](/Cristina/researches/research01/README.md#iot)
+   * 2.1 [What does Internet of Things entail?](/Cristina/researches/research01/README.md#what-does-internet-of-things-entail)
+   * 2.1 [Domains](/Cristina/researches/research01/README.md#domains)
+   * 2.1 [Commonly used data protocols](/Cristina/researches/research01/README.md#commonly-used-data-protocols
+)
+   * 2.1 [Typical devices](/Cristina/researches/research01/README.md#typical-devices
+)
+   * 2.1 [Wjhat are the benefits of IoT?](/Cristina/researches/research01/README.md#what-are-the-benefits-of-iot
+)
 
 ## Who are U?
 Answer the following questions:
