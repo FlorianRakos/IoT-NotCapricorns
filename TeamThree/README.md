@@ -36,11 +36,8 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [7.c Moisture Sensor](#7c-moisture-sensor)
    * [7.d Optional](#7d-optional)
 8. [Final IOT Project](#8-final-iot-project)
-9. [Volkers Part 1](#9-volkers-part-1)
-10. [Volkers Part 2](#10-volkers-part-2)
-11. [Volkers Part 3](#11-volkers-part-3)
-12. [Volkers Part 4](#12-volkers-part-4)
-13. [Presentation](#13-presentation)
+9. [Volkers Part](#9-volkers-part)
+10. [Presentation](#10-presentation)
 
 ## 1. Git and Kit
 ### 1.a Partner, team git repo setup
