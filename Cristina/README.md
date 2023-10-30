@@ -9,7 +9,7 @@ My portfolio
 - [Reflection](/Cristina/reflections/reflection01/reflection01.md)
 
 ## Second day
-- [Research records](/TeamTwo/exercises/exercise02/)
+- [Research records](/TeamThree/exercises/exercise%2002#exercise-02)
 
 - [Lab records](/TeamThree#3-iotempower-gateway---our-own-network)
 
