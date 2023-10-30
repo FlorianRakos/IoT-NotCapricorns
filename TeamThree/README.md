@@ -499,8 +499,7 @@ Dry:
 We did not do the optional exercise.
 
 ## 8. Final IOT Project
-## 9. Volkers Part 1
-## 10. Volkers Part 2
-## 11. Volkers Part 3
-## 12. Volkers Part 4
+## 9. Volkers Part
+See:
+"Link to folder and document is being created"
 ## 13. Presentation
