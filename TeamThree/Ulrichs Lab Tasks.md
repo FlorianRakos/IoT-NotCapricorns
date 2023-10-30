@@ -1,6 +1,6 @@
 # Teamfolder
 
-Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures of IoT.
+Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures from Ulrich.
  
 ## Index
 1. [Git and Kit](#1-git-and-kit)
