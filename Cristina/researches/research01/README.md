@@ -11,13 +11,14 @@
    * 1.6 [What are your expectations from this class?](/Cristina/researches/research01/README.md#what-are-your-expectations-from-this-class)
 2. [IoT](/Cristina/researches/research01/README.md#iot)
    * 2.1 [What does Internet of Things entail?](/Cristina/researches/research01/README.md#what-does-internet-of-things-entail)
-   * 2.1 [Domains](/Cristina/researches/research01/README.md#domains)
-   * 2.1 [Commonly used data protocols](/Cristina/researches/research01/README.md#commonly-used-data-protocols
+   * 2.2 [Domains](/Cristina/researches/research01/README.md#domains)
+   * 2.3 [Commonly used data protocols](/Cristina/researches/research01/README.md#commonly-used-data-protocols
 )
-   * 2.1 [Typical devices](/Cristina/researches/research01/README.md#typical-devices
+   * 2.4 [Typical devices](/Cristina/researches/research01/README.md#typical-devices
 )
-   * 2.1 [Wjhat are the benefits of IoT?](/Cristina/researches/research01/README.md#what-are-the-benefits-of-iot
+   * 2.5 [What are the benefits of IoT?](/Cristina/researches/research01/README.md#what-are-the-benefits-of-iot
 )
+   * 2.6 [What are the challenges?](/Cristina/researches/research01/README.md#what-are-the-challenges)
 
 ## Who are U?
 Answer the following questions:
