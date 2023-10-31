@@ -10,7 +10,7 @@ We started work on getting the raspberry Pi up and running. We had some trouble 
 This exercise is quite familiar to me, I spent time to explaining it to my teammates and getting them involved. I was once again confronted with the task of programming a toggle button. I decided the 1 second delay was good enough.
 
 ### exercise 3b
-We wrote a story about one of our personas using one of the products we're planning to create. I'm not sure I learned that much, but we were complimented on it.
+We wrote a [story](/TeamThree/exercises/exercise%2003/scenario.md) about one of our personas using one of the products we're planning to create. I'm not sure I learned that much, but we were complimented on it.
 
 ## Opinions
 

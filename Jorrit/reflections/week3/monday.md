@@ -20,3 +20,7 @@ I'd never heard of sfpt before but it's the kind of thing I was confused didn't 
 I asked ChatGPT but I could not be bothered with doing it via powershell, so I installed WinSCP instead. I tried to connect and it failed because sftp wasn't installed yet. I installed it ```opkg install openssh-sftp-server```, connected, and then I could download a dhcp.leases file and upload a png.
 
 The key upload was simple and adding the link to the file wasn't difficult either. The difficult bit was me forgetting to run ```opkg update``` so I still couldn't find the mqttbroker package.
+
+## Opinions
+- Volker seems to teach in a more traditional style, which was a bit more difficult for me to pay attention to.
+- People are pretty rude about Ulno's teaching and I must say I disagree (not trying to brown-nose, I'm just an opinionated contrarian). Given the time we had and the effort put in by the students, I think we got a lot done. Some of my classmates are motivationally bankrupt and view any difficult challenge as something to avoid.
