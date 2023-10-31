@@ -22,16 +22,16 @@ We drew a [sketch](/Cristina/additionalThings/sketch.jpg) to show how these conc
 ### What is especially unsuitable? Why?
  * Text: they may not be ideal for devices with limited computational capabilities or when efficiency is a priority. 
  * XML: is well structured as you can specify a lot of things that makes comunication easy. Because of the schemas and over especification, there where a lot of incompatibilities.
-## IoT Empower Gateway
+## IoT Empower Gateway (I)
 ### What are the main steps?
 ### What stands out (i.e. SD-card hint)?
 ### What is the point, why do we need a gateway? What will be the alternatives?
-## Turn on the Light
+## Turn on the Light (I)
 ### What are the main steps?
 ### Anything standing out?
 ### How could we use a button on another Wemos D1 Mini to trigger this (not with the browser)?
-## Gateway setup log (3)
-## Gateway services offered (3)
-## Led on/off on Web Request (3a)
+## Gateway setup log (3) (P)
+## Gateway services offered (3) (P)
+## Led on/off on Web Request (3a) (P)
 ## Second ESP32 as Webclient, controlling LED Webserver (3a)
 ## Second ESP32 with button as Webclient, controlling Webserver (3a)
