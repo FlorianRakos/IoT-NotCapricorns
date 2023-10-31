@@ -56,4 +56,6 @@ Nodes: Individual IoT devices such as sensors and actuators, forming the fundame
 A visual Representation can be seen in the following image:
 
 <img src="../../../Florian/pictures/IoTEnvironment.jpg" width=500>
+<img src="/Gift/PicturesGift/day 2 diagram(IOTENVIRONMENT).jpg" width=500>
+
 

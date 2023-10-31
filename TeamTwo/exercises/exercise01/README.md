@@ -5,7 +5,7 @@ For the first exercise we wrote three small Arduino programs.
 ## Tasks
 
 ### Making a LED that's controllable with a Button
-Therfore we connected the D1 Mini to a 5V Powersource, in our Case our Laptop port via USB. Next we connect the 5V Pin to a Switch. Then we connect the Switch to a 330Ohm Resistor which is then connected to the LED. Finally The LED is connected with the Ground Pin of the D1 Mini. When Power is applied the LEDs light up whenever the Button is pressed
+Therfore we connected the Wemos D1 Mini to a 5V Powersource, in our Case our Laptop port via USB. Next we connect the 5V Pin to a Switch. Then we connect the Switch to a 330Ohm Resistor which is then connected to the LED. Finally The LED is connected with the Ground Pin of the D1 Mini. When Power is applied the LEDs light up whenever the Button is pressed
 <br>
 <img src="../../pictures/exercise01/ButtonNotPressed.jpg" alt="ButtonNotPressed" width="300"/> 
 <img src="../../pictures/exercise01/ButtonPressed.jpg" alt="ButtonPressed" width="300"/>

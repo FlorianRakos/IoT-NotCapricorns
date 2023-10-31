@@ -1,8 +1,6 @@
 # Research records 01
 
-## Lecture slides
 
-The slides for this lecture can be found here: ...
 
 ## Who are U?
 Answer the following questions:
@@ -21,7 +19,7 @@ I know the RaspberryPI and Arduino, and I have used the Raspberry PI Pico.
 I guess a maker is someone who likes to create electronic solutions for problems or tinker around. 
 
 ### What do you already know about IoT?
-I only have a basic understanding about what IoT is. I also 
+I only have a basic understanding about what IoT is.
 
 ### What are your expectations from this class?
 I expect to learn about how to connect different Sensors with a Microcontroller and how to connect the Microcontroller with other devices and the internet.
