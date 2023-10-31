@@ -33,5 +33,5 @@ We drew a [sketch](/Cristina/additionalThings/sketch.jpg) to show how these conc
 ## Gateway setup log (3) (P)
 ## Gateway services offered (3) (P)
 ## Led on/off on Web Request (3a) (P)
-## Second ESP32 as Webclient, controlling LED Webserver (3a)
-## Second ESP32 with button as Webclient, controlling Webserver (3a)
+## Second ESP32 as Webclient, controlling LED Webserver (3a) (P)
+## Second ESP32 with button as Webclient, controlling Webserver (3a) (P)
