@@ -10,7 +10,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [2.b Breadboard and Electronic Prototyping](#2b-breadboard-and-electronic-prototyping)
    * [2.c Blink on the Wemos D1 Mini](#2c-blink-on-the-wemos-d1-mini)
    * [2.d Toggle Led With Button](#2d-toggle-led-with-button)
-3. [IoTempower Gateway, Actors and Sensors](#3-iotempower-gateway-our-own-network)
+3. [IoTempower Gateway Actors and Sensors](#3-iotempower-gateway-actors-and-sensors)
    * [3.a Actors and Sensors with Web Requests](#3a-actors-and-sensors-with-web-requests)
    * [3.b Stories and Scenario](#3b-stories-and-scenario)
 4. [MQTT Introduction and Simulators](#4-mqtt-introduction-and-simulators)
@@ -95,7 +95,7 @@ Blink on the Wemos D1 Mini Exercise:
 
 - Outcome: We now have a functional LED that can toggle on and off with a button press, but it keeps blinking if the button is held down.
 
-## 3. IoTempower Gateway, Actors and Sensors
+## 3. IoTempower Gateway Actors and Sensors
 
 ### 3.a Actors and Sensors with Web Requests
 
