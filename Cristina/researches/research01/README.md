@@ -43,6 +43,7 @@ In this classes i’ll try to don’t get lost and learn as many things as I can
 
 
 ## IoT
+We asked the following questions after seeing the Bosch and TIA videos
 
 ### What does Internet of Things entail?
 Internet of Things refers as the interconnection of everyday objects and devices to the internet, allowing them to send and receive data. 
@@ -51,9 +52,9 @@ Internet of Things refers as the interconnection of everyday objects and devices
 * Smart Home: includes all the devices and systems used in residences to enhance comfort, security, and energy efficiency.
     * This domain usually includes: smart thermostats, smart lighting systems, smart security cameras and locks  and voice-activated smart assistants like Amazon Echo or Google Home
 * Industrial IoT (IIoT): application of IoT technologies in manufacturing and industrial settings. Devices and systems in this domain aim to improve operational efficiencies, safety, and maintenance predictability. 
-    * This domain usually includes connected machinery that reports its operational status in real-time, sensors that monitor                   environmental conditions in factories and systems that predict when machinery will require maintenance or repair
+    * This domain usually includes connected machinery that reports its operational status in real-time, sensors that monitor environmental conditions in factories and systems that predict when machinery will require maintenance or repair
 * Healthcare: The healthcare domain leverages IoT for patient monitoring, personalized treatment, and improving overall patient care. 
-    * This domain usually includes wearable health monitors (that track vital statistics like heart rate, oxygen levels, or glucose             levels), remote patient monitoring systems (that allow healthcare professionals to monitor patients outside of traditional                 healthcare settings) and smart pill bottles that notify patients when it's time to take their medication
+    * This domain usually includes wearable health monitors (that track vital statistics like heart rate, oxygen levels, or glucose levels), remote patient monitoring systems (that allow healthcare professionals to monitor patients outside of traditional healthcare settings) and smart pill bottles that notify patients when it's time to take their medication
 
 
 ### Commonly used (data) protocols
