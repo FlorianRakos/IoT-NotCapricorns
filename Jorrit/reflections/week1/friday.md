@@ -16,7 +16,7 @@ I read this task and decided I hated it. We did this task as a team, different p
 
 ##### 2
 This one was already being done by 2 others and they actually started putting it together, which wasn't actually in the scope of the task.
-I heard the term 'voltage divider' and got a traumatic flashback to a lecture I didn't get years ago. I will try to put the thing together when we actually have to next week.
+I heard the term 'voltage divider' and got a traumatic flashback to a lecture I didn't understand years ago. I will try to put the thing together when we actually have to next week.
 
 #### 6.1b
 I struggled to understand the documentation server. I ran the command on the Pi and then realised I can't easily reach a locally hosted server on the Pi from my laptop. A kind helper pointed out that the default page of the Pi is already the documentation.
