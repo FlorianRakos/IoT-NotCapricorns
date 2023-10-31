@@ -95,7 +95,7 @@ Blink on the Wemos D1 Mini Exercise:
 
 - Outcome: We now have a functional LED that can toggle on and off with a button press, but it keeps blinking if the button is held down.
 
-## 3. IoTempower Gateway - Our Own Network
+## 3. IoTempower Gateway, Actors and Sensors
 
 ### 3.a Actors and Sensors with Web Requests
 
