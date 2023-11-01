@@ -79,22 +79,23 @@ RSA can be used for services such as digital signatures, key exchanges and for e
  How are RSA key exchange and SSL/TLS related/
 RSA key exchange in SSL/TLS is used for securely exchanging keys and authenticating the server. It relies on RSA's public key encryption to establish a secure session key for data encryption.
 
-you need 3 files to secure your web
+#### DAY 2 LECTURE ###
 
-Tasks (individually): Explore how one can . . .
-make notes in your personal portfolio!
-access the WEB interface of OpenWRT.
-i was able to do that.
-
-
-discover the symbolic host name of the lan interface address.
-ssh into the router using the IP address or the symbolic host name and execute shell commands.
-sftp into the router and upload/download files to and from it.
-install new packages on the router using either
-the WEB interface
-or the opkg command line utility
-??? where are the remote package repositories configured?
-The remote package repositories, from which packages are downloaded and installed, are configured in the OpenWRT router's package management system
-
-
+## Number of Server Instances (Services):
+The number of server instances and the type of services they offer depend on how you configure mqttbroker. It's common to configure a single MQTT broker instance.it offers 5 different servers
+### Type of Service:
+MQTT brokers typically offer message broker services that handle MQTT publish/subscribe messaging.
+### Protocol:
+MQTT brokers are accessible via the MQTT protocol (MQTT over TCP) for communication.
+### Configuration Sections (Categories):
+The specific configuration sections (categories) can vary depending on the MQTT broker implementation. Typically, you will have sections related to MQTT topics, access control, logging, and other broker-specific settings.
+### Encryption Configuration:
+For encrypted communication using SSL/TLS, you will typically find a configuration section in the configuration file that is specific to SSL/TLS settings. The section name and available options can vary. It's common to have options related to SSL/TLS certificates and key files, the choice of ciphersuites, and ports.
+### SSL/TLS Encryption Options:
+The options that can be configured for SSL/TLS encryption include:
+Paths to SSL/TLS certificate and key files
+Allowed SSL/TLS protocols (TLS 1.2, TLS 1.3, etc.)
+Choice of ciphersuites and their order of preference
+Certificate authority (CA) certificates for client and server authentication
+Enabling or disabling SSL/TLS for various components of the MQTT broker (e.g., client connections, broker-to-b
 
