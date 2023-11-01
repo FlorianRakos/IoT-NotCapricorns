@@ -30,16 +30,29 @@ Formats: Text, XML, JSON, YAML and Binary
 ### What is especially unsuitable? Why?
  * Text: they may not be ideal for devices with limited computational capabilities or when efficiency is a priority. 
  * XML: is well structured as you can specify a lot of things that makes comunication easy. Because of the schemas and over especification, there where a lot of incompatibilities.
+   
 ## IoT Empower Gateway (I)
 ### What are the main steps?
+See the steps [HERE](/TeamTwo/exercises/exercise02#potential-steps-and-challenges)
+
 ### What stands out (i.e. SD-card hint)?
+For me, the infrastucture of the gateway stand out. Aesthetically, it wasn't particulary pretty but I didn't find it ugly either.
+
 ### What is the point, why do we need a gateway? What will be the alternatives?
-## Turn on the Light (I)
+We need it to bridge communication between diverse devices and the cloud, enabling protocol translation, data aggregation, and security. Some alternatives could be direct cloud connectivity, edge computing or cloud-to-cloud integration.
+
+## Turn on the Light / Led on/off on Web Request
 ### What are the main steps?
+See the steps [HERE](/TeamTwo/exercises/exercise02#potential-steps-and-challenges)
+
 ### Anything standing out?
+Nope
+
 ### How could we use a button on another Wemos D1 Mini to trigger this (not with the browser)?
-## Gateway setup log (3) (P)
-## Gateway services offered (3) (P)
-## Led on/off on Web Request (3a) (P)
+We could use MQTT to set up communication between them.
+
+## Gateway setup log (3)
+See the steps [HERE](/TeamTwo/exercises/exercise02#potential-steps-and-challenges)
+
 ## Second ESP32 as Webclient, controlling LED Webserver (3a) (P)
 ## Second ESP32 with button as Webclient, controlling Webserver (3a) (P)
