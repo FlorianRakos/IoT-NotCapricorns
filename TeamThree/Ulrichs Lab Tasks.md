@@ -161,6 +161,8 @@ We also used our consoles to talk to each other, shown below:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d282b68b-02a1-483b-9b64-efed6a489516" target="_blank">See picture here</a>)
 
 ### 4.b MQTT Integration
+We first familiarized with mqtt_action and then rebuilt the example from the video.
+<br><br>
 To rebuild the air conditioning integratior component from the video, we first created a virtual environment in python using the following command: 
 ```python
 -m venv /path/to/new/virtual/environment
