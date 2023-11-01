@@ -69,7 +69,7 @@ We didn't want to create a new function to break down the RGB string the right w
 Finally, we made the Access Control System. We used the RFID project we worked on before. We also added a small traffic light, a buzzer, and the lock to the circuit, as you can see in the picture.
 <br><br><img src="/Gift/PicturesGift/exercise06/Accesscontrollsystem_Circuit.jpg" width="1000"><br><br>
 Next, we made some changes to the setup.cpp. We added a few things to make it work better. We made it show information for the traffic light, the lock, and a device that makes a buzzing sound. You can see these changes in the code..
-<br><br><img src="../../pictures/exercise06/Accesscontrollsystem_Code.jpg" width="1000"><br><br>
+<br><br><img src="/Gift/PicturesGift/exercise06/Accesscontrollsystem_Code.jpg" width="1000"><br><br>
 I made some changes and started fixing a computer program called NodeRED. It was supposed to do something with RFID cards. I added some new parts to make it work better. I put in some special buttons to control the light, a buzzer, and a lock. I also made it so the buzzer turns off after 1 second. But the lock didn't do what we wanted. The next day, we found out it needed more power, like 12 volts, to work properly. We wanted to try again, but we were too busy that day.
 
 <br><br><img src="/Gift/PicturesGift/exercise06/RFID_System_NodeRED.JPG" width="1000"><br><br>
