@@ -363,7 +363,7 @@ Discovering where to create the discord bot was complicated, but after some aski
 
 ## 6. Device Control with IoTempower
 ### 6.a Exploring IoTempower Services and Commands
-
+We wrote both the tool suport and documentation on a drive document linked [HERE](https://docs.google.com/document/d/1SMFhRlTP5ns-kHlcEid_c506uAFfQpNq/edit?usp=sharing&ouid=107652657307043314785&rtpof=true&sd=true)
 ### 6.b First Node
 
 ### 6.c Second Node
