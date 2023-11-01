@@ -377,7 +377,7 @@ Description
 * We first plugged rfid to the breadboard and wired it to the d1 mini following the wiring in the documentation like so:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/e3db2f98-dafa-405d-be24-ccf9c68afb4b" target="_blank">See RFID Circuit here</a>).
 * We initialise the serial 
-* It fails provably because of missing ;
+* It fails probably because of missing ;
 * It keeps failing until we realise we forgot to wire the 3.3V to the 3V3.
 * We connect the following functions on Node-red:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/41ff379a-3d12-4377-984c-67f2a94acf82" target="_blank">See RFID NodeRED here</a>).
