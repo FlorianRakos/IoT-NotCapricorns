@@ -100,7 +100,9 @@ Blink on the Wemos D1 Mini Exercise:
 ### 3.a Actors and Sensors with Web Requests
 
 ### 3.b Stories and Scenario
-Foot Mouse & Accessibility Software Scenario
+This is the first version of the story, where we got feedback from the professor. Ulno really liked the first line where we	introduce the location and the personas
+
+#### Foot Mouse & Accessibility Software Scenario
 
 Company: LoudWhisper, Project Manager: Roberto, Employee: Matthijs, CEO: Pieter
 
