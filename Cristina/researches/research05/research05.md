@@ -1,13 +1,14 @@
+# Day 5
 Today we reflected on scaling and testing IoT and I made the following notes:
-## 1. What will be issues scaling up (system size, number of systems, management)?
+## Scaling and Testing
+### 1. What will be issues scaling up (system size, number of systems, management)?
 * Data Management
 * Power Management
 * Security Concerns
 * Device Management
 * Interoperability 
 
-
-## 2. How can we do testing?
+### 2. How can we do testing?
 * User Experience or User Acceptance Testing
 * Simulations:
   * Device Simulators
