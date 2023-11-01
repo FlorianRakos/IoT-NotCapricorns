@@ -16,6 +16,14 @@ Click [HERE](/TeamThree/Ulrichs%20Lab%20Tasks.md#3b-stories-and-scenario) to tak
 We drew a [sketch](/Cristina/additionalThings/sketch.jpg) to show how these concepts are related.
 
 ## Exchange Formats
+Formats: Text, XML, JSON, YAML and Binary
+
+ * Text: Encoding (e.g., UTF-8, ASCII) Parsing Serialization Plain text String Characters
+ * XML (eXtensible Markup Language): Elements Attributes Schema XSLT (XML Stylesheet Language Transformations) DOM (Document Object Model) Namespaces Validation XPath DTD (Document Type Definition)
+ * JSON (JavaScript Object Notation): Objects Arrays Key-value pairs String Number Boolean Null Parsing Serialization
+ * YAML (YAML Ain't Markup Language): Scalars Sequences (lists) Mappings (hashes or dictionaries) Anchors Aliases Indentation Multiline strings Key-value pairs
+ * Binary: Byte Bit Binary protocols (e.g., MQTT, CoAP) Serialization Deserialization Endianness (Little-endian, Big-endian)
+
 ### What is especially suitable for IoT systems (where in architecture)? Why?
  * JSON: it is widdely supported, but if you want to sent a lot of data in small document it is not the best.
  * YAML: it supports comments and has more data types. It is more readable than YAML. It has some format aspects.
