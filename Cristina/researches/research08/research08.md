@@ -1,1 +1,2 @@
-No lesson today, worked on [tasks](/TeamThree/Ulrichs%20Lab%20Tasks.md#7c-moisture-sensor), the final project and the portfolio.
+# Day 8
+No lesson today, worked on [tasks]([/Cristina/LabRecords/LabRecord08.md), the final project and the portfolio.
