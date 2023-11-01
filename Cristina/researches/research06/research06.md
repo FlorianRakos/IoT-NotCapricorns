@@ -1,4 +1,5 @@
-# Index
+# Day 6
+## Index
 1. [Update on the “nice-to-have feature-list”](/Cristina/researches/research06/research06.md#update-on-the-nice-to-have-feature-list)
 2. [IoTempower”](/Cristina/researches/research06/research06.md#iotempower)
 3. [System in folders](/Cristina/researches/research06/research06.md#system-in-folders)
@@ -6,25 +7,29 @@
 5. [Compilation](/Cristina/researches/research06/research06.md#compilation)
 6. [Filters video](/Cristina/researches/research06/research06.md#filters-video)
 7. [Stories](/Cristina/researches/research06/research06.md#stories)
-## Update on the “nice-to-have feature-list”
-  * Unified framework: Not have to use that many different programs
-  * More documentation and context on the tasks
-  * Specific hardware for our projects
-  * Specific tasks that help us directly with the project
-  * Freedom to do the portfolio wherever we want and present it in pdf. It’s hard to do it in Git
+
+## Generic Steps for adding devices
+1- Check Official Documentation: Look for official documentation or user guides provided by the IoTempower platform. These documents typically contain detailed instructions on how to set up and add devices to the platform.
+2- Contact Support: If there is no documentation available, consider reaching out to the IoTempower support team. They should be able to provide you with step-by-step instructions or direct assistance.
+3- Community Forums or Resources: Search for online community forums, discussion boards, or resources related to IoTempower. Sometimes, users share their experiences and insights on how to add devices.
+4- Trial and Error: If you have access to the platform, you might explore its user interface to see if there are intuitive options for adding devices. Often, IoT platforms offer a user-friendly interface for this purpose.
+5- IoT Standards: If IoTempower adheres to standard IoT protocols like MQTT or CoAP, you can use standard tools or libraries to add devices. For example, using MQTT, you'd typically publish messages to specific topics to add devices.
+6- Consult the Platform Provider: If you are working with a specific organization that provides the IoTempower platform, consider reaching out to their technical team for guidance.
 
 ## IoTempower
 ### You already know how to install IoTempower through a pi image, what other ways of using/installing it are there?
+You can install it on Linux or WSL by cloning the git repository
+
+### What is the role of the different folders in lib/node_types?
+There are base links pointing to different directories. There is this directory and then other directories pointing to this directory (inheritance design)
+
 ### Where and what are the tools/commands/scripts?
 There is documentation for the commands in the command reference and scrips in the tool support (scripts that you can put in the command line)
 
 ### Where is documentation?
 Git > IoTempower > doc
 
-### What is the role of the different folders in lib/node_types?
-There are base links pointing to different directories. There is this directory and then other directories pointing to this directory (inheritance design)
-
-## System in folders
+## System in folders 
 ### Which topic needs to be called with what to 
 ### switch on the coffee machine?
 kitchen/coffee-machine/switch/set/on
@@ -86,5 +91,14 @@ Binarize, jmc_interval_median.
 ### What is the “fluent” style?
 Puttung everything in one line when we can, non repetitive code, or cahining methods.
 
+## Update on the “nice-to-have feature-list”
+  * Unified framework: Not have to use that many different programs
+  * More documentation and context on the tasks
+  * Specific hardware for our projects
+  * Specific tasks that help us directly with the project
+  * Freedom to do the portfolio wherever we want and present it in pdf. It’s hard to do it in Git
+
 ## Stories
 We also adapted the stories we made last week [(link)](/TeamThree#3b-stories-and-scenario) to the iot project we will do. [Here](/TeamThree/README.md#23102023-story-update) is the update.
+
+Go to [Lab Tasks](/Cristina/LabRecords/LabRecord06.md)
