@@ -9,12 +9,12 @@
 7. [Stories](/Cristina/researches/research06/research06.md#stories)
 
 ## Generic Steps for adding devices
-1- Check Official Documentation: Look for official documentation or user guides provided by the IoTempower platform. These documents typically contain detailed instructions on how to set up and add devices to the platform.
-2- Contact Support: If there is no documentation available, consider reaching out to the IoTempower support team. They should be able to provide you with step-by-step instructions or direct assistance.
-3- Community Forums or Resources: Search for online community forums, discussion boards, or resources related to IoTempower. Sometimes, users share their experiences and insights on how to add devices.
-4- Trial and Error: If you have access to the platform, you might explore its user interface to see if there are intuitive options for adding devices. Often, IoT platforms offer a user-friendly interface for this purpose.
-5- IoT Standards: If IoTempower adheres to standard IoT protocols like MQTT or CoAP, you can use standard tools or libraries to add devices. For example, using MQTT, you'd typically publish messages to specific topics to add devices.
-6- Consult the Platform Provider: If you are working with a specific organization that provides the IoTempower platform, consider reaching out to their technical team for guidance.
+ * 1- Check Official Documentation: Look for official documentation or user guides provided by the IoTempower platform. These documents typically contain detailed instructions on how to set up and add devices to the platform.
+ * 2- Contact Support: If there is no documentation available, consider reaching out to the IoTempower support team. They should be able to provide you with step-by-step instructions or direct assistance.
+ * 3- Community Forums or Resources: Search for online community forums, discussion boards, or resources related to IoTempower. Sometimes, users share their experiences and insights on how to add devices.
+ * 4- Trial and Error: If you have access to the platform, you might explore its user interface to see if there are intuitive options for adding devices. Often, IoT platforms offer a user-friendly interface for this purpose.
+ * 5- IoT Standards: If IoTempower adheres to standard IoT protocols like MQTT or CoAP, you can use standard tools or libraries to add devices. For example, using MQTT, you'd typically publish messages to specific topics to add devices.
+ * 6- Consult the Platform Provider: If you are working with a specific organization that provides the IoTempower platform, consider reaching out to their technical team for guidance.
 
 ## IoTempower
 ### You already know how to install IoTempower through a pi image, what other ways of using/installing it are there?
