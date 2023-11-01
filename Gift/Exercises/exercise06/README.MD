@@ -74,10 +74,10 @@ I made some changes and started fixing a computer program called NodeRED. It was
 
 <br><br><img src="/Gift/PicturesGift/exercise06/RFID_System_NodeRED.JPG" width="1000"><br><br>
 In this picture, you can see the system when it's all closed and secure.
-<br><br><img src="./Gift/PicturesGift/exercise06/Accesscontrollsystem_Closed.jpg" width="1000"><br><br>
+<br><br><img src="/Gift/PicturesGift/exercise06/Accesscontrollsystem_Closed.jpg" width="1000"><br><br>
 
 In the following picture, we used a special tag with an RFID reader to open the system. There is a small green light, like a tiny bulb, but it doesn't shine very brightly. It's quite dim, but you can notice it if you look at it closely, especially when you compare it to the previous picture.
-<br><br><img src="./Gift/PicturesGift/exercise06/Accesscontrollsystem_Open.jpg" width="1000"><br><br>
+<br><br><img src="/Gift/PicturesGift/exercise06/Accesscontrollsystem_Open.jpg" width="1000"><br><br>
 Here, you can look at all the messages that use MQTT, which is a way for devices to talk to each other. You can also see how different devices are doing, like if they are working well or not..
 <br><br><img src="/Gift/PicturesGift/exercise06/RFID_System_Console.JPG" width="1000"><br><br>
 
