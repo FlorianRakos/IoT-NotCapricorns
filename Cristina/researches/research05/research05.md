@@ -29,3 +29,5 @@ Simulators are crucial for testing large-scale IoT deployments without actually 
 MQTTs role is central in ensuring efficient, reliable, and real-time communication, especially when scaling up.
 
 Stories help define the requirements and objectives of the IoT system, guiding development and testing. By understanding the desired outcome or behavior through stories, the IoT solution can be scaled and optimized appropriately.
+## Tasks
+The rest of the tasks are linked [HERE](/Cristina/LabRecords/LabRecord05.md)
