@@ -2,39 +2,48 @@
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures from Volker.
  
 ## Index
-1. [Git and Kit](#1-git-and-kit)
+1. [1. Identify Security Risks](#1.-Identify-Security-Risks)
    * [1.a Partner, team git repo setup](#1a-partner-team-git-repo-setup)
    * [1.b The Kit](#1b-the-kit)
+10. Explore the SSL/TLS Configuration Options of mqttbroker
+## 9. Explore the SSL/TLS Configuration Options of mqttbroker 
+## 8. Installation of the mqttbroker Package on the Router
+## 7. Prepare Installation of the Package mqttbroker
+## 6. Learn about OpenWRT
+## 5. Symmetric validation
+## 4. RSA Key Exchange
+## 3. Diffie-Hellman Key Exchange
+## 2. The chain of trust
 
 ## 1. Identify Security Risks 
 For the next excercise we need to use our scenario to identify the security risks that can occur.
 
-### 1.a Which security vulnerabilities did you encounter in your IoT scenarious? 
+**Which security vulnerabilities did you encounter in your IoT scenarious?**
  * Device (footmouse) security and management
  * Lack of monitoring and logging
  * Lack of privacy protections
  * Unauthorized access to cloud storage
  * Insider threats (Roberto or Pieter)
 
-### 1.b Which measures can be taken to close the vulnerabilities?
+**Which measures can be taken to close the vulnerabilities?**
 *Device Security and Management:*
  * Regular Updates: to patch any known vulnerabilities.
  * Secure Boot: to ensure that the device only boots with trusted software.
  * Hardware-based Security: such as Trusted Platform Modules (TPM) or Hardware Security Modules (HSM), for cryptographic      operations and secure key storage.
  * Remote Device Management:  to allow administrators to monitor, update, and manage devices remotely.
  * Device Authentication: Use strong authentication mechanisms to ensure that only authorized devices can connect to the network.
-### 1.c Lack of Monitoring and Logging:
+**Lack of Monitoring and Logging:**
  * Enable Logging: Ensure all devices have logging capabilities enabled, capturing all relevant events and anomalies.
  * Centralized Monitoring: Use a centralized monitoring system to aggregate logs from all devices, making it easier to detect anomalies or security breaches.
  * Real-time Alerts: Implement real-time alerting mechanisms to notify administrators of suspicious activities or system failures.
  * Regular Audit: Conduct periodic audits of logs to identify any unusual patterns or activities.
-### 1.d Lack of Privacy Protections:
+**Lack of Privacy Protections:**
  * Data Minimization: Collect only the necessary data required for the device's function.
  * Data Encryption: Encrypt data at rest and in transit using strong encryption algorithms.
  * Data Retention Policies: Define and enforce data retention policies, ensuring that old and unnecessary data is securely deleted.
  * User Consent: Ensure that users provide informed consent before collecting any personal data, and provide options for users to opt-out or delete their data.
  * Privacy Impact Assessments: Conduct regular privacy impact assessments to identify and mitigate potential privacy risks.
-### 1.e Unauthorized Access to Cloud Storage:
+**Unauthorized Access to Cloud Storage:**
  * Strong Authentication: Implement multi-factor authentication (MFA) for accessing cloud storage.
  * Role-based Access Control (RBAC): Assign access rights based on roles within the organization, ensuring that users only have the permissions they need.
  * Encryption: Encrypt data stored in the cloud.
@@ -42,7 +51,7 @@ For the next excercise we need to use our scenario to identify the security risk
  * Network Security: Use Virtual Private Cloud (VPC), firewalls, and other network security tools to restrict unauthorized network access.
  * Audit Logs: Maintain audit logs for all accesses and modifications to the data in cloud storage.
  * Cloud Provider Security: Ensure that the chosen cloud storage provider adheres to best security practices and complies with relevant regulations.
-### 1.f Insider Threats Vulnerability
+**Insider Threats Vulnerability**
  * Access Control:
     * Implement the Principle of Least Privilege (PoLP).
     * Use Role-based Access Control (RBAC).
@@ -96,17 +105,18 @@ In communication, another representative could be "word of mouth" or "rumor mill
 *Which one is more secure*
 Neither method offers cryptographic security. However, a "root of trust" might be considered more reliable as there's a clear source of information, while the "web of trust" is more prone to distortions or misinformation due to its decentralized nature.
 
-## Diffie-Hellman Key Exchange
+## 3. Diffie-Hellman Key Exchange
 **How are Diffie-Hellman key exchange and SSL/TLS related?** 
 Diffie-Hellman helps SSL/TLS (secure web connections) set up a secret code that both the user and the website use to keep their conversation private.
 
-## RSA Key Exchange
+## 4. RSA Key Exchange
 **How are RSA key exchange and SSL/TLS related?**
 RSA key exchange plays a vital role in SSL/TLS by enabling the secure creation of an encrypted connection between a user's device (client) and a website's server. This ensures that the data exchanged between them is protected and cannot be easily intercepted or read by malicious parties.
 
 The main difference with the two exchanges is that HD uses the same key to encrypt and decrypt, and in RSA the key to encrypt is not the same as the one to decrypt
+10. Explore the SSL/TLS Configuration Options of mqttbroker
 
-## Symmetric validation
+## 5. Symmetric validation
 **forces Bob to validate Alice's certificate?**
 Bob validates Alice's certificate to ensure he's connecting to the real Alice and not an imposter, enhancing security and trust.
 **Is it possible to also force Alice to validate Bob's identity?**
@@ -114,7 +124,7 @@ Yes, Alice can also validate Bob's identity using his certificate for mutual aut
 **Which additinal certificates are necessary?**
 Necessary certificates include Alice's signed certificate from a trusted CA, Bob's certificate (if configured), and the CA's certificate (EXCA) for validation. These certificates establish trust and security.
 
-## Learn about OpenWRT
+## 6. Learn about OpenWRT
  * Make notes in your personal portfolio!
  * Access the WEB interface of OpenWRT.
  * Discover the symbolic host name of the lan interface address.
@@ -127,7 +137,7 @@ Necessary certificates include Alice's signed certificate from a trusted CA, Bob
 **Where are the remote package repositories configured?**
 in the /etc/opkg/distfeeds.conf file and /etc/opkg.conf file.
 
-## Prepare Installation of the Package mqttbroker
+## 7. Prepare Installation of the Package mqttbroker
 *Tasks (group): Add Package Repository to OpenWRT*
 1. Download the file with name 7646d48820c9bd9d containing the public package signing key from https://www.vchrist.at/owrt . Such keys are used by OpenWRT for validating the origin of packages. 
 2. Upload this file (don’t change it’s name) into the directory /etc/opkg/keys/ on the router. 
@@ -138,7 +148,7 @@ This can be done either using:
     * the WEB interface of the router 
     * or by hand using an editor. Install one if none is installed on the router (e.g. vi, joe, nano). 
 
-## Installation of the mqttbroker Package on the Router
+## 8. Installation of the mqttbroker Package on the Router
 *Tasks (group): Install mqttbroker on the router:*
 1. Use the WEB interface or the command line to install the mqttbroker package.  This package contains the two MQTT v3.1.1 conform mqttbroker (replacement for mosquitto) and mqttintegrator (replacement for Node-RED) applications. 
     * Are the mqttbroker and mqttintegrator applications running after install? 
@@ -148,7 +158,7 @@ Jorrit did it
     * What happens?
 We skipped this part.
 
-## Explore the SSL/TLS Configuration Options of mqttbroker 
+## 9. Explore the SSL/TLS Configuration Options of mqttbroker 
 *Start exploring the mqttbroker command line interface and the SSL/TLS configuration options by appending --help to mqttbroker on the command line.
 Investigate the following:*
  * ??? how to request a full "template" command line for mqttbroker? 
@@ -161,7 +171,7 @@ Investigate the following:*
  * ??? which section of the instances providing encrypted communication, provides the configuration option for SSL/TLS? 
  * ??? what options can be configured for SSL/TLS encryption?
 
-## Explore the SSL/TLS Configuration Options of mqttbroker
+## 10. Explore the SSL/TLS Configuration Options of mqttbroker
 *Tasks (group): Port IoT Scenarios to mqttbroker:*
 1. Select a cool and working IoT scenario. 
 2. Duplicate selected arduino sketches and/or iotempower configurations.  
@@ -174,7 +184,7 @@ Do this systematically to not get confused.
  Hint: First port only one simple sketch or simple iotempower configuration and the corresponding Node-Red flow to test the infrastructure. 
 Hint: The ESP32 controler, desireably, should utilize the router WiFi instead of the RasPI one.
 
-### Questions
+**Questions**
 **How to request a full "template" command line for mqttbroker?**
 mqttbroker –commandline-full
 
