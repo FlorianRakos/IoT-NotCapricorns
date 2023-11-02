@@ -2,18 +2,14 @@
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures from Volker.
  
 ## Index
-1. [Identify Security Risks](#1-Identify-Security-Risks)
-   * [1.a Partner, team git repo setup](#1a-partner-team-git-repo-setup)
-   * [1.b The Kit](#1b-the-kit)
-2. [The chain of trust](#2-The-chain-of-trust)
-3. [Diffie-Hellman Key Exchange](#3-Diffie-Hellman-Key-Exchange)
-4. [RSA Key Exchange](#4-RSA-Key-Exchange)
-5. [Symmetric validation](#5-Symmetric-validation)
-6. [Learn about OpenWRT](#6-Learn-about-OpenWRT)
-7. [Prepare Installation of the Package mqttbroker](#7-Prepare-Installation-of-the-Package-mqttbroker)
-8. [Installation of the mqttbroker Package on the Router](#8-Installation-of-the-mqttbroker-Package-on-the-Router)
-9. [Explore the SSL and TLS Configuration Options of mqttbroker Part 1](#9-Explore-the-SSL-and-TLS-Configuration-Options-of-mqttbroker-part-1)
-10. [Explore the SSL and TLS Configuration Options of mqttbroker Part 2](#10-Explore-the-SSL-and-TLS-Configuration-Options-of-mqttbroker-part-2)
+1. [The chain of trust](#2-The-chain-of-trust)
+2. [Diffie-Hellman Key Exchange](#3-Diffie-Hellman-Key-Exchange)
+3. [RSA Key Exchange](#4-RSA-Key-Exchange)
+4. [Symmetric validation](#5-Symmetric-validation)
+5. [Learn about OpenWRT](#6-Learn-about-OpenWRT)
+6. [Prepare Installation of the Package mqttbroker](#7-Prepare-Installation-of-the-Package-mqttbroker)
+7. [Installation of the mqttbroker Package on the Router](#8-Installation-of-the-mqttbroker-Package-on-the-Router)
+8. [Explore the SSL and TLS Configuration Options of mqttbroker](#9-Explore-the-SSL-and-TLS-Configuration-Options-of-mqttbroker)
 
 ## 1 Identify Security Risks 
 For the next excercise we need to use our scenario to identify the security risks that can occur.
@@ -125,69 +121,34 @@ Yes, Alice can also validate Bob's identity using his certificate for mutual aut
 Necessary certificates include Alice's signed certificate from a trusted CA, Bob's certificate (if configured), and the CA's certificate (EXCA) for validation. These certificates establish trust and security.
 
 ## 6. Learn about OpenWRT
- * Make notes in your personal portfolio!
- * Access the WEB interface of OpenWRT.
- * Discover the symbolic host name of the lan interface address.
- * ssh into the router using the IP address or the symbolic host name and execute shell commands.
- * sftp into the router and upload/download files to and from it.
- * Install new packages on the router using either
-    * the WEB interface
-    * or the opkg command line utility
+We accessed the WEB interface of Open WRT and searched for the symbolic host name of the lan interface address that was OpenWrt
+Then we installed opkg update on PuTTY. On the first try the resource was temporarily unavailable because we tried to update it at the same time as Jorrit. When he finished, we tried again and it upgraded correctly.
+Log in:
+![OpenWRT_61access_and_update](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/80234fbd-c48d-47c4-aa29-7d593da2de3e)
+![OpenWRT_8_mqttbroker_install](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ac312252-82df-473f-95a5-f1d2a360a7f0)
+<br><br>
+We created a nano so that the packages get installed in the router. See here
+![OpenWRT_62new_packages](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ba2b8356-5ccd-4576-9ed8-33b98684017a)
 
 **Where are the remote package repositories configured?**
 in the /etc/opkg/distfeeds.conf file and /etc/opkg.conf file.
 
 ## 7. Prepare Installation of the Package mqttbroker
-*Tasks (group): Add Package Repository to OpenWRT*
-1. Download the file with name 7646d48820c9bd9d containing the public package signing key from https://www.vchrist.at/owrt . Such keys are used by OpenWRT for validating the origin of packages. 
-2. Upload this file (don’t change it’s name) into the directory /etc/opkg/keys/ on the router. 
-3. On the router add the line: 
-src/gz snodec https://www.vchrist.at/owrt/packages/aarch64_cortex-a53 
-to the file /etc/opkg/customfeeds.conf pointing to my package repository for the router.  Create the file if it doesn’t exist. 
-This can be done either using:
-    * the WEB interface of the router 
-    * or by hand using an editor. Install one if none is installed on the router (e.g. vi, joe, nano). 
+Jorrit downloaded the file with name 7646d48820c9bd9d containing the public package signing key from https://www.vchrist.at/owrt . He upload it into the directory /etc/opkg/keys/ on the router, and then added this line:
+src/gz snodec https://www.vchrist.at/owrt/packages/aarch64_cortex-a53 ,
+to the file /etc/opkg/customfeeds.conf.  
 
 ## 8. Installation of the mqttbroker Package on the Router
-*Tasks (group): Install mqttbroker on the router:*
-1. Use the WEB interface or the command line to install the mqttbroker package.  This package contains the two MQTT v3.1.1 conform mqttbroker (replacement for mosquitto) and mqttintegrator (replacement for Node-RED) applications. 
-    * Are the mqttbroker and mqttintegrator applications running after install? 
-Jorrit did it
+We then used the command line to install the mqttbroker package. 
 
-2. Start mqttbroker on the command line. If it is already running as a daemon stop the daemon. 
-    * What happens?
-We skipped this part.
+## 9. Explore the SSl and TLS Configuration Options of mqttbroker
 
-## 9. Explore the SSl and TLS Configuration Options of mqttbroker part 1
-*Start exploring the mqttbroker command line interface and the SSL/TLS configuration options by appending --help to mqttbroker on the command line.
-Investigate the following:*
- * ??? how to request a full "template" command line for mqttbroker? 
- * ??? how to retrief the current configuration of mqttbroker? 
- * ??? how to write current configuration to a config file? 
- * ??? how many server instances (services) does the mqttbroker offer? 
- * ??? what type of service do the individual instances offer? 
- * ??? via which protocol are the individual instances accessible? 
- * ??? do all server instances offer the same configuration sections (cathegories)? 
- * ??? which section of the instances providing encrypted communication, provides the configuration option for SSL/TLS? 
  * ??? what options can be configured for SSL/TLS encryption?
 
 ## 10. Explore the SSL and TLS Configuration Options of mqttbroker part 2
-*Tasks (group): Port IoT Scenarios to mqttbroker:*
-1. Select a cool and working IoT scenario. 
-2. Duplicate selected arduino sketches and/or iotempower configurations.  
-Do this systematically to not get confused. 
-3. Duplicate selected your Node-Red flows.  
-Do this systematically to not get confused. 
-4. Reconfigure selected IoT scenarious to utilize mqttbroker instead of mosquitto.
-    * Reconfigure selected arduino sketches and/or iotempower configurations to contact mqttbroker at IP address 192.168.12.254 instead of mosquitto on 192.168.12.1. 
-    * Reconfigure selected Node-Red flows to contact mqttbroker at IP address 192.168.12.254 instead of mosquitto on 192.168.12.1. 
- Hint: First port only one simple sketch or simple iotempower configuration and the corresponding Node-Red flow to test the infrastructure. 
-Hint: The ESP32 controler, desireably, should utilize the router WiFi instead of the RasPI one.
-
-**Questions**
 **How to request a full "template" command line for mqttbroker?**
  * mqttbroker –commandline-full
-
+ * 
 **How to retrief the current configuration of mqttbroker?**
  * mqttbroker –show-config
 
