@@ -42,4 +42,4 @@ For me, the infrastucture of the gateway stand out. Aesthetically, it wasn't par
 We need it to bridge communication between diverse devices and the cloud, enabling protocol translation, data aggregation, and security. Some alternatives could be direct cloud connectivity, edge computing or cloud-to-cloud integration.
 
 ## Lab Tasks
-To see the lab tasks press [HERE](Cristina/LabRecords/LabRecord02.md)
+To see the lab tasks press [HERE](/Cristina/LabRecords/LabRecord02.md)
