@@ -45,7 +45,7 @@ Jorrit, Luca and Cristina partned up and with the rest of the group created this
 
 ### 1.b The Kit     
 We got one Kit, unpacked it and made a list with all the parts we found. We also identified what every piece is good for and added the bus system they use as an interface. Afterwards we googled tome properties of the respective bus on the respective device.
-All this information can be seen in this table:
+All this information, including the Wemos D1 Mini and ESP32, can be seen in this [table](https://docs.google.com/spreadsheets/d/1GLcCDbztd-jvkXTj-HZ6mThsLr_UORJh/edit?usp=sharing&ouid=107652657307043314785&rtpof=true&sd=true)
 
 ## 2. Breadboard, Blink, and Stories
 ### 2.a Feedback
