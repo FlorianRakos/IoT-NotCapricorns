@@ -1,4 +1,4 @@
-# Day 10
+# Research records 10
 ## OpenWRT Tasks
 Go [HERE](/Cristina/LabRecords/LabRecord10.md)
 ## Reflection of the day
