@@ -128,7 +128,7 @@ Necessary certificates include Alice's signed certificate from a trusted CA, Bob
 in the /etc/opkg/distfeeds.conf file and /etc/opkg.conf file.
 
 ## Prepare Installation of the Package mqttbroker
-### Tasks (group): Add Package Repository to OpenWRT 
+*Tasks (group): Add Package Repository to OpenWRT*
 1. Download the file with name 7646d48820c9bd9d containing the public package signing key from https://www.vchrist.at/owrt . Such keys are used by OpenWRT for validating the origin of packages. 
 2. Upload this file (don’t change it’s name) into the directory /etc/opkg/keys/ on the router. 
 3. On the router add the line: 
@@ -139,7 +139,7 @@ This can be done either using:
     * or by hand using an editor. Install one if none is installed on the router (e.g. vi, joe, nano). 
 
 ## Installation of the mqttbroker Package on the Router
-### Tasks (group): Install mqttbroker on the router:
+*Tasks (group): Install mqttbroker on the router:*
 1. Use the WEB interface or the command line to install the mqttbroker package.  This package contains the two MQTT v3.1.1 conform mqttbroker (replacement for mosquitto) and mqttintegrator (replacement for Node-RED) applications. 
     * Are the mqttbroker and mqttintegrator applications running after install? 
 Jorrit did it
@@ -149,8 +149,8 @@ Jorrit did it
 We skipped this part.
 
 ## Explore the SSL/TLS Configuration Options of mqttbroker 
-Start exploring the mqttbroker command line interface and the SSL/TLS configuration options by appending --help to mqttbroker on the command line.
-Investigate the following:
+*Start exploring the mqttbroker command line interface and the SSL/TLS configuration options by appending --help to mqttbroker on the command line.
+Investigate the following:*
  * ??? how to request a full "template" command line for mqttbroker? 
  * ??? how to retrief the current configuration of mqttbroker? 
  * ??? how to write current configuration to a config file? 
@@ -162,7 +162,7 @@ Investigate the following:
  * ??? what options can be configured for SSL/TLS encryption?
 
 ## Explore the SSL/TLS Configuration Options of mqttbroker
-Tasks (group): Port IoT Scenarios to mqttbroker:
+*Tasks (group): Port IoT Scenarios to mqttbroker:*
 1. Select a cool and working IoT scenario. 
 2. Duplicate selected arduino sketches and/or iotempower configurations.  
 Do this systematically to not get confused. 
