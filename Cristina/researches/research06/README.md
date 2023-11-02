@@ -1,12 +1,34 @@
-# Day 6
+# Research records 06
 ## Index
-1. [Update on the “nice-to-have feature-list”](/Cristina/researches/research06/research06.md#update-on-the-nice-to-have-feature-list)
-2. [IoTempower”](/Cristina/researches/research06/research06.md#iotempower)
-3. [System in folders](/Cristina/researches/research06/research06.md#system-in-folders)
-4. [Nodes](/Cristina/researches/research06/research06.md#nodes)
-5. [Compilation](/Cristina/researches/research06/research06.md#compilation)
-6. [Filters video](/Cristina/researches/research06/research06.md#filters-video)
+1. [Generic Steps for adding devices](/Cristina/researches/research06#generic-steps-for-adding-devices)
+2. [IoTempower”](/Cristina/researches/research06#iotempower)
+   * 2.1 [You already know how to install IoTempower through a pi image, what other ways of using/installing it are there?](/Cristina/researches/research06#you-already-know-how-to-install-iotempower-through-a-pi-image-what-other-ways-of-usinginstalling-it-are-there)
+   * 2.2 [What is the role of the different folders in lib/node_types?](/Cristina/researches/research06#what-is-the-role-of-the-different-folders-in-libnode_types)
+   * 2.3 [Where and what are the tools/commands/scripts?](/Cristina/researches/research06#where-and-what-are-the-toolscommandsscripts)
+   * 2.4 [Where is documentation?](/Cristina/researches/research06#where-is-documentation)
+4. [System in folders](/Cristina/researches/research06#system-in-folders)
+   * 4.1 [Which topic needs to be called with what to
+switch on the coffee machine?](/Cristina/researches/research06#which-topic-needs-to-be-called-with-what-to)
+   * 4.2 [set all lights in living room to blue?](/Cristina/researches/research06#set-all-lights-in-living-room-to-blue)
+   * 2.3 [turn the main power off?](/Cristina/researches/research06#turn-the-main-power-off)
+   * 2.4 [What is the general rule for forming topics in IoTempower?](/Cristina/researches/research06#what-is-the-general-rule-for-forming-topics-in-iotempower)
+   * 2.5 [When does it make sense to change something in system.conf?](/Cristina/researches/research06#when-does-it-make-sense-to-change-something-in-systemconf)
+   * 2.6 [What role does the location of system.conf play? (What if it would be one level higher and there is also yourhouse?)](/Cristina/researches/research06#what-role-does-the-location-of-systemconf-play-what-if-it-would-be-one-level-higher-and-there-is-also-yourhouse)
+3. [Nodes](/Cristina/researches/research06#nodes)
+   * 3.1 [What needs to/can go into node.conf?](/Cristina/researches/research06#what-needs-tocan-go-into-nodeconf)
+   * 3.2 [How do [optional config.txt,] etc/iotempower.conf, system.conf, and node.conf influence environment variables for compliling? Give examples for when to change which](/Cristina/researches/research06#how-do-optional-configtxt-etciotempowerconf-systemconf-and-nodeconf-influence-environment-variables-for-compliling-give-examples-for-when-to-change-which)
+4. [Compilation](/Cristina/researches/research06/research06.md#compilation)
+   * 4.1 [What are the steps IoTempower executes, when you call deploy in a node-folder (or room or system folder)? What types of deploy are there?](/Cristina/researches/research06#what-are-the-steps-iotempower-executes-when-you-call-deploy-in-a-node-folder-or-room-or-system-folder-what-types-of-deploy-are-there)
+   * 4.2 [Why can only one deploy run at once?](/Cristina/researches/research06#why-can-only-one-deploy-run-at-once)
+5. [Filters video](/Cristina/researches/research06/research06.md#filters-video)
+   * 5.1 [What is a common problem when we measure?](/Cristina/researches/research06#what-is-a-common-problem-when-we-measure)
+   * 5.2 [How can we do graphs in node-red?](/Cristina/researches/research06#how-can-we-do-graphs-in-node-red)
+   * 5.3 [What are filters and how do they work?](/Cristina/researches/research06#what-are-filters-and-how-do-they-work-in-node-red-and-iotempower)
+   * 5.4 [What is offered and what other generic filters would be nice?](/Cristina/researches/research06#what-is-offered-and-what-other-generic-filters-would-be-nice)
+   * 5.5 [What is the “fluent” style?](/Cristina/researches/research06#what-is-the-fluent-style)
+6. [Update on the “nice-to-have feature-list”](/Cristina/researches/research06#update-on-the-nice-to-have-feature-list)
 7. [Stories](/Cristina/researches/research06/research06.md#stories)
+8. [Reflection of the day](/Cristina/researches/research06#reflection-of-the-day)
 
 ## Generic Steps for adding devices
  * 1- Check Official Documentation: Look for official documentation or user guides provided by the IoTempower platform. These documents typically contain detailed instructions on how to set up and add devices to the platform.
@@ -89,7 +111,7 @@ Filters are often implemented using "Function" nodes or specialized nodes like "
 Binarize, jmc_interval_median.
 
 ### What is the “fluent” style?
-Puttung everything in one line when we can, non repetitive code, or cahining methods.
+Putting everything in one line when we can, non repetitive code, or cahining methods.
 
 ## Update on the “nice-to-have feature-list”
   * Unified framework: Not have to use that many different programs
