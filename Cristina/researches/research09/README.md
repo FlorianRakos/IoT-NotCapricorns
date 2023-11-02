@@ -14,5 +14,6 @@ Even if you listen you can not figure out the data. Only the public key is given
 The main difference with the two exchanges is that HD uses the same key to encrypt and decrypt, and in RSA the key to encrypt is not the same as the one to decrypt
 
 ## Lab tasks
-After, we proceded to start learning and working with [OpenWrt]()
+After, we proceded to start learning and working with [OpenWrt](/Cristina/LabRecords/LabRecord09.md)
+
 
