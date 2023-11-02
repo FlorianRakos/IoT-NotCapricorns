@@ -1,4 +1,16 @@
-# Day 2
+# Research day 2
+1. [Story draft](/Cristina/researches/research02/README.md#story-draft)
+2. [Architecture and Terminology of IoT](/Cristina/researches/research02#architecture-and-terminology-of-iot)
+3. [Exchange formats](/Cristina/researches/research02#exchange-formats)
+   * 3.1 [What is especially suitable for IoT systems (where in architecture)? Why?]([/Cristina/researches/research02#what-is-especially-suitable-for-iot-systems-where-in-architecture-why))
+   * 3.2 [What is especially unsuitable? Why?](/Cristina/researches/research02#what-is-especially-unsuitable-why)
+4. [IoT Empower Gateway (I)](/Cristina/researches/research02#iot-empower-gateway-i)
+   * 4.1 [What are the main steps?](/Cristina/researches/research02#what-are-the-main-steps)
+   * 4.2 [What stands out?](/Cristina/researches/research02#what-stands-out)
+   * 4.3 [What is the point, why do we need a gateway? What will be the alternatives?](/Cristina/researches/research02#what-is-the-point-why-do-we-need-a-gateway-what-will-be-the-alternatives)
+5. [Lab Tasks](/Cristina/researches/research02#lab-tasks)
+6. [Reflection of the day](/Cristina/researches/research02#reflection-of-the-day)
+   
 ## Story draft
 Click [HERE](/TeamThree/Ulrichs%20Lab%20Tasks.md#3b-stories-and-scenario) to take a look 
 
@@ -35,7 +47,7 @@ Formats: Text, XML, JSON, YAML and Binary
 ### What are the main steps?
 See the steps [HERE](/TeamTwo/exercises/exercise02#potential-steps-and-challenges)
 
-### What stands out (i.e. SD-card hint)?
+### What stands out?
 For me, the infrastucture of the gateway stand out. Aesthetically, it wasn't particulary pretty but I didn't find it ugly either.
 
 ### What is the point, why do we need a gateway? What will be the alternatives?
