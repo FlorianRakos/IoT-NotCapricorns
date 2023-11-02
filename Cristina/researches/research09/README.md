@@ -1,4 +1,4 @@
-# Day 9
+# Research records 09
 We started the lesson analising our IoT scenario to find vulnerabilities and then figuring out measures that could fix them, check them out [HERE](/TeamThree/Volkers%20Part.md#identify-security-risks)
 
 ##### These are some notes I took from the other groups:
