@@ -205,3 +205,20 @@ They are all accessible using the protocol MQTT (Message Queuing Telemetry Trans
 ### Do all server instances offer the same configuration sections (cathegories)?
 No they don’t, some have 4 sections, and others have 5.
 
+Which section of the instances providing encrypted communication, provides the configuration option for SSL/TLS?
+Instances:
+legacyin
+![Afbeelding van WhatsApp op 2023-10-31 om 10 09 14_518d566a](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/11200881-06c0-4799-aeb9-dbc7a339de0b)
+
+tlsin
+![Afbeelding van WhatsApp op 2023-10-31 om 10 09 14_bce577aa](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/19a2489c-d282-4d0e-868d-4de39cdf5a57)
+
+legacyun
+![Afbeelding van WhatsApp op 2023-10-31 om 10 10 44_05d48c9a](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/4e3f626c-99d1-4d11-8762-ef34d0a9cc7b)
+
+mqtttlswebview
+![Afbeelding van WhatsApp op 2023-10-31 om 10 10 44_07ed3902](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c90273e8-7d7a-4448-bfe5-5fdc05cc5cb7)
+
+mqttlegacywebview
+![Afbeelding van WhatsApp op 2023-10-31 om 10 09 14_44507735](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/06ac408d-239b-4d09-96a1-a07e2fec387e)
+
