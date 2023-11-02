@@ -2,7 +2,7 @@
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures from Volker.
  
 ## Index
-1. [1. Identify Security Risks](#1.-Identify-Security-Risks)
+1. [Identify Security Risks](#1.-Identify-Security-Risks)
    * [1.a Partner, team git repo setup](#1a-partner-team-git-repo-setup)
    * [1.b The Kit](#1b-the-kit)
 10. Explore the SSL/TLS Configuration Options of mqttbroker
