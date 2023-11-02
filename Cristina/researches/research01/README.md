@@ -19,7 +19,8 @@
    * 2.5 [What are the benefits of IoT?](/Cristina/researches/research01/README.md#what-are-the-benefits-of-iot
 )
    * 2.6 [What are the challenges?](/Cristina/researches/research01/README.md#what-are-the-challenges)
-
+3. [Reflection of the day](/Cristina/researches/research01/README.md#reflection-of-the-day)
+   
 ## Who are U?
 Answer the following questions:
 
