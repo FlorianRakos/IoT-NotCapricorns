@@ -1,3 +1,4 @@
+# Day 9
 We started the lesson analising our IoT scenario to find vulnerabilities and then figuring out measures that could fix them
 
 Notes from the other groups:
