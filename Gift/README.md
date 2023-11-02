@@ -2,7 +2,7 @@
 My portfolio 
 
 ## First day
-- [Research records](/Gift/researches/research01/README.md)
+- [Research records](/Gift/Lecture/lecture01/README.MD)
 
 - [Lab records](/Teamfolder/exercises/exercise01/README.md)
 
