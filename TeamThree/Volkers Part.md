@@ -15,15 +15,6 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 9. [Explore the SSL and TLS Configuration Options of mqttbroker Part 1](#9-Explore-the-SSL-and-TLS-Configuration-Options-of-mqttbroker-part-1)
 10. [Explore the SSL and TLS Configuration Options of mqttbroker Part 2](#10-Explore-the-SSL-and-TLS-Configuration-Options-of-mqttbroker-part-2)
 
-
-
-
-
-
-
-
-
-
 ## 1 Identify Security Risks 
 For the next excercise we need to use our scenario to identify the security risks that can occur.
 
@@ -195,17 +186,17 @@ Hint: The ESP32 controler, desireably, should utilize the router WiFi instead of
 
 **Questions**
 **How to request a full "template" command line for mqttbroker?**
-mqttbroker –commandline-full
+ * mqttbroker –commandline-full
 
 **How to retrief the current configuration of mqttbroker?**
-mqttbroker –show-config
+ * mqttbroker –show-config
 
 **How to write current configuration to a config file?**
-mqttbroker –write-config
+ * mqttbroker –write-config
 
 **How many server instances (services) does the mqttbroker offer?**
-Mqttbroker offers 5 instances
-We used the following command: mqttbroker --help
+ * Mqttbroker offers 5 instances
+ * We used the following command: mqttbroker --help
 
 **What type of service do the individual instances offer?**
 *Instances:*
