@@ -247,7 +247,6 @@ The right command:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/da9b5c42-db5d-46ea-90c4-d40dd51959e3" target="_blank">See The right command here</a>).
 
 After this, we entered the following pathway to see the list of all connected clients. The pathway we followed was: "https://192.168.12.254:8088/clients/"
-![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/78f8b995-125e-41ef-afdb-af10b1b4b22c)
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/78f8b995-125e-41ef-afdb-af10b1b4b22c" target="_blank">See The pathway we followed here</a>).
 
 We sadly were not able to complete the next steps, Cristina and Luca (the people who worked together on this) did not have the knowledge to complete this. 
