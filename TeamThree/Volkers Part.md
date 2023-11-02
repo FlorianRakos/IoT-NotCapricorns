@@ -12,8 +12,8 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 6. [Learn about OpenWRT](#6-Learn-about-OpenWRT)
 7. [Prepare Installation of the Package mqttbroker](#7-Prepare-Installation-of-the-Package-mqttbroker)
 8. [Installation of the mqttbroker Package on the Router](#8-Installation-of-the-mqttbroker-Package-on-the-Router)
-9. [Explore the SSL/TLS Configuration Options of mqttbroker](#9-Explore-the-SSL/TLS-Configuration-Options-of-mqttbroker)
-10. [Explore the SSL/TLS Configuration Options of mqttbroker](#10-Explore-the-SSL/TLS-Configuration-Options-of-mqttbroker)
+9. [Explore the SSL/TLS Configuration Options of mqttbroker](#9-Explore-the-SSL/TLS-Configuration-Options-of-mqttbroker-part-1)
+10. [Explore the SSL/TLS Configuration Options of mqttbroker](#10-Explore-the-SSL/TLS-Configuration-Options-of-mqttbroker-part-2)
 
 
 
@@ -167,7 +167,7 @@ Jorrit did it
     * What happens?
 We skipped this part.
 
-## 9. Explore the SSL/TLS Configuration Options of mqttbroker 
+## 9. Explore the SSL/TLS Configuration Options of mqttbroker part 1
 *Start exploring the mqttbroker command line interface and the SSL/TLS configuration options by appending --help to mqttbroker on the command line.
 Investigate the following:*
  * ??? how to request a full "template" command line for mqttbroker? 
@@ -180,7 +180,7 @@ Investigate the following:*
  * ??? which section of the instances providing encrypted communication, provides the configuration option for SSL/TLS? 
  * ??? what options can be configured for SSL/TLS encryption?
 
-## 10. Explore the SSL/TLS Configuration Options of mqttbroker
+## 10. Explore the SSL/TLS Configuration Options of mqttbroker part 2
 *Tasks (group): Port IoT Scenarios to mqttbroker:*
 1. Select a cool and working IoT scenario. 
 2. Duplicate selected arduino sketches and/or iotempower configurations.  
