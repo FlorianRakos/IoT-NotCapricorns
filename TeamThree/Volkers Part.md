@@ -143,13 +143,9 @@ to the file /etc/opkg/customfeeds.conf.
 We then used the command line to install the mqttbroker package. 
 
 ## 9. Explore the SSl and TLS Configuration Options of mqttbroker
-
- * ??? what options can be configured for SSL/TLS encryption?
-
-## 10. Explore the SSL and TLS Configuration Options of mqttbroker part 2
 **How to request a full "template" command line for mqttbroker?**
  * mqttbroker –commandline-full
- * 
+
 **How to retrief the current configuration of mqttbroker?**
  * mqttbroker –show-config
 
@@ -197,3 +193,59 @@ mqttlegacywebview
 ![Afbeelding van WhatsApp op 2023-10-31 om 10 09 14_44507735](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/06ac408d-239b-4d09-96a1-a07e2fec387e)
 
 **What options can be configured for SSL/TLS encryption?**
+
+## 10 Creating the certificate
+We started creating the certificate by following the steps from the presentation. We made a small mistake because we were too enthusiastic about creating one, and we already saved it while not adjusting al the settings. We deleted this version and started over.
+
+**The Root**
+We followed the same steps and then we got to the following pop up messages:
+![Afbeelding van WhatsApp op 2023-10-31 om 10 37 23_f7cd4cbe](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/74d90311-0de7-4abf-b5a8-8d42ecfec7d4)
+This was good. We successfully created our private root. 
+After that we continued to adjust some settings:
+![Afbeelding van WhatsApp op 2023-10-31 om 10 37 23_3a9d6a6b](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/dec63130-066b-4dbb-ad2a-09a260b8c828)
+Then the root showed that it was correctly created:
+![Afbeelding van WhatsApp op 2023-10-31 om 10 42 53_599abf39](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/7be15c42-0ce5-47ad-9ef1-b68d69e9b2a8)
+We edited some extra extentions:
+![Afbeelding van WhatsApp op 2023-10-31 om 11 04 29_063c83c6](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/d127f426-f17a-4ed6-bab7-1aa358d898af)
+![Afbeelding van WhatsApp op 2023-10-31 om 11 04 29_30eeb86f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/e64caec5-89b0-4667-a99d-5421aa33a88a)
+
+And eventually everything was done. We were now the owners of a fully working certificate.
+![Afbeelding van WhatsApp op 2023-10-31 om 11 04 29_bc6aab41](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/fd6c8de0-bcd1-4903-80e3-0e5a72096dcf)
+
+The following picture shows that the "End Entity" is inside the Root:
+![Afbeelding van WhatsApp op 2023-10-31 om 11 04 30_f2875a8a](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/53957886-9c52-478b-8848-bff30778b373)
+
+We have imported them on Cristina's computer:
+![Afbeelding van WhatsApp op 2023-10-31 om 11 04 29_4b04b072](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9c604d12-4b1c-4c44-8bd7-85bc0efc6f5a)
+And it was there, so we definitely have our private key.
+
+**Use the certificates to secure communication with the mqttbroker**
+The first thing we did was install the Root CA certificate on Cristina's webbrowser.
+
+The we configured the mqtttlswebview instance of the mqttbroker so we were able to use the created end entity server
+certificate chain and the corresponding private key
+It did not really work out, we encountered a lot of different errors which causes us to be stuck for a while. We have a few pictures of the errors:
+The first picture said that the address in use
+![Afbeelding van WhatsApp op 2023-10-31 om 12 28 04_c4423890](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/83efa047-a006-4d68-9319-7933615968f3)
+We tried to wait for a couple of minutes and try again, you can already guess it, it didn't work.
+We wrote on all the instances to re-use the address.
+![Afbeelding van WhatsApp op 2023-10-31 om 12 28 04_cb7b9ded](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/cd14f22a-d3d8-4c1e-89dd-ff3df8425db1)
+We hoped this would work, but you can guess again, it didn't work.
+We "killed" the mqttbroker, so we could run it again. 
+![Afbeelding van WhatsApp op 2023-10-31 om 12 28 04_2039cf58](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/54f83329-99c6-4c51-a9ae-1dd76e2323a7)
+Some of the instances worked, but there was one of them that still had an annoying error.
+![Afbeelding van WhatsApp op 2023-10-31 om 12 28 04_19f43ea7](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/b1d9b157-234e-411f-a364-c89a84399306)
+
+We discovered that the links to the certificate had the wrong endings, we were specifying the route "Cristina" directory, but we were already inside the directory. We also did not specify the key (which we did have).
+The wrong command:
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/1c0cfd51-3d62-4f7e-a272-1afd09fc77e2)
+The right command:
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/da9b5c42-db5d-46ea-90c4-d40dd51959e3)
+
+After this, we entered the following pathway to see the list of all connected clients. The pathway we followed was: "https://192.168.12.254:8088/clients/"
+![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/78f8b995-125e-41ef-afdb-af10b1b4b22c)
+
+We sadly were not able to complete the next steps, Cristina and Luca (the people who worked together on this) did not have the knowledge to complete this. 
+
+
+
