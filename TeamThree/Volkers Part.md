@@ -11,6 +11,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 7. [Prepare Installation of the Package mqttbroker](#7-Prepare-Installation-of-the-Package-mqttbroker)
 8. [Installation of the mqttbroker Package on the Router](#8-Installation-of-the-mqttbroker-Package-on-the-Router)
 9. [Explore the SSL and TLS Configuration Options of mqttbroker](#9-Explore-the-SSL-and-TLS-Configuration-Options-of-mqttbroker)
+10. [Creating the certificate](#10-creating-the-certificate)
 
 ## 1 Identify Security Risks 
 For the next excercise we need to use our scenario to identify the security risks that can occur.
