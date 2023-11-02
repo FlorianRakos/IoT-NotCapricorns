@@ -16,4 +16,6 @@ The main difference with the two exchanges is that HD uses the same key to encry
 ## Lab tasks
 After, we proceded to start learning and working with [OpenWrt](/Cristina/LabRecords/LabRecord09.md)
 
+## Reflection of the day
+Go to today's [reflection](/Cristina/reflections/reflection09/README.md)
 
