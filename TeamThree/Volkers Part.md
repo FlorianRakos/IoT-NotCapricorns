@@ -2,14 +2,15 @@
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures from Volker.
  
 ## Index
-1. [The chain of trust](#2-The-chain-of-trust)
-2. [Diffie-Hellman Key Exchange](#3-Diffie-Hellman-Key-Exchange)
-3. [RSA Key Exchange](#4-RSA-Key-Exchange)
-4. [Symmetric validation](#5-Symmetric-validation)
-5. [Learn about OpenWRT](#6-Learn-about-OpenWRT)
-6. [Prepare Installation of the Package mqttbroker](#7-Prepare-Installation-of-the-Package-mqttbroker)
-7. [Installation of the mqttbroker Package on the Router](#8-Installation-of-the-mqttbroker-Package-on-the-Router)
-8. [Explore the SSL and TLS Configuration Options of mqttbroker](#9-Explore-the-SSL-and-TLS-Configuration-Options-of-mqttbroker)
+1. [Identify Security Risks](#1-identify-security-risks)
+2. [The chain of trust](#2-The-chain-of-trust)
+3. [Diffie-Hellman Key Exchange](#3-Diffie-Hellman-Key-Exchange)
+4. [RSA Key Exchange](#4-RSA-Key-Exchange)
+5. [Symmetric validation](#5-Symmetric-validation)
+6. [Learn about OpenWRT](#6-Learn-about-OpenWRT)
+7. [Prepare Installation of the Package mqttbroker](#7-Prepare-Installation-of-the-Package-mqttbroker)
+8. [Installation of the mqttbroker Package on the Router](#8-Installation-of-the-mqttbroker-Package-on-the-Router)
+9. [Explore the SSL and TLS Configuration Options of mqttbroker](#9-Explore-the-SSL-and-TLS-Configuration-Options-of-mqttbroker)
 
 ## 1 Identify Security Risks 
 For the next excercise we need to use our scenario to identify the security risks that can occur.
