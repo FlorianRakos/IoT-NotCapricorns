@@ -41,18 +41,5 @@ For me, the infrastucture of the gateway stand out. Aesthetically, it wasn't par
 ### What is the point, why do we need a gateway? What will be the alternatives?
 We need it to bridge communication between diverse devices and the cloud, enabling protocol translation, data aggregation, and security. Some alternatives could be direct cloud connectivity, edge computing or cloud-to-cloud integration.
 
-## Turn on the Light / Led on/off on Web Request
-### What are the main steps?
-See the steps [HERE](/TeamTwo/exercises/exercise02#potential-steps-and-challenges)
-
-### Anything standing out?
-Nope
-
-### How could we use a button on another Wemos D1 Mini to trigger this (not with the browser)?
-We could use MQTT to set up communication between them.
-
-## Gateway setup log (3)
-See the steps [HERE](/TeamTwo/exercises/exercise02#potential-steps-and-challenges)
-
-## Second ESP32 as Webclient, controlling LED Webserver (3a) (P)
-## Second ESP32 with button as Webclient, controlling Webserver (3a) (P)
+## Lab Tasks
+To see the lab tasks press [HERE](Cristina/LabRecords/LabRecord02.md)
