@@ -1,4 +1,3 @@
-![Afbeelding van WhatsApp op 2023-10-31 om 10 10 44_07ed3902](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/72393f4c-ab88-4acc-8494-ac3a46cc65c0)# Teamfolder
 
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures from Volker.
  
