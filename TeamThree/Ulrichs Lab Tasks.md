@@ -585,6 +585,5 @@ We did not do the optional exercise.
 
 ## 8. Final IOT Project
 ## 9. Volkers Part
-See:
-"Link to folder and document is being created"
+See [HERE](/TeamThree/Volkers%20Part.md)
 ## 13. Presentation
