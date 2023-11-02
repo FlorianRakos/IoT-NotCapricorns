@@ -43,3 +43,6 @@ We need it to bridge communication between diverse devices and the cloud, enabli
 
 ## Lab Tasks
 To see the lab tasks press [HERE](/Cristina/LabRecords/LabRecord02.md)
+
+## Reflection of the day
+Go to today's [reflection](/Cristina/reflections/reflection02/README.md)
