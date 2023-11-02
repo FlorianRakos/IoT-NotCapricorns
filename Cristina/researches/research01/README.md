@@ -86,4 +86,4 @@ the devices are smaller than before
   * Battery life
 
 ## Reflection of the day
-Go to todays [reflection](/Cristina/reflections/reflection01/README.md)
+Go to today's [reflection](/Cristina/reflections/reflection01/README.md)
