@@ -31,7 +31,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [6.f RFID Reader](#6f-rfid-reader)
 7. [Acces Control System](#7-access-control-system)
    * [7.a1 New Actors](#7a1-new-actors)
-   * [7.a2 Project 1 (Group)](#7a2-project-1-(group))
+   * [7.a2 Project 1 (Group)](#7a2-project-1)
    * [7.b Analog Touch Sensor](#7b-analog-touch-sensor)
    * [7.c Moisture Sensor](#7c-moisture-sensor)
    * [7.d Optional](#7d-optional)
