@@ -2,4 +2,4 @@ Today I found the tasks challenging. I managed to do most of them with the help 
 <br><br>
 As helpful as my colleagues from other grups are, I have a lot of problems to solve and questions to answer and I don't want to be a burden when they need to work on the tasks too so I try to ask for help to a different person every time.
 <br><br>
-I go to sleep happy with the achievements made today, but wish my group teammates would collaborate more.
+I go to sleep happy with the achievements made today, but wished my group teammates would collaborate more.
