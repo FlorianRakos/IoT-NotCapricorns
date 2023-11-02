@@ -6,14 +6,22 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [1.a Partner, team git repo setup](#1a-partner-team-git-repo-setup)
    * [1.b The Kit](#1b-the-kit)
 2. [The chain of trust](#2-The-chain-of-trust)
-10. Explore the SSL/TLS Configuration Options of mqttbroker
-## 9. Explore the SSL/TLS Configuration Options of mqttbroker 
-## 8. Installation of the mqttbroker Package on the Router
-## 7. Prepare Installation of the Package mqttbroker
-## 6. Learn about OpenWRT
-## 5. Symmetric validation
-## 4. RSA Key Exchange
-## 3. Diffie-Hellman Key Exchange
+3. [Diffie-Hellman Key Exchange](#3-Diffie-Hellman-Key-Exchange)
+4. [RSA Key Exchange](#4-RSA-Key-Exchange)
+5. [Symmetric validation](#5-Symmetric-validation)
+6. [Learn about OpenWRT](#6-Learn-about-OpenWRT)
+7. [Prepare Installation of the Package mqttbroker](#7-Prepare-Installation-of-the-Package-mqttbroker)
+8. [Installation of the mqttbroker Package on the Router](#8-Installation-of-the-mqttbroker-Package-on-the-Router)
+9. [Explore the SSL/TLS Configuration Options of mqttbroker](#9-Explore-the-SSL/TLS-Configuration-Options-of-mqttbroker)
+10. [Explore the SSL/TLS Configuration Options of mqttbroker](#10-Explore-the-SSL/TLS-Configuration-Options-of-mqttbroker)
+
+
+
+
+
+
+
+
 
 
 ## 1 Identify Security Risks 
