@@ -102,3 +102,5 @@ Puttung everything in one line when we can, non repetitive code, or cahining met
 We also adapted the stories we made last week [(link)](/TeamThree#3b-stories-and-scenario) to the iot project we will do. [Here](/TeamThree/README.md#23102023-story-update) is the update.
 
 Go to [Lab Tasks](/Cristina/LabRecords/LabRecord06.md)
+## Reflection of the day
+Go to today's [reflection](/Cristina/reflections/reflection06/README.md)
