@@ -1,4 +1,11 @@
 # Day 3
+1. [MQTT in Action on CLI](/Cristina/researches/research03#mqtt-in-action-on-cli)
+   * 1.1 [What are the main CLI commands for MQTT?](/Cristina/researches/research03#what-are-the-main-cli-commands-for-mqtt)
+   * 1.2 [What stands out for you?](/Cristina/researches/research03#what-stands-out-for-you)
+2. [Lab Tasks](/Cristina/researches/research03#lab-tasks)
+3. [Reflection of the day](/Cristina/researches/research03#reflection-of-the-day)
+
+
 ## MQTT in Action on CLI
 After watching the video "Barebone MQTT with Mosquitto Clients", we answered the following questions
 ### What are the main CLI commands for MQTT?
