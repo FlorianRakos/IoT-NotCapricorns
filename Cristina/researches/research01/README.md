@@ -85,3 +85,5 @@ the devices are smaller than before
   * Choosing a network: every device has different needs
   * Battery life
 
+## Reflection of the day
+Go to todays [reflection](/Cristina/reflections/reflection01/README.md)
