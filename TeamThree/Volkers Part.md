@@ -126,19 +126,21 @@ Necessary certificates include Alice's signed certificate from a trusted CA, Bob
 We accessed the WEB interface of Open WRT and searched for the symbolic host name of the lan interface address that was OpenWrt
 Then we installed opkg update on PuTTY. On the first try the resource was temporarily unavailable because we tried to update it at the same time as Jorrit. When he finished, we tried again and it upgraded correctly.
 Log in:
-![OpenWRT_61access_and_update](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/80234fbd-c48d-47c4-aa29-7d593da2de3e)
-![OpenWRT_8_mqttbroker_install](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ac312252-82df-473f-95a5-f1d2a360a7f0)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/80234fbd-c48d-47c4-aa29-7d593da2de3e" target="_blank">See OpenWRT 61access and update here</a>).
+
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ac312252-82df-473f-95a5-f1d2a360a7f0" target="_blank">See OpenWRT 8 mqttbroker install here</a>).
+
 <br><br>
 We created a nano so that the packages get installed in the router. See here
-![OpenWRT_62new_packages](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ba2b8356-5ccd-4576-9ed8-33b98684017a)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ba2b8356-5ccd-4576-9ed8-33b98684017a" target="_blank">See OpenWRT 62new packages here</a>).
 
 **Where are the remote package repositories configured?**
 in the /etc/opkg/distfeeds.conf file and /etc/opkg.conf file.
 
 ## 7. Prepare Installation of the Package mqttbroker
-Jorrit downloaded the file with name 7646d48820c9bd9d containing the public package signing key from https://www.vchrist.at/owrt . He upload it into the directory /etc/opkg/keys/ on the router, and then added this line:
-src/gz snodec https://www.vchrist.at/owrt/packages/aarch64_cortex-a53 ,
-to the file /etc/opkg/customfeeds.conf.  
+Jorrit downloaded the file with name 7646d48820c9bd9d containing the public package signing key from "https://www.vchrist.at/owrt" . He upload it into the directory /etc/opkg/keys/ on the router, and then added this line:
+src/gz snodec "https://www.vchrist.at/owrt/packages/aarch64_cortex-a53" ,
+to the file "/etc/opkg/customfeeds.conf".  
 
 ## 8. Installation of the mqttbroker Package on the Router
 We then used the command line to install the mqttbroker package. 
@@ -179,19 +181,19 @@ No they don’t, some have 4 sections, and others have 5.
 **Which section of the instances providing encrypted communication, provides the configuration option for SSL/TLS?**
 *Instances:*
 legacyin
-![Afbeelding van WhatsApp op 2023-10-31 om 10 09 14_518d566a](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/11200881-06c0-4799-aeb9-dbc7a339de0b)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/11200881-06c0-4799-aeb9-dbc7a339de0b" target="_blank">See legacyin here</a>).
 
 tlsin
-![Afbeelding van WhatsApp op 2023-10-31 om 10 09 14_bce577aa](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/19a2489c-d282-4d0e-868d-4de39cdf5a57)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/19a2489c-d282-4d0e-868d-4de39cdf5a57" target="_blank">See tlsin here</a>).
 
 legacyun
-![Afbeelding van WhatsApp op 2023-10-31 om 10 10 44_05d48c9a](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/4e3f626c-99d1-4d11-8762-ef34d0a9cc7b)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/4e3f626c-99d1-4d11-8762-ef34d0a9cc7b" target="_blank">See legacyun here</a>).
 
 mqtttlswebview
-![Afbeelding van WhatsApp op 2023-10-31 om 10 10 44_07ed3902](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c90273e8-7d7a-4448-bfe5-5fdc05cc5cb7)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/c90273e8-7d7a-4448-bfe5-5fdc05cc5cb7" target="_blank">See mqtttlswebview here</a>).
 
 mqttlegacywebview
-![Afbeelding van WhatsApp op 2023-10-31 om 10 09 14_44507735](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/06ac408d-239b-4d09-96a1-a07e2fec387e)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/06ac408d-239b-4d09-96a1-a07e2fec387e" target="_blank">See mqttlegacywebview here</a>).
 
 **What options can be configured for SSL/TLS encryption?**
 
@@ -200,24 +202,25 @@ We started creating the certificate by following the steps from the presentation
 
 **The Root**
 We followed the same steps and then we got to the following pop up messages:
-![Afbeelding van WhatsApp op 2023-10-31 om 10 37 23_f7cd4cbe](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/74d90311-0de7-4abf-b5a8-8d42ecfec7d4)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/74d90311-0de7-4abf-b5a8-8d42ecfec7d4" target="_blank">See Pop up message here</a>).
+
 This was good. We successfully created our private root. 
 After that we continued to adjust some settings:
-![Afbeelding van WhatsApp op 2023-10-31 om 10 37 23_3a9d6a6b](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/dec63130-066b-4dbb-ad2a-09a260b8c828)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/dec63130-066b-4dbb-ad2a-09a260b8c828" target="_blank">See Adjusting settings here</a>).
 Then the root showed that it was correctly created:
-![Afbeelding van WhatsApp op 2023-10-31 om 10 42 53_599abf39](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/7be15c42-0ce5-47ad-9ef1-b68d69e9b2a8)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/7be15c42-0ce5-47ad-9ef1-b68d69e9b2a8" target="_blank">See Root correctly created here</a>).
 We edited some extra extentions:
-![Afbeelding van WhatsApp op 2023-10-31 om 11 04 29_063c83c6](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/d127f426-f17a-4ed6-bab7-1aa358d898af)
-![Afbeelding van WhatsApp op 2023-10-31 om 11 04 29_30eeb86f](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/e64caec5-89b0-4667-a99d-5421aa33a88a)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/d127f426-f17a-4ed6-bab7-1aa358d898af" target="_blank">See Extra extentions here</a>).
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/e64caec5-89b0-4667-a99d-5421aa33a88a" target="_blank">See More extra extentions here</a>).
 
 And eventually everything was done. We were now the owners of a fully working certificate.
-![Afbeelding van WhatsApp op 2023-10-31 om 11 04 29_bc6aab41](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/fd6c8de0-bcd1-4903-80e3-0e5a72096dcf)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/fd6c8de0-bcd1-4903-80e3-0e5a72096dcf" target="_blank">See Fully working certificate here</a>).
 
 The following picture shows that the "End Entity" is inside the Root:
-![Afbeelding van WhatsApp op 2023-10-31 om 11 04 30_f2875a8a](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/53957886-9c52-478b-8848-bff30778b373)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/53957886-9c52-478b-8848-bff30778b373" target="_blank">See "End Entity" is inside the Root here</a>).
 
 We have imported them on Cristina's computer:
-![Afbeelding van WhatsApp op 2023-10-31 om 11 04 29_4b04b072](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9c604d12-4b1c-4c44-8bd7-85bc0efc6f5a)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/9c604d12-4b1c-4c44-8bd7-85bc0efc6f5a" target="_blank">See import on Cristina's computer here</a>).
 And it was there, so we definitely have our private key.
 
 **Use the certificates to secure communication with the mqttbroker**
@@ -227,24 +230,25 @@ The we configured the mqtttlswebview instance of the mqttbroker so we were able 
 certificate chain and the corresponding private key
 It did not really work out, we encountered a lot of different errors which causes us to be stuck for a while. We have a few pictures of the errors:
 The first picture said that the address in use
-![Afbeelding van WhatsApp op 2023-10-31 om 12 28 04_c4423890](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/83efa047-a006-4d68-9319-7933615968f3)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/83efa047-a006-4d68-9319-7933615968f3" target="_blank">See address in use here</a>).
 We tried to wait for a couple of minutes and try again, you can already guess it, it didn't work.
 We wrote on all the instances to re-use the address.
-![Afbeelding van WhatsApp op 2023-10-31 om 12 28 04_cb7b9ded](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/cd14f22a-d3d8-4c1e-89dd-ff3df8425db1)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/cd14f22a-d3d8-4c1e-89dd-ff3df8425db1" target="_blank">See re-use the address here</a>).
 We hoped this would work, but you can guess again, it didn't work.
 We "killed" the mqttbroker, so we could run it again. 
-![Afbeelding van WhatsApp op 2023-10-31 om 12 28 04_2039cf58](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/54f83329-99c6-4c51-a9ae-1dd76e2323a7)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/54f83329-99c6-4c51-a9ae-1dd76e2323a7" target="_blank">See "killed" the mqttbroker here</a>).
 Some of the instances worked, but there was one of them that still had an annoying error.
-![Afbeelding van WhatsApp op 2023-10-31 om 12 28 04_19f43ea7](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/b1d9b157-234e-411f-a364-c89a84399306)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/b1d9b157-234e-411f-a364-c89a84399306" target="_blank">See an annoying error here</a>).
 
 We discovered that the links to the certificate had the wrong endings, we were specifying the route "Cristina" directory, but we were already inside the directory. We also did not specify the key (which we did have).
 The wrong command:
-![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/1c0cfd51-3d62-4f7e-a272-1afd09fc77e2)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/1c0cfd51-3d62-4f7e-a272-1afd09fc77e2" target="_blank">See The wrong command here</a>).
 The right command:
-![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/da9b5c42-db5d-46ea-90c4-d40dd51959e3)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/da9b5c42-db5d-46ea-90c4-d40dd51959e3" target="_blank">See The right command here</a>).
 
 After this, we entered the following pathway to see the list of all connected clients. The pathway we followed was: "https://192.168.12.254:8088/clients/"
 ![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/78f8b995-125e-41ef-afdb-af10b1b4b22c)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/78f8b995-125e-41ef-afdb-af10b1b4b22c" target="_blank">See The pathway we followed here</a>).
 
 We sadly were not able to complete the next steps, Cristina and Luca (the people who worked together on this) did not have the knowledge to complete this. 
 
