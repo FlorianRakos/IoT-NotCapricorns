@@ -31,7 +31,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [6.f RFID Reader](#6f-rfid-reader)
 7. [Acces Control System](#7-access-control-system)
    * [7.a1 New Actors](#7a1-new-actors)
-   * [7.a2 Project 1 (Group)](#7a2-project-1-(group))
+   * [7.a2 Project 1 (Group)](#7a2-project-1)
    * [7.b Analog Touch Sensor](#7b-analog-touch-sensor)
    * [7.c Moisture Sensor](#7c-moisture-sensor)
    * [7.d Optional](#7d-optional)
@@ -98,9 +98,91 @@ Blink on the Wemos D1 Mini Exercise:
 ## 3. IoTempower Gateway Actors and Sensors
 
 ### 3.a Actors and Sensors with Web Requests
+#### Control an ESP8266 from another ESP8266 via WLAN
+In this little project we wanted to make a server (ESP8266) which only toggles a LED when a special event occurs. That event is the click of a button on another ESP8266.
+These two ESP8266s are connected via WLAN.
 
+##### Client - ESP8266 with a button which talks to another ESP8266
+This is our client which connects to the WLAN from our Raspberry Pi and also connects to the second ESP8266 via its IP address and sends a HTTP GET to it when the button is pressed.
+
+###### How to begin
+1. File > New
+1. Tools > Board > LOLIN(WEMOS) D1 R2 & mini
+3. Connect the cables between the ESP8266 and the button
+	- black cable of the button to the ground (G) of the ESP8266
+	- yellow cable of the button to D6 connector of the ESP8266
+	- red cable of the button to the 3V connector of the ESP8266
+2. Write the code
+3. Verify the program
+4. Upload File to ESP8266
+
+###### Code for the client
+Here you can find the code for the client -> [client_button.ino](/Teamfolder/exercises/exercise01/client_button/client_button.ino)
+
+###### Pictures
+<img src="/Teamfolder/pictures/exercise01/client_button_picture_1.jpg" alt="drawing" width="300"/> <img src="/Teamfolder/pictures/exercise01/client_button_picture_2.jpg" alt="drawing" width="300"/>
+
+##### Server - ESP8266 with a LED which is switched on/off from the client
+...
+
+#### Problems
+In the first Lab we had problems especially with the micro USB cables. Some of our cables did not work and that cost us time.
+
+### Breadboard and blink
+
+```/*
+  DigitalReadSerial
+
+  Reads a digital input on pin 2, prints the result to the Serial Monitor
+
+  This example code is in the public domain.
+
+  https://www.arduino.cc/en/Tutorial/BuiltInExamples/DigitalReadSerial
+*/
+
+// digital pin 2 has a pushbutton attached to it. Give it a name:
+int pushButton = 5;
+int ledpin = 23;
+
+bool ledstate = false;
+
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // initialize serial communication at 9600 bits per second:
+  Serial.begin(9600);
+  // make the pushbutton's pin an input:
+  pinMode(pushButton, INPUT_PULLUP);
+  pinMode(ledpin, OUTPUT);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // read the input pin:
+  int buttonState = digitalRead(pushButton);
+
+  if (buttonState == 1) // if button is pressed
+  {
+    if (ledstate)
+    {
+      ledstate = false;
+      digitalWrite(ledpin, LOW);
+    }
+    else
+    {
+      ledstate = true;
+      digitalWrite(ledpin, HIGH);
+    }
+  }
+  // print out the state of the button:
+  Serial.println(buttonState);
+  delay(100);  // delay in between reads for stability
+}
+```
 ### 3.b Stories and Scenario
-Foot Mouse & Accessibility Software Scenario
+This is the first version of the story, where we got feedback from the professor. Ulno really liked the first line where we	introduce the location and the personas
+
+#### Foot Mouse & Accessibility Software Scenario
 
 Company: LoudWhisper, Project Manager: Roberto, Employee: Matthijs, CEO: Pieter
 
@@ -159,6 +241,8 @@ We also used our consoles to talk to each other, shown below:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d282b68b-02a1-483b-9b64-efed6a489516" target="_blank">See picture here</a>)
 
 ### 4.b MQTT Integration
+We first familiarized with mqtt_action and then rebuilt the example from the video.
+<br><br>
 To rebuild the air conditioning integratior component from the video, we first created a virtual environment in python using the following command: 
 ```python
 -m venv /path/to/new/virtual/environment
@@ -209,7 +293,8 @@ problem: we struggled getting the status of the AC because it only showed OFF
 
 resolved:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/62a23ca0-b329-4674-836a-e01c2f08a487" target="_blank">See picture here</a>)
-
+<br><br>
+For the integration of the simulators, we used the same exact python code as in the last exercise
 
 #### AC simulator Bash code
 ```
@@ -363,21 +448,24 @@ Discovering where to create the discord bot was complicated, but after some aski
 
 ## 6. Device Control with IoTempower
 ### 6.a Exploring IoTempower Services and Commands
-
+We wrote both the tool suport and documentation on a drive document linked [HERE](https://docs.google.com/document/d/1SMFhRlTP5ns-kHlcEid_c506uAFfQpNq/edit?usp=sharing&ouid=107652657307043314785&rtpof=true&sd=true)
 ### 6.b First Node
-
+We completed this task but forgot to write about it.
 ### 6.c Second Node
+We completed this task but forgot to write about it.
 
 ### 6.d Button to sound and notification
+We completed this task but forgot to write about it.
 
 ### 6.e Text receiver
+We completed this task but forgot to write about it.
 
 ### 6.f RFID reader
 Description
 * We first plugged rfid to the breadboard and wired it to the d1 mini following the wiring in the documentation like so:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/e3db2f98-dafa-405d-be24-ccf9c68afb4b" target="_blank">See RFID Circuit here</a>).
 * We initialise the serial 
-* It fails provably because of missing ;
+* It fails probably because of missing ;
 * It keeps failing until we realise we forgot to wire the 3.3V to the 3V3.
 * We connect the following functions on Node-red:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/41ff379a-3d12-4377-984c-67f2a94acf82" target="_blank">See RFID NodeRED here</a>).
@@ -497,6 +585,5 @@ We did not do the optional exercise.
 
 ## 8. Final IOT Project
 ## 9. Volkers Part
-See:
-"Link to folder and document is being created"
+See [HERE](/TeamThree/Volkers%20Part.md)
 ## 13. Presentation

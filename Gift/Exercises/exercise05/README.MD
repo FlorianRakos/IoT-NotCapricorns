@@ -19,7 +19,7 @@ Once the code is set up initially, you can send code updates over the Wi-Fi netw
 
 ### Second Node
 The following task involved adding a second node and controlling its ESP's LED by pressing the button on the first node. The setup for this node was similar to the first one, and I won't go into specific details about it. To enable this functionality, the 'setup.cpp' file was modified to include an LED, as shown in the picture below.
-<br><br><img src="/Gift/PicturesGift/exercise05/Code_TwoNodes.JPG" width="1000"><br><br>
+###
 with the help of Floarin and me caught up in the dark florian was able make a NodeRed flow which subscribes to the MQTT topic "myTestNode/b1" which registered the button press. Next I added a switch node which checks for the value "up" as I only want react once on a given button press. Then I add a toggle node to switch between on and off every time.
 <br><br><img src="/Gift/PicturesGift/exercise05/NodeRED_SecondNode.JPG" width="1000"><br><br>
  after a while of struggling we were able to oublish a MQTT message to this topic "secondNode/blue/set". The "/set" topic is automatically listened to by IoTempower and sets the value of the LED.

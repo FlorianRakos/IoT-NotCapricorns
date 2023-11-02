@@ -8,7 +8,7 @@ In this repo there are five different portfolios. One for each student.
 ## Jorrit (student ID (?))
 [Jorrit](/Jorrit/README.md)
 
-## Cristina (student ID (?))
+## Cristina 
 [Cristina](/Cristina/README.md)
 
 ## Gift (student ID (?))
