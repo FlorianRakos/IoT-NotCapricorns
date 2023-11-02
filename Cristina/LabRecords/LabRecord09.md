@@ -9,4 +9,3 @@ To see more steps ans screenshots press [HERE]()
 ### Where are the remote package repositories configured?
 in the /etc/opkg/distfeeds.conf file and /etc/opkg.conf file
 
-## Prepare Installation of the Package mqttbroker
