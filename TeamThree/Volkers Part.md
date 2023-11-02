@@ -105,3 +105,103 @@ Diffie-Hellman helps SSL/TLS (secure web connections) set up a secret code that 
 RSA key exchange plays a vital role in SSL/TLS by enabling the secure creation of an encrypted connection between a user's device (client) and a website's server. This ensures that the data exchanged between them is protected and cannot be easily intercepted or read by malicious parties.
 
 The main difference with the two exchanges is that HD uses the same key to encrypt and decrypt, and in RSA the key to encrypt is not the same as the one to decrypt
+
+## Symmetric validation
+###  forces Bob to validate Alice's certificate?
+Bob validates Alice's certificate to ensure he's connecting to the real Alice and not an imposter, enhancing security and trust.
+### Is it possible to also force Alice to validate Bob's identity? 
+Yes, Alice can also validate Bob's identity using his certificate for mutual authentication.
+### Which additinal certificates are necessary?
+Necessary certificates include Alice's signed certificate from a trusted CA, Bob's certificate (if configured), and the CA's certificate (EXCA) for validation. These certificates establish trust and security.
+## Learn about OpenWRT
+ * Make notes in your personal portfolio!
+ * Access the WEB interface of OpenWRT.
+ * Discover the symbolic host name of the lan interface address.
+ * ssh into the router using the IP address or the symbolic host name and execute shell commands.
+ * sftp into the router and upload/download files to and from it.
+ * Install new packages on the router using either
+    * the WEB interface
+    * or the opkg command line utility
+
+### Where are the remote package repositories configured?
+in the /etc/opkg/distfeeds.conf file and /etc/opkg.conf file.
+
+## Prepare Installation of the Package mqttbroker
+### Tasks (group): Add Package Repository to OpenWRT 
+1. Download the file with name 7646d48820c9bd9d containing the public package signing key from https://www.vchrist.at/owrt . Such keys are used by OpenWRT for validating the origin of packages. 
+2. Upload this file (don’t change it’s name) into the directory /etc/opkg/keys/ on the router. 
+3. On the router add the line: 
+src/gz snodec https://www.vchrist.at/owrt/packages/aarch64_cortex-a53 
+to the file /etc/opkg/customfeeds.conf pointing to my package repository for the router.  Create the file if it doesn’t exist. 
+This can be done either using:
+    * the WEB interface of the router 
+    * or by hand using an editor. Install one if none is installed on the router (e.g. vi, joe, nano). 
+
+## Installation of the mqttbroker Package on the Router
+### Tasks (group): Install mqttbroker on the router:
+1. Use the WEB interface or the command line to install the mqttbroker package.  This package contains the two MQTT v3.1.1 conform mqttbroker (replacement for mosquitto) and mqttintegrator (replacement for Node-RED) applications. 
+    * Are the mqttbroker and mqttintegrator applications running after install? 
+Jorrit did it
+
+2. Start mqttbroker on the command line. If it is already running as a daemon stop the daemon. 
+    * What happens?
+We skipped this part.
+
+## Explore the SSL/TLS Configuration Options of mqttbroker 
+Start exploring the mqttbroker command line interface and the SSL/TLS configuration options by appending --help to mqttbroker on the command line.
+Investigate the following:
+ * ??? how to request a full "template" command line for mqttbroker? 
+ * ??? how to retrief the current configuration of mqttbroker? 
+ * ??? how to write current configuration to a config file? 
+ * ??? how many server instances (services) does the mqttbroker offer? 
+ * ??? what type of service do the individual instances offer? 
+ * ??? via which protocol are the individual instances accessible? 
+ * ??? do all server instances offer the same configuration sections (cathegories)? 
+ * ??? which section of the instances providing encrypted communication, provides the configuration option for SSL/TLS? 
+ * ??? what options can be configured for SSL/TLS encryption?
+
+## Explore the SSL/TLS Configuration Options of mqttbroker
+Tasks (group): Port IoT Scenarios to mqttbroker:
+1. Select a cool and working IoT scenario. 
+2. Duplicate selected arduino sketches and/or iotempower configurations.  
+Do this systematically to not get confused. 
+3. Duplicate selected your Node-Red flows.  
+Do this systematically to not get confused. 
+4. Reconfigure selected IoT scenarious to utilize mqttbroker instead of mosquitto.
+    * Reconfigure selected arduino sketches and/or iotempower configurations to contact mqttbroker at IP address 192.168.12.254 instead of mosquitto on 192.168.12.1. 
+    * Reconfigure selected Node-Red flows to contact mqttbroker at IP address 192.168.12.254 instead of mosquitto on 192.168.12.1. 
+ Hint: First port only one simple sketch or simple iotempower configuration and the corresponding Node-Red flow to test the infrastructure. 
+Hint: The ESP32 controler, desireably, should utilize the router WiFi instead of the RasPI one.
+
+### How to request a full "template" command line for mqttbroker?
+mqttbroker –commandline-full
+
+### How to retrief the current configuration of mqttbroker?
+mqttbroker –show-config
+
+### How to write current configuration to a config file?
+mqttbroker –write-config
+
+### How many server instances (services) does the mqttbroker offer?
+Mqttbroker offers 5 instances
+We used the following command: mqttbroker --help
+
+### What type of service do the individual instances offer?
+Instances:
+ * legacyin
+    * Configuration for server instance 'legacyin'
+ * tlsin
+    * Configuration for server instance 'tlsin'
+ * legacyun
+    * Configuration for server instance 'legacyun'
+ * mqtttlswebview
+    * Configuration for server instance 'mqtttlswebview'
+ * mqttlegacywebview
+    * Configuration for server instance 'mqttlegacywebview’
+
+### Via which protocol are the individual instances accessible?
+They are all accessible using the protocol MQTT (Message Queuing Telemetry Transport)
+
+### Do all server instances offer the same configuration sections (cathegories)?
+No they don’t, some have 4 sections, and others have 5.
+
