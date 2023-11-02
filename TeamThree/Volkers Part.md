@@ -2,7 +2,7 @@
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures from Volker.
  
 ## Index
-1. [Identify Security Risks](#1.-Identify-Security-Risks)
+1. [Identify Security Risks](#1-Identify-Security-Risks)
    * [1.a Partner, team git repo setup](#1a-partner-team-git-repo-setup)
    * [1.b The Kit](#1b-the-kit)
 10. Explore the SSL/TLS Configuration Options of mqttbroker
@@ -15,7 +15,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 ## 3. Diffie-Hellman Key Exchange
 ## 2. The chain of trust
 
-## 1. Identify Security Risks 
+## 1 Identify Security Risks 
 For the next excercise we need to use our scenario to identify the security risks that can occur.
 
 **Which security vulnerabilities did you encounter in your IoT scenarious?**
