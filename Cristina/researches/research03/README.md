@@ -30,4 +30,9 @@ Other notes Judit, Xavi and I took throughout the video:
 ### What stands out for you?
 For me, the concept of using wildcards (#) for MQTT subscriptions has surprised me, as it allows to receive messages from multiple subtopics without specifically subscribing to each one. I find it very efficient.
 
+## Lab Tasks
+Click [HERE](/Cristina/LabRecords/LabRecord03.md)
+
+## Reflection of the day
+Go to today's [reflection](/Cristina/reflections/reflection03/README.md)
 
