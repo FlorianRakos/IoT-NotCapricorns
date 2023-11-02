@@ -19,7 +19,8 @@
    * 2.5 [What are the benefits of IoT?](/Cristina/researches/research01/README.md#what-are-the-benefits-of-iot
 )
    * 2.6 [What are the challenges?](/Cristina/researches/research01/README.md#what-are-the-challenges)
-3. [Reflection of the day](/Cristina/researches/research01/README.md#reflection-of-the-day)
+3. [ESP8266](/Cristina/researches/research01/README.md#esp8266)
+4. [Reflection of the day](/Cristina/researches/research01/README.md#reflection-of-the-day)
    
 ## Who are U?
 Answer the following questions:
@@ -85,6 +86,14 @@ the devices are smaller than before
   * The devices on the market are not always secure
   * Choosing a network: every device has different needs
   * Battery life
+
+## ESP8266
+### Why esp8266? (why do we have here more esp32s?)
+It is cost-effective and efficient for simple IoT applications. Here we have more esp32 because they were cheaper then the D1 mini, but now the D1 mini is cheaper than before
+### What is personally inspiring for you?
+The Amazon button is made like the D1 mini
+### What is the connection to coffee?
+One of the boards used on the video is called an expresso light, just like the coffee
 
 ## Reflection of the day
 Go to today's [reflection](/Cristina/reflections/reflection01/README.md)
