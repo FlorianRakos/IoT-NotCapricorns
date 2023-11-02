@@ -293,7 +293,8 @@ problem: we struggled getting the status of the AC because it only showed OFF
 
 resolved:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/62a23ca0-b329-4674-836a-e01c2f08a487" target="_blank">See picture here</a>)
-
+<br><br>
+For the integration of the simulators, we used the same exact python code as in the last exercise
 
 #### AC simulator Bash code
 ```
