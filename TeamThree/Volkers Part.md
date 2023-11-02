@@ -12,8 +12,8 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 6. [Learn about OpenWRT](#6-Learn-about-OpenWRT)
 7. [Prepare Installation of the Package mqttbroker](#7-Prepare-Installation-of-the-Package-mqttbroker)
 8. [Installation of the mqttbroker Package on the Router](#8-Installation-of-the-mqttbroker-Package-on-the-Router)
-9. [Explore the SSL/TLS Configuration Options of mqttbroker](#9-Explore-the-SSL/TLS-Configuration-Options-of-mqttbroker-part-1)
-10. [Explore the SSL/TLS Configuration Options of mqttbroker](#10-Explore-the-SSL/TLS-Configuration-Options-of-mqttbroker-part-2)
+9. [Explore the SSL/TLS Configuration Options of mqttbroker Part 1](#9-Explore-the-SSL/TLS-Configuration-Options-of-mqttbroker-part-1)
+10. [Explore the SSL/TLS Configuration Options of mqttbroker Part 2](#10-Explore-the-SSL/TLS-Configuration-Options-of-mqttbroker-part-2)
 
 
 
