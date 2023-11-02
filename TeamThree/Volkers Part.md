@@ -234,3 +234,4 @@ mqtttlswebview
 mqttlegacywebview
 ![Afbeelding van WhatsApp op 2023-10-31 om 10 09 14_44507735](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/06ac408d-239b-4d09-96a1-a07e2fec387e)
 
+**What options can be configured for SSL/TLS encryption?**
