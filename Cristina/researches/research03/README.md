@@ -1,4 +1,4 @@
-# Day 3
+# Research records 03
 1. [MQTT in Action on CLI](/Cristina/researches/research03#mqtt-in-action-on-cli)
    * 1.1 [What are the main CLI commands for MQTT?](/Cristina/researches/research03#what-are-the-main-cli-commands-for-mqtt)
    * 1.2 [What stands out for you?](/Cristina/researches/research03#what-stands-out-for-you)
