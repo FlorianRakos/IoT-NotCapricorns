@@ -41,3 +41,5 @@ I started this [exercise](/TeamThree/Ulrichs%20Lab%20Tasks.md#4c-mqtt-simulators
 
 ## MQTT on microcontroller
 Here is the last [activity](/TeamThree/Ulrichs%20Lab%20Tasks.md#4d-mqtt-on-microcontroller) from today, that we couldn't finish before the class ended and did on day 4.
+## Reflection of the day
+Go to today's [reflection](/Cristina/reflections/reflection03/README.md)
