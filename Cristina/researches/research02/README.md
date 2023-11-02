@@ -1,4 +1,4 @@
-# Research day 2
+# Research records 02
 1. [Story draft](/Cristina/researches/research02/README.md#story-draft)
 2. [Architecture and Terminology of IoT](/Cristina/researches/research02#architecture-and-terminology-of-iot)
 3. [Exchange formats](/Cristina/researches/research02#exchange-formats)
