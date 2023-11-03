@@ -1,4 +1,16 @@
-# Day 2
+# Research records 02
+1. [Story draft](/Cristina/researches/research02/README.md#story-draft)
+2. [Architecture and Terminology of IoT](/Cristina/researches/research02#architecture-and-terminology-of-iot)
+3. [Exchange formats](/Cristina/researches/research02#exchange-formats)
+   * 3.1 [What is especially suitable for IoT systems (where in architecture)? Why?]([/Cristina/researches/research02#what-is-especially-suitable-for-iot-systems-where-in-architecture-why))
+   * 3.2 [What is especially unsuitable? Why?](/Cristina/researches/research02#what-is-especially-unsuitable-why)
+4. [IoT Empower Gateway (I)](/Cristina/researches/research02#iot-empower-gateway-i)
+   * 4.1 [What are the main steps?](/Cristina/researches/research02#what-are-the-main-steps)
+   * 4.2 [What stands out?](/Cristina/researches/research02#what-stands-out)
+   * 4.3 [What is the point, why do we need a gateway? What will be the alternatives?](/Cristina/researches/research02#what-is-the-point-why-do-we-need-a-gateway-what-will-be-the-alternatives)
+5. [Lab Tasks](/Cristina/researches/research02#lab-tasks)
+6. [Reflection of the day](/Cristina/researches/research02#reflection-of-the-day)
+   
 ## Story draft
 Click [HERE](/TeamThree/Ulrichs%20Lab%20Tasks.md#3b-stories-and-scenario) to take a look 
 
@@ -35,24 +47,14 @@ Formats: Text, XML, JSON, YAML and Binary
 ### What are the main steps?
 See the steps [HERE](/TeamTwo/exercises/exercise02#potential-steps-and-challenges)
 
-### What stands out (i.e. SD-card hint)?
+### What stands out?
 For me, the infrastucture of the gateway stand out. Aesthetically, it wasn't particulary pretty but I didn't find it ugly either.
 
 ### What is the point, why do we need a gateway? What will be the alternatives?
 We need it to bridge communication between diverse devices and the cloud, enabling protocol translation, data aggregation, and security. Some alternatives could be direct cloud connectivity, edge computing or cloud-to-cloud integration.
 
-## Turn on the Light / Led on/off on Web Request
-### What are the main steps?
-See the steps [HERE](/TeamTwo/exercises/exercise02#potential-steps-and-challenges)
+## Lab Tasks
+To see the lab tasks press [HERE](/Cristina/LabRecords/LabRecord02.md)
 
-### Anything standing out?
-Nope
-
-### How could we use a button on another Wemos D1 Mini to trigger this (not with the browser)?
-We could use MQTT to set up communication between them.
-
-## Gateway setup log (3)
-See the steps [HERE](/TeamTwo/exercises/exercise02#potential-steps-and-challenges)
-
-## Second ESP32 as Webclient, controlling LED Webserver (3a) (P)
-## Second ESP32 with button as Webclient, controlling Webserver (3a) (P)
+## Reflection of the day
+Go to today's [reflection](/Cristina/reflections/reflection02/README.md)

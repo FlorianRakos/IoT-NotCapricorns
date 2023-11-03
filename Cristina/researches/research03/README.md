@@ -1,4 +1,11 @@
-# Day 3
+# Research records 03
+1. [MQTT in Action on CLI](/Cristina/researches/research03#mqtt-in-action-on-cli)
+   * 1.1 [What are the main CLI commands for MQTT?](/Cristina/researches/research03#what-are-the-main-cli-commands-for-mqtt)
+   * 1.2 [What stands out for you?](/Cristina/researches/research03#what-stands-out-for-you)
+2. [Lab Tasks](/Cristina/researches/research03#lab-tasks)
+3. [Reflection of the day](/Cristina/researches/research03#reflection-of-the-day)
+
+
 ## MQTT in Action on CLI
 After watching the video "Barebone MQTT with Mosquitto Clients", we answered the following questions
 ### What are the main CLI commands for MQTT?
@@ -30,14 +37,9 @@ Other notes Judit, Xavi and I took throughout the video:
 ### What stands out for you?
 For me, the concept of using wildcards (#) for MQTT subscriptions has surprised me, as it allows to receive messages from multiple subtopics without specifically subscribing to each one. I find it very efficient.
 
-## MQTT exploration (different tools, computers/network nodes, and wildcards)
-I had so much fun sending [messages](/TeamThree/Ulrichs%20Lab%20Tasks.md#4a-mqtt-basics) to my team mates.
+## Lab Tasks
+Click [HERE](/Cristina/LabRecords/LabRecord03.md)
 
-## MQTT integration
-I did this [exercise](/TeamThree/Ulrichs%20Lab%20Tasks.md#4b-mqtt-integration) by myself, with the help of Jesper.
+## Reflection of the day
+Go to today's [reflection](/Cristina/reflections/reflection03/README.md)
 
-## MQTT simulators
-I started this [exercise](/TeamThree/Ulrichs%20Lab%20Tasks.md#4c-mqtt-simulators) alone but then Jorrit joined and colaborated
-
-## MQTT on microcontroller
-Here is the last [activity](/TeamThree/Ulrichs%20Lab%20Tasks.md#4d-mqtt-on-microcontroller) from today, that we couldn't finish before the class ended and did on day 4.
