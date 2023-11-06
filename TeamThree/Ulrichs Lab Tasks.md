@@ -1,16 +1,16 @@
 # Teamfolder
 
-Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures of IoT.
+Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures from Ulrich.
  
 ## Index
 1. [Git and Kit](#1-git-and-kit)
-   * 1.a [Partner, team git repo setup](#1a-partner-team-git-repo-setup)
-   * 1.b [The Kit](#1b-the-kit)
+   * [1.a Partner, team git repo setup](#1a-partner-team-git-repo-setup)
+   * [1.b The Kit](#1b-the-kit)
 2. [Breadboard, Blink, and Stories](#2-breadboard-blink-and-stories)
    * [2.b Breadboard and Electronic Prototyping](#2b-breadboard-and-electronic-prototyping)
    * [2.c Blink on the Wemos D1 Mini](#2c-blink-on-the-wemos-d1-mini)
    * [2.d Toggle Led With Button](#2d-toggle-led-with-button)
-3. [IoTempower Gateway, Actors and Sensors](#3-iotempower-gateway-our-own-network)
+3. [IoTempower Gateway Actors and Sensors](#3-iotempower-gateway-actors-and-sensors)
    * [3.a Actors and Sensors with Web Requests](#3a-actors-and-sensors-with-web-requests)
    * [3.b Stories and Scenario](#3b-stories-and-scenario)
 4. [MQTT Introduction and Simulators](#4-mqtt-introduction-and-simulators)
@@ -31,16 +31,13 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [6.f RFID Reader](#6f-rfid-reader)
 7. [Acces Control System](#7-access-control-system)
    * [7.a1 New Actors](#7a1-new-actors)
-   * [7.a2 Project 1 (Group)](#7a2-project-1-(group))
+   * [7.a2 Project 1 (Group)](#7a2-project-1)
    * [7.b Analog Touch Sensor](#7b-analog-touch-sensor)
    * [7.c Moisture Sensor](#7c-moisture-sensor)
    * [7.d Optional](#7d-optional)
 8. [Final IOT Project](#8-final-iot-project)
-9. [Volkers Part 1](#9-volkers-part-1)
-10. [Volkers Part 2](#10-volkers-part-2)
-11. [Volkers Part 3](#11-volkers-part-3)
-12. [Volkers Part 4](#12-volkers-part-4)
-13. [Presentation](#13-presentation)
+9. [Volkers Part](#9-volkers-part)
+10. [Presentation](#10-presentation)
 
 ## 1. Git and Kit
 ### 1.a Partner, team git repo setup
@@ -48,7 +45,7 @@ Jorrit, Luca and Cristina partned up and with the rest of the group created this
 
 ### 1.b The Kit     
 We got one Kit, unpacked it and made a list with all the parts we found. We also identified what every piece is good for and added the bus system they use as an interface. Afterwards we googled tome properties of the respective bus on the respective device.
-All this information can be seen in this table:
+All this information, including the Wemos D1 Mini and ESP32, can be seen in this [table](https://docs.google.com/spreadsheets/d/1GLcCDbztd-jvkXTj-HZ6mThsLr_UORJh/edit?usp=sharing&ouid=107652657307043314785&rtpof=true&sd=true)
 
 ## 2. Breadboard, Blink, and Stories
 ### 2.a Feedback
@@ -98,12 +95,94 @@ Blink on the Wemos D1 Mini Exercise:
 
 - Outcome: We now have a functional LED that can toggle on and off with a button press, but it keeps blinking if the button is held down.
 
-## 3. IoTempower Gateway - Our Own Network
+## 3. IoTempower Gateway Actors and Sensors
 
 ### 3.a Actors and Sensors with Web Requests
+#### Control an ESP8266 from another ESP8266 via WLAN
+In this little project we wanted to make a server (ESP8266) which only toggles a LED when a special event occurs. That event is the click of a button on another ESP8266.
+These two ESP8266s are connected via WLAN.
 
+##### Client - ESP8266 with a button which talks to another ESP8266
+This is our client which connects to the WLAN from our Raspberry Pi and also connects to the second ESP8266 via its IP address and sends a HTTP GET to it when the button is pressed.
+
+###### How to begin
+1. File > New
+1. Tools > Board > LOLIN(WEMOS) D1 R2 & mini
+3. Connect the cables between the ESP8266 and the button
+	- black cable of the button to the ground (G) of the ESP8266
+	- yellow cable of the button to D6 connector of the ESP8266
+	- red cable of the button to the 3V connector of the ESP8266
+2. Write the code
+3. Verify the program
+4. Upload File to ESP8266
+
+###### Code for the client
+Here you can find the code for the client -> [client_button.ino](/Teamfolder/exercises/exercise01/client_button/client_button.ino)
+
+###### Pictures
+<img src="/Teamfolder/pictures/exercise01/client_button_picture_1.jpg" alt="drawing" width="300"/> <img src="/Teamfolder/pictures/exercise01/client_button_picture_2.jpg" alt="drawing" width="300"/>
+
+##### Server - ESP8266 with a LED which is switched on/off from the client
+...
+
+#### Problems
+In the first Lab we had problems especially with the micro USB cables. Some of our cables did not work and that cost us time.
+
+### Breadboard and blink
+
+```/*
+  DigitalReadSerial
+
+  Reads a digital input on pin 2, prints the result to the Serial Monitor
+
+  This example code is in the public domain.
+
+  https://www.arduino.cc/en/Tutorial/BuiltInExamples/DigitalReadSerial
+*/
+
+// digital pin 2 has a pushbutton attached to it. Give it a name:
+int pushButton = 5;
+int ledpin = 23;
+
+bool ledstate = false;
+
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // initialize serial communication at 9600 bits per second:
+  Serial.begin(9600);
+  // make the pushbutton's pin an input:
+  pinMode(pushButton, INPUT_PULLUP);
+  pinMode(ledpin, OUTPUT);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // read the input pin:
+  int buttonState = digitalRead(pushButton);
+
+  if (buttonState == 1) // if button is pressed
+  {
+    if (ledstate)
+    {
+      ledstate = false;
+      digitalWrite(ledpin, LOW);
+    }
+    else
+    {
+      ledstate = true;
+      digitalWrite(ledpin, HIGH);
+    }
+  }
+  // print out the state of the button:
+  Serial.println(buttonState);
+  delay(100);  // delay in between reads for stability
+}
+```
 ### 3.b Stories and Scenario
-Foot Mouse & Accessibility Software Scenario
+This is the first version of the story, where we got feedback from the professor. Ulno really liked the first line where we	introduce the location and the personas
+
+#### Foot Mouse & Accessibility Software Scenario
 
 Company: LoudWhisper, Project Manager: Roberto, Employee: Matthijs, CEO: Pieter
 
@@ -162,6 +241,8 @@ We also used our consoles to talk to each other, shown below:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d282b68b-02a1-483b-9b64-efed6a489516" target="_blank">See picture here</a>)
 
 ### 4.b MQTT Integration
+We first familiarized with mqtt_action and then rebuilt the example from the video.
+<br><br>
 To rebuild the air conditioning integratior component from the video, we first created a virtual environment in python using the following command: 
 ```python
 -m venv /path/to/new/virtual/environment
@@ -212,7 +293,8 @@ problem: we struggled getting the status of the AC because it only showed OFF
 
 resolved:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/62a23ca0-b329-4674-836a-e01c2f08a487" target="_blank">See picture here</a>)
-
+<br><br>
+For the integration of the simulators, we used the same exact python code as in the last exercise
 
 #### AC simulator Bash code
 ```
@@ -366,21 +448,24 @@ Discovering where to create the discord bot was complicated, but after some aski
 
 ## 6. Device Control with IoTempower
 ### 6.a Exploring IoTempower Services and Commands
-
+We wrote both the tool suport and documentation on a drive document linked [HERE](https://docs.google.com/document/d/1SMFhRlTP5ns-kHlcEid_c506uAFfQpNq/edit?usp=sharing&ouid=107652657307043314785&rtpof=true&sd=true)
 ### 6.b First Node
-
+We completed this task but forgot to write about it.
 ### 6.c Second Node
+We completed this task but forgot to write about it.
 
 ### 6.d Button to sound and notification
+We completed this task but forgot to write about it.
 
 ### 6.e Text receiver
+We completed this task but forgot to write about it.
 
 ### 6.f RFID reader
 Description
 * We first plugged rfid to the breadboard and wired it to the d1 mini following the wiring in the documentation like so:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/e3db2f98-dafa-405d-be24-ccf9c68afb4b" target="_blank">See RFID Circuit here</a>).
 * We initialise the serial 
-* It fails provably because of missing ;
+* It fails probably because of missing ;
 * It keeps failing until we realise we forgot to wire the 3.3V to the 3V3.
 * We connect the following functions on Node-red:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/41ff379a-3d12-4377-984c-67f2a94acf82" target="_blank">See RFID NodeRED here</a>).
@@ -473,18 +558,32 @@ We build a touch sensor based on the analog port with IoTempower on an Wemos D1 
 We then used the filter filter_binarize to generate touched/untouched the same. 
  * We had some trouble adding the filter because we were following the format from the video tutorial, but didn't realize that in the documentation the format was different. We were missing a dot "."
  * In node red it wasn't working. I deleted the switch and filter nodes in node-red and it kinda worked but only the pressed were shown.
-![Analog_pressedProblem](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/221b369f-00ce-43bd-9346-54f01175ab47)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/221b369f-00ce-43bd-9346-54f01175ab47" target="_blank">See Analog pressedProblem here</a>)
  * I chandged the code from pressed/released to touched/untouched and added again the filter and switch in red node and it magically worked. 
-![image](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ce2253ad-2cb6-4e76-af68-30e9c03fc79f)
-![Analog_2proff](https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/55cc7a9a-d516-493d-ba99-0faa1949d98c)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ce2253ad-2cb6-4e76-af68-30e9c03fc79f" target="_blank">See picture here</a>)
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/55cc7a9a-d516-493d-ba99-0faa1949d98c" target="_blank">See Analog 2proff here</a>)
 
 ### 7.c Moisture Sensor
+In this task we build a voltage divider connected to the capacitive moisture sensor. 
+ * First we connected everything to the breadboard and then to the raspberry pie
+ * In the gateway, in the setup-cpp document, we wrote the following command: analog(a0);
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d455641a-c30b-4f1b-87a8-e28636ecdc70" target="_blank">See picture here</a>)
+ * In node red we connected a mqtt in node to a debug and a lot of numbers appeared after deploying.
+ * We tried to apply a filter in the gateway to filter out the numbers, but it didn't really work, so we applied the filter and a delay in node red because it was easier.
+ * We added a switch to translate the numbers to the messages wet/dry
+ * We had some truble gettin the dry/wet stats because we didn't know the number that separated what was wet from what was dry. After some trial and error, we found that the turning point was 70.
+Nodes in node red:
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/de49a756-fccb-459e-be5a-114bfffd753d" target="_blank">See Moisture nodered here</a>)
+
+Wet:
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/b9df2092-a206-414f-8314-cfec22069612" target="_blank">See Wet Sensor here</a>)
+Dry:
+(<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/07027208-4ba3-44e1-b7df-14400225d8c0" target="_blank">See Dry Sensor here</a>)
+
 ### 7.d Optional
 We did not do the optional exercise.
 
 ## 8. Final IOT Project
-## 9. Volkers Part 1
-## 10. Volkers Part 2
-## 11. Volkers Part 3
-## 12. Volkers Part 4
+## 9. Volkers Part
+See [HERE](/TeamThree/Volkers%20Part.md)
 ## 13. Presentation
