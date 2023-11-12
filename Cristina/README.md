@@ -76,8 +76,5 @@ Welcome to my portfolio. Here you will be able to go through my progress, stuggl
 - [Reflection](/Cristina/reflections/reflection11/README.md)
 
 ## Twelfth day
-- [Research records](/Cristina/researches/research12/README.md)
-
-- [Lab records - project02](/Cristina/LabRecords/LabRecord12.md)
 
 - [Reflection](/Cristina/reflections/reflection12/README.md)
