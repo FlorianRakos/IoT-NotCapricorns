@@ -1,4 +1,4 @@
-#Day 5
+# Day 5
 Today was frustraiting. Gift and I misunderstood a task, and spent most of the morning working on something that we weren't supposed to do. We tried hard for 1 to 2 hours with the help form the teacher and then we realised we didn't had to build this task, just do research on the hardware. Ulno told us that we could save the progress we had made because we would build that same device some days after, but we were a bit disapointed on ourselves for not understanding the activity and for have "wasted" that much time, although it is not wasted because we will do that activity sometime in the near future.
 
 After that, I felt quite dumb, as the other half of the group were doing the second activity and didn't want us to join, because we would distract them. In consequence, I invested most of my time doing documentation here in git in the team three folder about the previous days and doing the index.  After, my team would explain me how they did the activities and finally, I managed to successfully do the second task with Xavi's help.
