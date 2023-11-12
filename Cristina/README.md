@@ -46,16 +46,16 @@ Welcome to my portfolio. Here you will be able to go through my progress, stuggl
 ## Seventh day
 - [Research records](/Cristina/researches/research07/README.md)
 
-- [Lab records - project01](/Cristina/LabRecords/LabRecord07.md)
+- [Lab records](/Cristina/LabRecords/LabRecord07.md)
 
 - [Reflection](/Cristina/reflections/reflection07/README.md)
 
 ## Eighth day
 - [Research records](/Cristina/researches/research08/README.md)
 
-- [Lab records - project01](/Cristina/LabRecords/LabRecord08.md)
+- [Lab records](/Cristina/LabRecords/LabRecord08.md)
 
-- [Reflection](/Cristina/reflections/reflection08/reflection08.md)
+- [Reflection](/Cristina/reflections/reflection08/README.md)
 
 ## Ninth day
 - [Research records](/Cristina/researches/research09/README.md)
