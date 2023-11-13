@@ -1,1 +1,1 @@
-I liked how it magically deploys over wifi.
+I liked how IoT empower magically deploys over wifi. Furthermore I finally started getting familiar with the Hardware as well as the tools we were using like IoT empower to achive specific goals.
