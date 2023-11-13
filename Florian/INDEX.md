@@ -9,8 +9,6 @@ My portfolio
 - [Reflection](/Florian/reflections/reflection01/README.md)
 
 ## Second day
-- [Lecture](/Florian/lecture/lecture02/README.md)
-
 - [Exercises](/TeamTwo/exercises/exercise02/README.md)
 
 - [Reflection](/Florian/reflections/reflection02/README.md)

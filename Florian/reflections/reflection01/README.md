@@ -1,7 +1,5 @@
 # Reflections
 
-## week 1
-
 ## Lecture reflection
 The Lecture was interesting and I think I have a better Understanding of what makes up the Internet of Things.
 
