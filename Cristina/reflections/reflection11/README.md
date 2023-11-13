@@ -1,3 +1,4 @@
+# Day 11
 Yesterday I was working until 1 on the morning on the portfolio because the group tasks were disorganized, so today I was a bit tired, but I finished organizing them and then made some index on the days where I have a lot of topics. I linked everything and rewrited some texts.
 <br><br>
 I did a ton of documentation and with Luca we explained with a lot of photos the last exercise we did with Volker while Jorrit and Florian worked on the final project.
