@@ -1,5 +1,5 @@
-# Portfolio of Florian (example!)
-My portfolio 
+# Portfolio of Florian Rakos
+
 
 ## First day
 - [Lecture](/Florian/lecture/lecture01/README.md)
