@@ -596,7 +596,7 @@ Furthermore, about the voice recognition,he say it was very useful, and unique. 
 Volker stated that id the begginig of our jouney on IoT so our project was good for the 3 weeks course, anything more would have been too much. He suggested we could make different voice commands for different scenarios. To optimise it, he encoraged us to connect it to the Alexa software to send mqtt messages from alexa to the broker and then Alexa sends the input into the mqtt and then give it back.
  
 ### Some of the questions asked were the following, with a short resume of our response:
-Buzzer is activated from roos. Can she cancel it?
+#### Buzzer is activated from roos. Can she cancel it?
 No, she doesnt want to cancel it.
  
 #### What were our challenges?
@@ -606,5 +606,5 @@ M5 stick, decide on an IoT project, specific scenario for our end product
 Yes, we already used it for the parkinsons mouse and for this tool, it is also useful.
  
 ### To sum up:
-	* We are the connectivity masters
-	* Features that stand out: voice control and add devices
+ * We are the connectivity masters
+ * Features that stand out: voice control and add devices
