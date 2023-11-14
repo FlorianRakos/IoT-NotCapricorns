@@ -37,7 +37,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [7.d Optional](#7d-optional)
 8. [Final IOT Project](#8-final-iot-project)
 9. [Volkers Part](#9-volkers-part)
-10. [Presentation](#10-presentation)
+10. [Presentation](#10-presentation-feedback)
 
 ## 1. Git and Kit
 ### 1.a Partner, team git repo setup
@@ -587,7 +587,7 @@ We did not do the optional exercise.
 
 ## 9. Volkers Part
 See [HERE](/TeamThree/Volkers%20Part.md)
-## 13. Presentation Feedback
+## 10. Presentation Feedback
 Durnig the presentation we got some feedback:
 Ulrich suggested to talk more about the option to add more receivers to our system in the 2nd round as he found it a very nice implementation.
 He verbalised that the UI looks nice for this idea. He also believed that our node red looks quite dificult and impressive. Also, that the solution looked quite nice, and suggested to play a little with databases.
