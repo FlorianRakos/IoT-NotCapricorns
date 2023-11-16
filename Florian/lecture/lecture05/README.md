@@ -38,5 +38,3 @@ More Documentation.
 
 **Stories**: Stories or use cases help in understanding how IoT systems will be used in real-world scenarios. They guide the design and development process, making it easier to anticipate scaling requirements and potential issues. They also help in testing by providing real-world contexts for validation.
 
-
-### IoT Empower - Which features does it offer?

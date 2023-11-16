@@ -37,7 +37,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [7.d Optional](#7d-optional)
 8. [Final IOT Project](#8-final-iot-project)
 9. [Volkers Part](#9-volkers-part)
-10. [Presentation](#10-presentation)
+10. [Presentation Feedback](#10-presentation-feedback)
 
 ## 1. Git and Kit
 ### 1.a Partner, team git repo setup
@@ -45,7 +45,7 @@ Jorrit, Luca and Cristina partned up and with the rest of the group created this
 
 ### 1.b The Kit
 We got one Kit, unpacked it and made a list with all the parts we found. We also identified what every piece is good for and added the bus system they use as an interface. Afterwards we googled tome properties of the respective bus on the respective device.
-All this information can be seen in this table:
+All this information, including the Wemos D1 Mini and ESP32, can be seen in this [table](https://docs.google.com/spreadsheets/d/1GLcCDbztd-jvkXTj-HZ6mThsLr_UORJh/edit?usp=sharing&ouid=107652657307043314785&rtpof=true&sd=true)
 
 ## 2. Breadboard, Blink, and Stories
 ### 2.a Feedback
@@ -599,4 +599,24 @@ There are comments in the flows explaining its working.
 
 ## 9. Volkers Part
 See [HERE](/TeamThree/Volkers%20Part.md)
-## 13. Presentation
+## 10. Presentation Feedback
+### Durnig the presentation we got some feedback:
+Ulrich suggested to talk more about the option to add more receivers to our system in the 2nd round as he found it a very nice implementation.
+He verbalised that the UI looks nice for this idea. He also believed that our node red looks quite dificult and impressive. Also, that the solution looked quite nice, and suggested to play a little with databases.
+Furthermore, about the voice recognition,he say it was very useful, and unique. The Node red, specifically the voice recognition nodes, literally: "are very unique and impressive".
+
+Volker stated that id the begginig of our jouney on IoT so our project was good for the 3 weeks course, anything more would have been too much. He suggested we could make different voice commands for different scenarios. To optimise it, he encoraged us to connect it to the Alexa software to send mqtt messages from alexa to the broker and then Alexa sends the input into the mqtt and then give it back.
+
+### Some of the questions asked were the following, with a short resume of our response:
+#### Buzzer is activated from roos. Can she cancel it?
+No, she doesnt want to cancel it.
+
+#### What were our challenges?
+M5 stick, decide on an IoT project, specific scenario for our end product
+
+#### IS node red usefull for our project?
+Yes, we already used it for the parkinsons mouse and for this tool, it is also useful.
+
+### To sum up:
+ * We are the connectivity masters
+ * Features that stand out: voice control and add devices

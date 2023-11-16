@@ -1,0 +1,2 @@
+There was a lot of work to do this session. More than actually fits in one day but I stood here a bit longer so I can finish it. 
+Most of all I enjoyed creating the Access Controll System, as it brings together many different components and seems like a device that could actually be usefull.
