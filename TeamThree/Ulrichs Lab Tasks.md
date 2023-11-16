@@ -584,7 +584,7 @@ Dry:
 We did not do the optional exercise.
 
 ## 8. Final IOT Project
-The final IoT project is a 3-part system. There is the alarm device, the sender Node-RED flow, a receiver Node-RED flow, and a receiving device.
+The final IoT project is a 4-part system. There is the alarm device, the sender Node-RED flow, a receiver Node-RED flow, and a receiving device.
 
 The sending device is an esp32 that reads a button press and a potentiometer being spun (potentially by a string) that send an alarm message to the sender via mqtt.
 The receiver device is a C5 stick that receives MQTT messages and buzzes to tell its carrier to go off and help the person that called the alarm.
