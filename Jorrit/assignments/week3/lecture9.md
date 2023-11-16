@@ -1,5 +1,6 @@
 # Lecture 6
 
+[Class Reflections](/Jorrit/reflections/week3/monday.md)
 
 ## Identify Security Risks
 

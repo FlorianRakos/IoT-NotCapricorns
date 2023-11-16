@@ -11,6 +11,8 @@ This one was a little more difficult because the pubsub library that was recomme
 
 Soon after We had an ESP32 that behaved like the integrator and the AC unit.
 
+[Lazy Florian link](/Florian/exercises/exercise04/README.md)
+
 ### exercise 5 - Node-RED intro
 I honestly don't feel the need to prove my familiarity with Node-RED. I've been using it for years and even used it earlier this semester.
 
@@ -20,7 +22,7 @@ This is now a letter for a subtask, within a subtask.
 Building a 3-node flow isn't difficult for me (although,in fairness, I used 7), the rest did struggle a little. I don't always take full advantage of the visual aspect. I tend to just put everything functional in a function node. Just look at [my flow](/Jorrit/assignments/week1/flows.json).
 
 #### b
-I somehow completely missed the example listed in the lab document. I just found someone who did it online and copied their work. I will admit I don't think the others understand how I changed the colour of the text. It was late and they were tired, so I just did it.
+I somehow completely missed the example listed in the lab document. I just found someone who did it online and copied their work. I will admit I don't think the others understand how I changed the colour of the text. It was late and they were tired, so I just did it. Evidence is in [here](/TeamThree/Ulrichs Lab Tasks.md), I think, the links are dead for me.
 
 ## Opinions
 

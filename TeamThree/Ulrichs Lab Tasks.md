@@ -1,7 +1,7 @@
 # Teamfolder
 
 Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina did in the exercise lectures from Ulrich.
- 
+
 ## Index
 1. [Git and Kit](#1-git-and-kit)
    * [1.a Partner, team git repo setup](#1a-partner-team-git-repo-setup)
@@ -43,7 +43,7 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
 ### 1.a Partner, team git repo setup
 Jorrit, Luca and Cristina partned up and with the rest of the group created this Git Repo. We downloaded the example provided on the documentation and decided on doing a similar organisation. We created different folders for each member of the group as well as the smaller groups and we all cloned the repository.
 
-### 1.b The Kit     
+### 1.b The Kit
 We got one Kit, unpacked it and made a list with all the parts we found. We also identified what every piece is good for and added the bus system they use as an interface. Afterwards we googled tome properties of the respective bus on the respective device.
 All this information, including the Wemos D1 Mini and ESP32, can be seen in this [table](https://docs.google.com/spreadsheets/d/1GLcCDbztd-jvkXTj-HZ6mThsLr_UORJh/edit?usp=sharing&ouid=107652657307043314785&rtpof=true&sd=true)
 
@@ -74,7 +74,7 @@ Blink on the Wemos D1 Mini Exercise:
 
 4. To make the LEDs blink in sync, we kept the same setup but switched the High and Low voltage. This adjustment made both LEDs blink in perfect synchronization (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/4a5a858d-dd20-44d5-b659-88307596b9a3" target="_blank">See picture 1 here</a>), (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/1ec2ecf8-6864-40cf-a140-72f3ea6bf8be" target="_blank">See picture 2 here</a>).
 
-## 2.d Toggle Led With Button 
+## 2.d Toggle Led With Button
 - Add a button to the breadboard, connecting the button to ground and a GPIO port like D5.
   * We correctly placed the button in the right spot (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/148061546/6743522d-ca32-48b9-a11f-5559176af15c" target="_blank">See picture here</a>).
 
@@ -219,7 +219,7 @@ At LoudWhisper's Amsterdam office, Roos is working with her footmouse.
 
 Roos is very thirsty and didn’t remember to ask for a glass of water when she arrived. Everyone seems so focused and not noticing her need.
 
-Roos presses the button on her footmouse (or voice command or pull string) a blinking light (buzz or whatever) turns on. 
+Roos presses the button on her footmouse (or voice command or pull string) a blinking light (buzz or whatever) turns on.
 
 Roberto’s, watch starts to beep and blink, and he is aware that she needs something.
 
@@ -243,11 +243,11 @@ We also used our consoles to talk to each other, shown below:
 ### 4.b MQTT Integration
 We first familiarized with mqtt_action and then rebuilt the example from the video.
 <br><br>
-To rebuild the air conditioning integratior component from the video, we first created a virtual environment in python using the following command: 
+To rebuild the air conditioning integratior component from the video, we first created a virtual environment in python using the following command:
 ```python
 -m venv /path/to/new/virtual/environment
 ```
-After that, we download git, because we didn't have it installed. We pasted the iotempire example on how to connect a button node with a switch, changing the host to our raspberry pie number, and followed the tutorial "Knit Your IoT Network with IoTknit". We set a mosquitto pub and a mosquitto sub that were connected to the script. 
+After that, we download git, because we didn't have it installed. We pasted the iotempire example on how to connect a button node with a switch, changing the host to our raspberry pie number, and followed the tutorial "Knit Your IoT Network with IoTknit". We set a mosquitto pub and a mosquitto sub that were connected to the script.
 
 ```python
 from iotknit import *
@@ -266,7 +266,7 @@ def tempCallback(msg):
         t = int(msg)
     except ValueError:
         return
-   
+
     if (t >= 30):
         switch.publish("set", "on")  # publish updated state
         print("sending: [r1]", "on")
@@ -285,7 +285,7 @@ run()  # you can also do a while loop here call process() instead
 ```
 
 ### 4.c MQTT simulators
-We generated two bash scripts on ChatGPT, one for the temperature simulator, and one for the AC simulator, and we installed PuTTY to run them. 
+We generated two bash scripts on ChatGPT, one for the temperature simulator, and one for the AC simulator, and we installed PuTTY to run them.
 
 
 problem: we struggled getting the status of the AC because it only showed OFF
@@ -464,7 +464,7 @@ We completed this task but forgot to write about it.
 Description
 * We first plugged rfid to the breadboard and wired it to the d1 mini following the wiring in the documentation like so:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/e3db2f98-dafa-405d-be24-ccf9c68afb4b" target="_blank">See RFID Circuit here</a>).
-* We initialise the serial 
+* We initialise the serial
 * It fails probably because of missing ;
 * It keeps failing until we realise we forgot to wire the 3.3V to the 3V3.
 * We connect the following functions on Node-red:
@@ -483,7 +483,7 @@ Denied:
 
 ## 7. Access Control System
 ### 7.a1 New Actors
-On the fisrt part of this task, we used a slider in Node-RED to control the brightness (duty cycle) of the LED. 	
+On the fisrt part of this task, we used a slider in Node-RED to control the brightness (duty cycle) of the LED.
  * We first hooked up a simple LED with a resistor to a GPIO port of a Wemos D1 Mini.
  * The led wouldn't lit up and in the gateway we were receiving an error over and over again. We first thought it was a missing ";" but it still gave us the error
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/c13c3a43-7f82-42b3-a12e-826d5d1ed7d4" target="_blank">See PWM Error here</a>).
@@ -520,7 +520,7 @@ The last part of the task consisted on using the rgb_single IoTempower command t
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/144f5829-39c5-4e11-b023-03a0a5589bb5"     target="_blank">See RGB Light Console here</a>)
 
 ### 7.a2 Project 1
-On this task we are building an access control system using the RFID reader, the RGB led, the buzzer, the display, and the relay with the solenoid drawer lock. 
+On this task we are building an access control system using the RFID reader, the RGB led, the buzzer, the display, and the relay with the solenoid drawer lock.
  * First we wire up the RFID reader along with the RGB light.
  * We do some connedtions on Node-RED. When it is accepted the red light turns on, when it is denied it is turned off and the green one doesn't light up.
  * We make some changes and when is it accepted the green light turns on and when it is denied it turns off and the red light turns on. We figured that the green light is on but is very very light. It is hard to see.
@@ -538,7 +538,7 @@ node-red + bread board + gateway
 
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/a6eafdbd-91ad-4f03-baac-49514f6a53ae" target="_blank">See Accesscontrollsystem Open here</a>)
 
-breadboard setup: 
+breadboard setup:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/67fe49df-166b-4dc4-b963-55f44866678d " target="_blank">See Accesscontrollsystem Circuit here</a>)
 
 
@@ -547,7 +547,7 @@ We build a touch sensor based on the analog port with IoTempower on an Wemos D1 
  * We opened the IoTempire gateway and, created a new node folder and wrote "analog(a0)" on the setup.cpp
  * When we deployed it gave us an error. We tried different things and concluded that we missed a ; and we had the wrong device on the node.conf. When we changed the "Wemos D1 Mini" to "esp32minikit", we could deploy it correctly.
  * We connected a cable onto the breadboard:
- 
+
  * In node red we connected a mqtt in node to a debug one and the following data started showing:
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/12c60d3d-4d14-466e-a67c-bbbba2bbfa0e" target="_blank">See Analog response here</a>)
 
@@ -555,16 +555,16 @@ We build a touch sensor based on the analog port with IoTempower on an Wemos D1 
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d744662a-5944-4103-9384-c34faafacc38" target="_blank">See Analog messages here</a>)
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/dbab11e7-9cc4-409c-9a41-48e6919b12c5" target="_blank">See Analog proff here</a>)
 
-We then used the filter filter_binarize to generate touched/untouched the same. 
+We then used the filter filter_binarize to generate touched/untouched the same.
  * We had some trouble adding the filter because we were following the format from the video tutorial, but didn't realize that in the documentation the format was different. We were missing a dot "."
  * In node red it wasn't working. I deleted the switch and filter nodes in node-red and it kinda worked but only the pressed were shown.
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/221b369f-00ce-43bd-9346-54f01175ab47" target="_blank">See Analog pressedProblem here</a>)
- * I chandged the code from pressed/released to touched/untouched and added again the filter and switch in red node and it magically worked. 
+ * I chandged the code from pressed/released to touched/untouched and added again the filter and switch in red node and it magically worked.
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/ce2253ad-2cb6-4e76-af68-30e9c03fc79f" target="_blank">See picture here</a>)
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/55cc7a9a-d516-493d-ba99-0faa1949d98c" target="_blank">See Analog 2proff here</a>)
 
 ### 7.c Moisture Sensor
-In this task we build a voltage divider connected to the capacitive moisture sensor. 
+In this task we build a voltage divider connected to the capacitive moisture sensor.
  * First we connected everything to the breadboard and then to the raspberry pie
  * In the gateway, in the setup-cpp document, we wrote the following command: analog(a0);
 (<a href="https://github.com/FlorianRakos/IoT-NotCapricorns/assets/113584087/d455641a-c30b-4f1b-87a8-e28636ecdc70" target="_blank">See picture here</a>)
@@ -584,6 +584,18 @@ Dry:
 We did not do the optional exercise.
 
 ## 8. Final IOT Project
+The final IoT project is a 4-part system. There is the alarm device, the sender Node-RED flow, a receiver Node-RED flow, and a receiving device.
+
+The sending device is an esp32 that reads a button press and a potentiometer being spun (potentially by a string) that send an alarm message to the sender via mqtt.
+The receiver device is a C5 stick that receives MQTT messages and buzzes to tell its carrier to go off and help the person that called the alarm.
+
+The sending flow processes the mqtt messages from the sending device and can also respond to ui input, and voice commands (kinda). It displays the receivers it knows about on the ui and allows the user to add more.
+
+The receiving flow gets the alarm message from the sending flow and activates the receiving device.
+
+The mqtt topics are dynamically subscribed and published to, so using multiple devices requires minimal code changes.
+
+There are comments in the flows explaining its working.
 
 ## 9. Volkers Part
 See [HERE](/TeamThree/Volkers%20Part.md)
@@ -594,17 +606,17 @@ He verbalised that the UI looks nice for this idea. He also believed that our no
 Furthermore, about the voice recognition,he say it was very useful, and unique. The Node red, specifically the voice recognition nodes, literally: "are very unique and impressive".
 
 Volker stated that id the begginig of our jouney on IoT so our project was good for the 3 weeks course, anything more would have been too much. He suggested we could make different voice commands for different scenarios. To optimise it, he encoraged us to connect it to the Alexa software to send mqtt messages from alexa to the broker and then Alexa sends the input into the mqtt and then give it back.
- 
+
 ### Some of the questions asked were the following, with a short resume of our response:
 #### Buzzer is activated from roos. Can she cancel it?
 No, she doesnt want to cancel it.
- 
+
 #### What were our challenges?
 M5 stick, decide on an IoT project, specific scenario for our end product
- 
+
 #### IS node red usefull for our project?
 Yes, we already used it for the parkinsons mouse and for this tool, it is also useful.
- 
+
 ### To sum up:
  * We are the connectivity masters
  * Features that stand out: voice control and add devices

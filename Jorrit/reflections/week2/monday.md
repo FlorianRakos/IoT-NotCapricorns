@@ -1,11 +1,15 @@
 # Reflections
 
+[Lecture assignments](/Jorrit/assignments/week2/lecture6.md)
+
 ## Lecture
 We started by discussing the IoT project we'd be doing. As a team we opted to do a small project that would basically just serve to qualify as an IoT project. It is not related to our existing project. It's a cynical move, but there's no point in making our lives more difficult.
 
 Next we started answering some questions, but I got a little distracted by contacting the mechanic in Spain. It was good news. The part that died was my fuel pump. They can replace it and then I can pick him up.
 
 ## Lab
+
+My, how convenient; Florian has [written down](/Florian/exercises/exercise06/README.md) what we were doing.
 
 ### exercise 6.1f
 I think we have reached the point where we're not really doing anything new, we're just repeating the stuff we have been doing.

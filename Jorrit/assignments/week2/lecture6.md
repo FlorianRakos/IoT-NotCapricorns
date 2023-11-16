@@ -1,5 +1,6 @@
 # Lecture 6
 
+[Class Reflections](/Jorrit/reflections/week2/monday.md)
 
 ## generic steps
 
