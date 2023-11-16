@@ -1,5 +1,7 @@
 # Reflections
 
+[Lecture assignments](/Jorrit/assignments/week1/lecture1.md)
+
 ## Lecture
 My study profile is Embedded systems/technology, which means I've had plenty lectures on IoT before.
 The information wasn't anything new to me. I do think it's all going a little quick; I imagine that some of my classmates might struggle to keep up.
@@ -20,15 +22,17 @@ All of my experience with git tells me to get a branch policy going, but I canno
 I recognise most of the components from the kit. I have used a couple of them before. The others in the team actually contributed to the list. This sort of exercise can make me question what I actually know, because it took me way too long to figure out the bus system of the DHT11 from looking at the datasheet.
 
 The example table provided was pretty useless if you ask me, but I did just now notice that there was another part to this exercise where you had to research the bus system.
+[Components List](/TeamThree/exercises/exercise%2002/ComponentsList.xlsx)
 
 ### exercise 2b
 This exercise was simplicity itself, but I discovered that I am unlearning stuff. I tried to wire up the two LEDs in series and was surprised to find that it's a lot less bright than two led's in parallel. I completely forgot about the concept of voltage drop and the variable resistance of LEDs. When I listened to Volker's explanation I got the most horrible sense of déjà vu. I vaguely recall learning this same thing 2-3 years ago.
 
 ### exercise 2c
 This part was perfectly clear, except for one task: *Add led on D6 blinking async*. I do not know what *async* is supposed to mean in this context. If it's meant to be fully asynchronous, then we would have to use another system for timing the blink like millis() or hardware timers, but that is decidedly beyond the scope of this lesson. The next task asks you to do the opposite by synchronising the blinking. I just decided to ignore it.
+[Code](/TeamThree/exercises/exercise%2002/example_blink/)
 
 ### exercise 2d
-This one is also deceptively complicated. having a button respond properly is pretty difficult for someone with no experience. Obviously it involves saving button states, but to get the button to behave as you would expect, you need to actually add delays and maybe even hysteresis. I decided to go with a 100 ms delay because it was after 17:00 and I was tired.
+This one is also deceptively complicated. having a button respond properly is pretty difficult for someone with no experience. Obviously it involves saving button states, but to get the button to behave as you would expect, you need to actually add delays and maybe even hysteresis. I decided to go with a 100 ms delay because it was after 17:00 and I was tired. Apparently I never saved the code.
 
 ## Opinions
 

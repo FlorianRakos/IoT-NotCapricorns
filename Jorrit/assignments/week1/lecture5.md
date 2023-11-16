@@ -1,5 +1,7 @@
 # Lecture 5
 
+[Class Reflections](/Jorrit/reflections/week1/friday.md)
+
 ## scaling and testing
 > Think about these questions:
 >

@@ -19,4 +19,4 @@
 ## Friday
 - [Reflections](/Jorrit/reflections/week1/friday.md)
 
-- [Lecture assignments](/Jorrit/assignments/week1/lecture3.md)
+- [Lecture assignments](/Jorrit/assignments/week1/lecture5.md)

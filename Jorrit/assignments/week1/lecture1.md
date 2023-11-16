@@ -1,5 +1,7 @@
 # Lecture 1
 
+[Class Reflections](/Jorrit/reflections/week1/monday.md)
+
 ## Who are U?
 Answer the following questions:
 

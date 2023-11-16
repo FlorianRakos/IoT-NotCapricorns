@@ -1,5 +1,7 @@
 # Lecture 3
 
+[Class Reflections](/Jorrit/reflections/week1/wednesday.md)
+
 ## IoT architecture
 > Research IoT architecture in respect to
 > - Internet
