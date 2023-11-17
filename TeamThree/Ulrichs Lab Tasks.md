@@ -35,8 +35,8 @@ Here we store all the exercises, pictures and projects Jorrit, Luca and Cristina
    * [7.b Analog Touch Sensor](#7b-analog-touch-sensor)
    * [7.c Moisture Sensor](#7c-moisture-sensor)
    * [7.d Optional](#7d-optional)
-8. [Final IOT Project](#8-final-iot-project)
-9. [Volkers Part](#9-volkers-part)
+8. [Volkers Part](#8-volkers-part)
+9. [Final IOT Project](#9-final-iot-project)
 10. [Presentation Feedback](#10-presentation-feedback)
 
 ## 1. Git and Kit
@@ -583,7 +583,10 @@ Dry:
 ### 7.d Optional
 We did not do the optional exercise.
 
-## 8. Final IOT Project
+## 8. Volkers Part
+See [HERE](/TeamThree/Volkers%20Part.md)
+
+## 9. Final IOT Project
 The final IoT project is a 4-part system. There is the alarm device, the sender Node-RED flow, a receiver Node-RED flow, and a receiving device.
 
 The sending device is an esp32 that reads a button press and a potentiometer being spun (potentially by a string) that send an alarm message to the sender via mqtt.
@@ -595,11 +598,8 @@ The receiving flow gets the alarm message from the sending flow and activates th
 
 The mqtt topics are dynamically subscribed and published to, so using multiple devices requires minimal code changes.
 
-There are comments in the flows explaining its working. You can see them [here](/main/main/Florian/exercises/project), along with a step by step on the progress.
+There are comments in the flows explaining its working. You can see them [here](/Florian/exercises/project), along with a step by step on the progress.
 
-
-## 9. Volkers Part
-See [HERE](/TeamThree/Volkers%20Part.md)
 ## 10. Presentation Feedback
 ### Durnig the presentation we got some feedback:
 Ulrich suggested to talk more about the option to add more receivers to our system in the 2nd round as he found it a very nice implementation.
