@@ -595,7 +595,7 @@ The receiving flow gets the alarm message from the sending flow and activates th
 
 The mqtt topics are dynamically subscribed and published to, so using multiple devices requires minimal code changes.
 
-There are comments in the flows explaining its working. You can see them [here](/main/Florian/exercises/project), along with a step by step on the progress.
+There are comments in the flows explaining its working. You can see them [here](/main/main/Florian/exercises/project), along with a step by step on the progress.
 
 
 ## 9. Volkers Part
