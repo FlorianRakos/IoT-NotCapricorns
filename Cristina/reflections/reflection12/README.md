@@ -7,3 +7,5 @@ We presented for the first time to Ulno and to some members from another group. 
 We then did it again to Volker and to members from the other group.
 <br><br>
 Both teachers emphasized their fascination for the voice command feature. Jorrit did a very good job on that, and was a pitty he couldn't be there to explain it in detail.
+<br><br>
+You can learn about our project [HERE](/TeamThree/Ulrichs%20Lab%20Tasks.md#9-final-iot-project)
