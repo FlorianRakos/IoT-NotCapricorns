@@ -1,7 +1,8 @@
 # Portfolio of Gift (example!)
 My portfolio .
 
-Good Sir i hope you doing good please when you do not find what you looking for look between Reserch records and Lab records.
+Goodday  Sir i hope you doing good please when you do not find what you looking for search  in between Reserch record,Lab records and Teamtwo folder
+
 
 ## First day
 - [Research records](/Gift/Lecture/lecture01/README.MD)
