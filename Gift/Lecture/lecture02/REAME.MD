@@ -1,3 +1,7 @@
+###
+### IoTempower Gateway - main steps, what is the point? 
+
+### Turn on the Light - main steps, what stands out, optional - hint at button? 
 
  ### Setting up lOTEMPO gate way
 https://github.com/iotempire/iotempower/blob/master/doc/image-pi.rst

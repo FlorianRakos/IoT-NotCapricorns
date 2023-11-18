@@ -1,4 +1,4 @@
-### Stories
+### Storie draft with feedback
 Roos, a 27-year-old colleague at our company, faced a challenging situation after a life-altering accident that left her without the use of both  arms. Her desire to regain her independence in using a computer was strong. She discovered the Foot Mouse device and was determined to make it work for her.
 
 After obtaining the Foot Mouse and installing the necessary app, Roos started the setup process, which turned out to be surprisingly straightforward, just like with any other mouse. She customized the mouse sensitivity to ensure the cursor moved precisely the way she wanted, using her foot to control it.
