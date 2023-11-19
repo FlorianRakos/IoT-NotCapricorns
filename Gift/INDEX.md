@@ -24,7 +24,7 @@ all the work for our group work it is at
 - [Research records](/Gift/Lecture/lecture03/README.MD)
 - [Teamtwo Research records](/TeamTwo/exercises/exerciseday3/README.md)
 - [Lab records](/Gift/Exercises/exercise03/README.MD)
-- [Teamtwo  Lab records](//TeamTwo/exercises/exerciseday3/README.md)
+- [Teamtwo  Lab records](/TeamTwo/exercises/exerciseday3/README.md)
 - [Reflection](/Gift/reflections/reflection03/README.MD)
 
 ## Fourth day
