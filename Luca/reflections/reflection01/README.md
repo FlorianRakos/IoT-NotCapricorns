@@ -1,7 +1,4 @@
-# Reflections
-
-## week 1
-
+# Reflection day 1
 ## Lecture reflection
 The lecturers are very good. It is very nice that they both speak with a lot of pasion about the subject. My only problem is that they are going to fast. I don't understand a lot. Most tasks are very hard for someone that does not have any experience with this. I spent a lot of time on figuring out what to do and that makes it very boring for myself. It does not help that I don't like IoT at all. IoT is split in 2 subjects at Fontys, it is Technology and Infrastructure. These were both my worst subjects and the ones that I really hate. So when we got here I had a little spark of hope that it was not that bad, but I really don't like it. It has nothing to do with the way the lecturers are teaching, it just has to do with my interests in IT. 
 
