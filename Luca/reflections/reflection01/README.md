@@ -10,16 +10,3 @@ I am trying my best to complete tasks, but I need the help of my classmates for 
 
 ## Lab reflection
 The first day was already a drop in the deep sea. I really hated it. I don't like to play around with wires and small things. I had a 8 week course when I started my education, but every knowledge that I had of this is gone. I didn't remember anything. So I partnered up with Cristina, she was in the same struggle. We tried to do most things by discussing it with eachother. Sadly, we had to ask Jorrit for help a couple times, because he is a Technology student and has had more experience with this.
-So the task that were completed are:
-
-### Day 1
-The things I completed are:
--
-
-The things I have been working on are:
--
-### Day 2
-### Day 3
-### Day 4
-### Day 5
- 
