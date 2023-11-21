@@ -1,0 +1,17 @@
+#What are the main CLI commands for MQTT?
+After watching the video I came up with these:
+•	Run/iot
+•	Iot menu
+•	Accespoint
+•	Iot upgrade
+•	Iot install
+•	Console_serial
+•	Initialize
+•	Deploy serial
+•	Adopt
+•	Deploy adopt
+•	Deploy
+•	Mqtt_broker
+•	Mqtt_listen
+•	Mqtt_send
+•	Iot doc serve
