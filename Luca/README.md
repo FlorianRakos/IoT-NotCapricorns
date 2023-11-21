@@ -1,5 +1,5 @@
 # Portfolio of Luca (example!)
-My portfolio 
+Welcome to my portofolio. Here you will see my progress, struggles and reflections.
 
 ## First day
 - [Research records](/Luca/researches/research01/README.md)
