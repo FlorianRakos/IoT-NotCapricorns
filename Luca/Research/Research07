@@ -1,0 +1,13 @@
+Today I focused on thinking about different ideas for our footmouse project. Ulrich said that our original idea was not IOT and that we needed to add some stuff. These were the ideas I came up with:
+
+
+#Idea 1
+Make the footmouse, but integrate a voice control system. So when a person uses the mouse they should say “Left click” or “Right click”, and the mouse will click. The mouse would communicate with the laptop. The user says the voice command to the laptop and not to the mouse (so they can say it more softly).
+
+#Idea 2
+Implement IoT-based location tracking to help users find their foot mouse if they misplace it. Use an airtag to beep louder when a person is closer when they say the correct words to locate their mouse.
+
+#Idea 3
+Implement IoT-enabled emergency buttons or voice-activated alerts that can notify caregivers or emergency services in urgent situations. So for example, when someone is using the footmouse, and has a probleem or wants to call the nurse, they can press a button or a gesture on the footmouse. The nurse will then get a notification on their device, this can be a light, a sound or a normal message.
+
+
