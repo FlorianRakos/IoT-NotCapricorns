@@ -1,0 +1,29 @@
+#The scenario
+See scenario [HERE](/TeamThree/Ulrichs%20Lab%20Tasks.md#3b-stories-and-scenario)
+
+#What is especially suitable for iot system, and why? The options to choose from are the following:
+Tekst 
+XML
+JSON
+YAML
+Binary
+
+For IoT systems, JSON is especially suitable, and here's why:
+1. Efficiency: JSON is a text-based format between human-readability and data size efficiency. In IoT applications, where bandwidth and data transmission efficiency are often critical, JSON can be an advantage.
+2. Wide Adoption: JSON is supported by a lot of programming languages and platforms. This makes it a good choice for IoT systems that involve different devices and software components, as it makes sure that the compatibility and ease of integration is easy.
+3. Human-Readable: JSON is easy to read and work with, which can be advantageous for debugging, troubleshooting, and development purposes, although not as much as XML.
+4. IoT Ecosystem: People often use JSON in different IoT protocols and standards, such as MQTT and HTTP REST APIs. This makes it easier for IoT devices to talk to cloud services and share information.
+5. Flexibility: JSON is flexible and allows for the representation of complex data structures, which is needed for IoT applications that deal with different data types and sensor inputs.
+
+#What is especially unsuitable, and why?
+1. Text: they may not be ideal for devices with limited capabilities.
+2. XML: You can specify a lot of things that makes comunication easy. There are a lot of incompatibilities.
+
+
+ 
+
+
+ 
+
+ 
+
