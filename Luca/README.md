@@ -2,42 +2,42 @@
 Welcome to my portofolio. Here you will see my progress, struggles and reflections.
 
 ## First day
-- [Research records](/Luca/researches/research01/README.md)
+- [Research records](Luca/Research/Research01)
 
 - [Lab records](Luca/LabRecordsFolder/Labrecords01)
 
 - [Reflection](/Luca/reflections/reflection01/README.md)
 
 ## Second day
-- [Research records](/Luca/researches/research02/README.md)
+- [Research records](Luca/Research/Research02)
 
 - [Lab records](Luca/LabRecordsFolder/Labrecords02)
 
 - [Reflection](/Luca/reflections/reflection02/README.md)
 
 ## Third day
-- [Research records](/Luca/researches/research03/README.md)
+- [Research records](Luca/Research/Research03)
 
 - [Lab records](Luca/LabRecordsFolder/Labrecords03)
 
 - [Reflection](/Luca/reflections/reflection03/README.md)
 
 ## Fourth day
-- [Research records](/Luca/researches/research04/README.md)
+- [Research records](Luca/Research/Research04)
 
 - [Lab records](Luca/LabRecordsFolder/Labrecords04)
 
 - [Reflection](/Luca/reflections/reflection04/README.md)
 
 ## Fifth day
-- [Research records](/Luca/researches/research05/README.md)
+- [Research records](Luca/Research/Research05)
 
 - [Lab records](Luca/LabRecordsFolder/Labrecords05)
 
 - [Reflection](/Luca/reflections/reflection05/README.md)
 
 ## Sixth day
-- [Research records](/Luca/researches/research06/README.md)
+- [Research records](Luca/Research/Research06)
 
 - [Lab records](Luca/LabRecordsFolder/Labrecords06)
 
