@@ -1,0 +1,62 @@
+#What will be issues scaling up (system size, number of systems, management)?
+•	The costs
+•	Too much data
+•	Higher chance of more bottlenecks
+•	Bigger surface for hackers to attack
+•	Data that is not consistent and becomes not useable
+#How can we do testing?
+•	Testing each individual device to make sure it works
+•	Test the security so the data doesnt get leaked
+•	End-to-End testing
+•	UX testing
+#What would you like to see or scaling up? (What is not so great currently)
+•	Using that many different programs
+•	The coding without any experience
+•	The building breadboard circuits without any experience
+•	The going online and doing stuff via a server (or something, i dont really know) without any experience
+•	I would like to see some ux or business related things
+#What role will play simulator (-components), MQTT, and Stories?
+•	Simulators are software or hardware tools that mimic the behavior of physical IoT devices or components. They are invaluable for testing, development, and validation of IoT systems without relying on actual physical devices.
+•	MQTT is a lightweight, efficient messaging protocol designed for low-bandwidth, high-latency, or unreliable networks. It plays a crucial role in the communication and data exchange between IoT devices and the central system.
+•	Stories or use cases are descriptions of how an IoT system is expected to behave in real-world situations. They serve as a reference for system design, testing, and validation.
+
+#IoTempower Feature list
+•	Use one program instead of multiple
+•	Have more explanation about coding and the internet programs
+•	More explanation about everything on a breadboard and what it does 
+•	For myself i would like to see more connection with UX and Business, there have een a few things but not alot
+•	A different way of documenting. Github is not that easy for someone who has never used it.
+
+#Make a new node. You need one line of code to tell the output of the device you are using,
+
+
+Switch on the coffee machine
+	Kitchen/Coffee_machine/Switch/set(on)
+Set all lights in the living room to blue
+	Living_room/#Leds/set(blue)
+Turn the main power off?
+	Main/Switch/set(off)
+
+#What is the general rule for forming topics in iotempower?
+	Hierarchy
+#When does it make sense to change something in system.conf?
+	If you want to change something about the security. Tune the performances
+#What role does the location of system.conf play?
+	It is the start of defining the topics. In this instance my house is left out of the topics.
+
+#What needs to go into the node.conf
+	The identity of the node. The port settings with which it needs to connect and also security.
+#How do optimal config.txt, etc/iotempower.conf, system.conf, and node.conf influence environmet variables for compiling? Give examples for when to change which
+If one node needs to connect to a different network then you will need to edit the node.conf. 
+
+#Common problem when we measure?
+	To many values get sent so there is alot of traffic on the network. 
+#How can we do graphs in node-red?
+	Use the UI-Chart node, specify data source, deploy flow
+#What are filters and how do they work?
+	Iotempower, different nodes and filtering capabilities. 
+	Node-red, fluent style to change the filters behind.
+#Wat is offered and what other generic filters would be nice?
+	None that i can think of.
+#What is the fluent style?
+The combination of programming and design style of the creation of a flow. Also the filter chaining is something fluent.
