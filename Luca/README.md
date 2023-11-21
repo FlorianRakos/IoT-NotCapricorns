@@ -92,7 +92,7 @@ Welcome to my portofolio. Here you will see my progress, struggles and reflectio
 
 - [Extra activities](/Luca/additionalThings/README.md#extra-activities)
 
-
+- [Reflection](- [Reflection](Luca/reflections/Reflection12))
 ## Ranking for the videos
 
 - [Ranking](/Luca/reflections/video_reflection/README.md#ranking)
