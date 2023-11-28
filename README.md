@@ -12,7 +12,7 @@ In this repo there are five different portfolios. One for each student.
 [Cristina](/Cristina/README.md)
 
 ## Gift (student ID 577052@belgiumcampus.ac.za)
-[Gift](/Gift/README.md)
+[Gift](/Gift/INDEX.md)
 
 ## Luca (student ID (?))
 [Luca](/Luca/README.md)
