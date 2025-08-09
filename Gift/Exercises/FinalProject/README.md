@@ -5,7 +5,9 @@ As we couldn't make footmouse because it was something that was irrelevent to IO
 First of all we have set up a simple circuit with a esp32 and a Button to detect the Help Button press. For the responder we wanted to use the M5 stick plus. When setting up the devices with IOT empower we ran into a lot of trouble with the M5 stick. At first it worked as expected, but after turing it off one time it wouldn't get to work anymore. Not a single pin could be manipulated. We ried a lot of things, including updating the PI, testing out different pins, reinitializing the device, etc...
 
 Because nothing worked we decided to emulate the M5 stick by just using a normal esp32 and a breadboard, with a Buzzer and an OLED screen, as can be seen in the image.
-<br><br><img src="../../pictures/project/Circuit.jpg" width="500"><br><br>
+<br><img src="https://raw.githubusercontent.com/FlorianRakos/IoT-NotCapricorns/main/pictures/project/Circuit.jpg" width="500"><br>
+<img src="https://raw.githubusercontent.com/FlorianRakos/IoT-NotCapricorns/main/pictures/project/Code_Responder.JPG" width="500">
+
 
 
 To controll the responder we used IOT Empower, with the following code.
