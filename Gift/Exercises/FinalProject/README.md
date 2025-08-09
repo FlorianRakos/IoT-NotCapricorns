@@ -16,7 +16,7 @@ Next we created a complex NodeRED flow. We wanted to be able to connect multiple
 <br><br><img src="/Gift/PicturesGift/Code_Responder.JPG" width="500"><br><br>
 
 The second flow, starts and stops the buzzer of the responder and sets the OLED screen. 
-<br><br><img src="Gift/PicturesGift/NodeRED_Listeners.JPG" width="500"><br><br>
+<br><br><img src="/Gift/PicturesGift/NodeRED_Listeners.JPG" width="500"><br><br>
 
 We also wanted to be able to induce the help call with a voice command. Therefore we used the NodeRED plugin "Voice2JSON" with which we could successfully identify the words "help" and "emergency" to trigger the responder. For voice input we used the NodeRED UI as we didn't have enough time left to implement it with the help-button device.
 <br><br><img src="/Gift/PicturesGift/NodeRED_Voice.JPG" width="500"><br><br>
