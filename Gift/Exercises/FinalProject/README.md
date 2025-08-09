@@ -7,6 +7,7 @@ First of all we have set up a simple circuit with a esp32 and a Button to detect
 Because nothing worked we decided to emulate the M5 stick by just using a normal esp32 and a breadboard, with a Buzzer and an OLED screen, as can be seen in the image.
 <br><br><img src="../../pictures/project/Circuit.jpg" width="500"><br><br>
 
+
 To controll the responder we used IOT Empower, with the following code.
 <br><br><img src="../../pictures/project/Code_Responder.JPG" width="500"><br><br>
 
